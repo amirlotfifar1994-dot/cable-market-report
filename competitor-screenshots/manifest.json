@@ -1,0 +1,498 @@
+{
+  "barghsan": {
+    "name": "برق‌سان",
+    "capturedAt": "2026-09-27T18:34:37.767Z",
+    "captures": {
+      "desktop": {
+        "device": "desktop",
+        "status": "captured",
+        "attempts": [
+          {
+            "url": "https://www.barghsan.com/",
+            "code": 200,
+            "finalUrl": "https://www.barghsan.com/",
+            "title": "برق سان نماینده رسمی سیم کابل خراسان افشارنژاد"
+          }
+        ],
+        "url": "https://www.barghsan.com/",
+        "title": "برق سان نماینده رسمی سیم کابل خراسان افشارنژاد",
+        "file": "barghsan-desktop.jpg",
+        "dimensions": {
+          "width": 1440,
+          "height": 4529
+        },
+        "bytes": 495497
+      },
+      "mobile": {
+        "device": "mobile",
+        "status": "captured",
+        "attempts": [
+          {
+            "url": "https://www.barghsan.com/",
+            "code": 200,
+            "finalUrl": "https://www.barghsan.com/",
+            "title": "برق سان نماینده رسمی سیم کابل خراسان افشارنژاد"
+          }
+        ],
+        "url": "https://www.barghsan.com/",
+        "title": "برق سان نماینده رسمی سیم کابل خراسان افشارنژاد",
+        "file": "barghsan-mobile.jpg",
+        "dimensions": {
+          "width": 390,
+          "height": 10334
+        },
+        "bytes": 209455
+      }
+    }
+  },
+  "jahancablearka": {
+    "name": "جهان کابل آرکا",
+    "capturedAt": "2026-09-27T18:32:25.012Z",
+    "captures": {
+      "desktop": {
+        "device": "desktop",
+        "status": "captured",
+        "attempts": [
+          {
+            "url": "https://jahancablearka.com/",
+            "code": 200,
+            "finalUrl": "https://jahancablearka.com/",
+            "title": "جهان کابل آرکا - نمایندگی رسمی سیم و کابل افشارنژاد - صفحه اصلی"
+          }
+        ],
+        "url": "https://jahancablearka.com/",
+        "title": "جهان کابل آرکا - نمایندگی رسمی سیم و کابل افشارنژاد - صفحه اصلی",
+        "file": "jahancablearka-desktop.jpg",
+        "dimensions": {
+          "width": 1440,
+          "height": 3574
+        },
+        "bytes": 282586
+      },
+      "mobile": {
+        "device": "mobile",
+        "status": "captured",
+        "attempts": [
+          {
+            "url": "https://jahancablearka.com/",
+            "code": 200,
+            "finalUrl": "https://jahancablearka.com/",
+            "title": "جهان کابل آرکا - نمایندگی رسمی سیم و کابل افشارنژاد - صفحه اصلی"
+          }
+        ],
+        "url": "https://jahancablearka.com/",
+        "title": "جهان کابل آرکا - نمایندگی رسمی سیم و کابل افشارنژاد - صفحه اصلی",
+        "file": "jahancablearka-mobile.jpg",
+        "dimensions": {
+          "width": 390,
+          "height": 4928
+        },
+        "bytes": 162941
+      }
+    }
+  },
+  "chalipacable": {
+    "name": "چلیپا کابل پویا",
+    "capturedAt": "2026-09-27T18:41:53.001Z",
+    "captures": {
+      "desktop": {
+        "device": "desktop",
+        "status": "failed",
+        "attempts": [
+          {
+            "url": "https://www.chalipacable.com/",
+            "error": "page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://www.chalipacable.com/\nCall log:\n\u001b[2m  - navigating to \"https://www.chalipacable.com/\", waiting until \"domcontentloaded\"\u001b[22m\n"
+          },
+          {
+            "url": "https://www.chalipacable.ir/",
+            "error": "page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://www.chalipacable.ir/\nCall log:\n\u001b[2m  - navigating to \"https://www.chalipacable.ir/\", waiting until \"domcontentloaded\"\u001b[22m\n"
+          },
+          {
+            "url": "http://www.chalipacable.com/",
+            "error": "page.goto: Navigation to \"http://www.chalipacable.com/\" is interrupted by another navigation to \"chrome-error://chromewebdata/\"\nCall log:\n\u001b[2m  - navigating to \"http://www.chalipacable.com/\", waiting until \"domcontentloaded\"\u001b[22m\n"
+          },
+          {
+            "url": "http://www.chalipacable.ir/",
+            "error": "page.goto: Navigation to \"http://www.chalipacable.ir/\" is interrupted by another navigation to \"http://www.chalipacable.com/\"\nCall log:\n\u001b[2m  - navigating to \"http://www.chalipacable.ir/\", waiting until \"domcontentloaded\"\u001b[22m\n"
+          },
+          {
+            "url": "https://chalipacable.ir/",
+            "error": "page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://chalipacable.ir/\nCall log:\n\u001b[2m  - navigating to \"https://chalipacable.ir/\", waiting until \"domcontentloaded\"\u001b[22m\n"
+          },
+          {
+            "url": "https://chalipacable.com/",
+            "error": "page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://chalipacable.com/\nCall log:\n\u001b[2m  - navigating to \"https://chalipacable.com/\", waiting until \"domcontentloaded\"\u001b[22m\n"
+          },
+          {
+            "url": "http://chalipacable.ir/",
+            "error": "page.goto: Navigation to \"http://chalipacable.ir/\" is interrupted by another navigation to \"chrome-error://chromewebdata/\"\nCall log:\n\u001b[2m  - navigating to \"http://chalipacable.ir/\", waiting until \"domcontentloaded\"\u001b[22m\n"
+          },
+          {
+            "url": "http://chalipacable.com/",
+            "error": "page.goto: Navigation to \"http://chalipacable.com/\" is interrupted by another navigation to \"http://chalipacable.ir/\"\nCall log:\n\u001b[2m  - navigating to \"http://chalipacable.com/\", waiting until \"domcontentloaded\"\u001b[22m\n"
+          }
+        ]
+      },
+      "mobile": {
+        "device": "mobile",
+        "status": "failed",
+        "attempts": [
+          {
+            "url": "https://www.chalipacable.com/",
+            "error": "page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://www.chalipacable.com/\nCall log:\n\u001b[2m  - navigating to \"https://www.chalipacable.com/\", waiting until \"domcontentloaded\"\u001b[22m\n"
+          },
+          {
+            "url": "https://www.chalipacable.ir/",
+            "error": "page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://www.chalipacable.ir/\nCall log:\n\u001b[2m  - navigating to \"https://www.chalipacable.ir/\", waiting until \"domcontentloaded\"\u001b[22m\n"
+          },
+          {
+            "url": "http://www.chalipacable.com/",
+            "error": "page.goto: Navigation to \"http://www.chalipacable.com/\" is interrupted by another navigation to \"chrome-error://chromewebdata/\"\nCall log:\n\u001b[2m  - navigating to \"http://www.chalipacable.com/\", waiting until \"domcontentloaded\"\u001b[22m\n"
+          },
+          {
+            "url": "http://www.chalipacable.ir/",
+            "error": "page.goto: Navigation to \"http://www.chalipacable.ir/\" is interrupted by another navigation to \"http://www.chalipacable.com/\"\nCall log:\n\u001b[2m  - navigating to \"http://www.chalipacable.ir/\", waiting until \"domcontentloaded\"\u001b[22m\n"
+          },
+          {
+            "url": "https://chalipacable.ir/",
+            "error": "page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://chalipacable.ir/\nCall log:\n\u001b[2m  - navigating to \"https://chalipacable.ir/\", waiting until \"domcontentloaded\"\u001b[22m\n"
+          },
+          {
+            "url": "https://chalipacable.com/",
+            "error": "page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://chalipacable.com/\nCall log:\n\u001b[2m  - navigating to \"https://chalipacable.com/\", waiting until \"domcontentloaded\"\u001b[22m\n"
+          },
+          {
+            "url": "http://chalipacable.ir/",
+            "error": "page.goto: Navigation to \"http://chalipacable.ir/\" is interrupted by another navigation to \"chrome-error://chromewebdata/\"\nCall log:\n\u001b[2m  - navigating to \"http://chalipacable.ir/\", waiting until \"domcontentloaded\"\u001b[22m\n"
+          },
+          {
+            "url": "http://chalipacable.com/",
+            "error": "page.goto: Navigation to \"http://chalipacable.com/\" is interrupted by another navigation to \"http://chalipacable.ir/\"\nCall log:\n\u001b[2m  - navigating to \"http://chalipacable.com/\", waiting until \"domcontentloaded\"\u001b[22m\n"
+          }
+        ]
+      }
+    }
+  },
+  "voltatadbir": {
+    "name": "ولتا تدبیر",
+    "capturedAt": "2026-09-27T18:32:35.793Z",
+    "captures": {
+      "desktop": {
+        "device": "desktop",
+        "status": "captured",
+        "attempts": [
+          {
+            "url": "https://voltatadbir.ir/",
+            "code": 200,
+            "finalUrl": "https://voltatadbir.ir/",
+            "title": "Home | کابل ولتا تدبیر"
+          }
+        ],
+        "url": "https://voltatadbir.ir/",
+        "title": "Home | کابل ولتا تدبیر",
+        "file": "voltatadbir-desktop.jpg",
+        "dimensions": {
+          "width": 1440,
+          "height": 3007
+        },
+        "bytes": 167277
+      },
+      "mobile": {
+        "device": "mobile",
+        "status": "captured",
+        "attempts": [
+          {
+            "url": "https://voltatadbir.ir/",
+            "code": 200,
+            "finalUrl": "https://voltatadbir.ir/",
+            "title": "Home | کابل ولتا تدبیر"
+          }
+        ],
+        "url": "https://voltatadbir.ir/",
+        "title": "Home | کابل ولتا تدبیر",
+        "file": "voltatadbir-mobile.jpg",
+        "dimensions": {
+          "width": 390,
+          "height": 5438
+        },
+        "bytes": 208594
+      }
+    }
+  },
+  "maniadsanat": {
+    "name": "مانیاد صنعت",
+    "capturedAt": "2026-09-27T18:32:50.122Z",
+    "captures": {
+      "desktop": {
+        "device": "desktop",
+        "status": "captured",
+        "attempts": [
+          {
+            "url": "https://maniadsanat.com/",
+            "code": 200,
+            "finalUrl": "https://maniadsanat.com/",
+            "title": "تولید ترموکوپل صنعتی، RTD / PT100 و ترموول | مانیاد"
+          }
+        ],
+        "url": "https://maniadsanat.com/",
+        "title": "تولید ترموکوپل صنعتی، RTD / PT100 و ترموول | مانیاد",
+        "file": "maniadsanat-desktop.jpg",
+        "dimensions": {
+          "width": 1440,
+          "height": 9641
+        },
+        "bytes": 641978
+      },
+      "mobile": {
+        "device": "mobile",
+        "status": "captured",
+        "attempts": [
+          {
+            "url": "https://maniadsanat.com/",
+            "code": 200,
+            "finalUrl": "https://maniadsanat.com/",
+            "title": "تولید ترموکوپل صنعتی، RTD / PT100 و ترموول | مانیاد"
+          }
+        ],
+        "url": "https://maniadsanat.com/",
+        "title": "تولید ترموکوپل صنعتی، RTD / PT100 و ترموول | مانیاد",
+        "file": "maniadsanat-mobile.jpg",
+        "dimensions": {
+          "width": 390,
+          "height": 23323
+        },
+        "bytes": 896814
+      }
+    }
+  },
+  "renirvana": {
+    "name": "رایا ارتباط نیروانا",
+    "capturedAt": "2026-09-27T18:33:04.219Z",
+    "captures": {
+      "desktop": {
+        "device": "desktop",
+        "status": "captured",
+        "attempts": [
+          {
+            "url": "https://renirvana.com/",
+            "code": 200,
+            "finalUrl": "https://renirvana.com/",
+            "title": "رایا ارتباط نیروانا | واردات و فروش تجهیزات شبکه لگراند و نگزنس با قیمت رقابتی"
+          }
+        ],
+        "url": "https://renirvana.com/",
+        "title": "رایا ارتباط نیروانا | واردات و فروش تجهیزات شبکه لگراند و نگزنس با قیمت رقابتی",
+        "file": "renirvana-desktop.jpg",
+        "dimensions": {
+          "width": 1440,
+          "height": 6304
+        },
+        "bytes": 669797
+      },
+      "mobile": {
+        "device": "mobile",
+        "status": "captured",
+        "attempts": [
+          {
+            "url": "https://renirvana.com/",
+            "code": 200,
+            "finalUrl": "https://renirvana.com/",
+            "title": "رایا ارتباط نیروانا | واردات و فروش تجهیزات شبکه لگراند و نگزنس با قیمت رقابتی"
+          }
+        ],
+        "url": "https://renirvana.com/",
+        "title": "رایا ارتباط نیروانا | واردات و فروش تجهیزات شبکه لگراند و نگزنس با قیمت رقابتی",
+        "file": "renirvana-mobile.jpg",
+        "dimensions": {
+          "width": 390,
+          "height": 7878
+        },
+        "bytes": 234660
+      }
+    }
+  },
+  "legrandco": {
+    "name": "لگراندکو",
+    "capturedAt": "2026-09-27T18:33:25.261Z",
+    "captures": {
+      "desktop": {
+        "device": "desktop",
+        "status": "captured",
+        "attempts": [
+          {
+            "url": "https://legrand-co.ir/",
+            "code": 200,
+            "finalUrl": "https://legrand-co.ir/",
+            "title": "فروشگاه تخصصی نمایندگی کابل شبکه لگراند و تجهیزات شبکه لگراند"
+          }
+        ],
+        "url": "https://legrand-co.ir/",
+        "title": "فروشگاه تخصصی نمایندگی کابل شبکه لگراند و تجهیزات شبکه لگراند",
+        "file": "legrandco-desktop.jpg",
+        "dimensions": {
+          "width": 1425,
+          "height": 3535
+        },
+        "bytes": 222248
+      },
+      "mobile": {
+        "device": "mobile",
+        "status": "captured",
+        "attempts": [
+          {
+            "url": "https://legrand-co.ir/",
+            "code": 200,
+            "finalUrl": "https://legrand-co.ir/",
+            "title": "فروشگاه تخصصی نمایندگی کابل شبکه لگراند و تجهیزات شبکه لگراند"
+          }
+        ],
+        "url": "https://legrand-co.ir/",
+        "title": "فروشگاه تخصصی نمایندگی کابل شبکه لگراند و تجهیزات شبکه لگراند",
+        "file": "legrandco-mobile.jpg",
+        "dimensions": {
+          "width": 390,
+          "height": 3321
+        },
+        "bytes": 125239
+      }
+    }
+  },
+  "cableiran": {
+    "name": "کابل ایران",
+    "capturedAt": "2026-09-27T18:33:36.564Z",
+    "captures": {
+      "desktop": {
+        "device": "desktop",
+        "status": "captured",
+        "attempts": [
+          {
+            "url": "https://cableiran.com/",
+            "code": 200,
+            "finalUrl": "https://cableiran.com/",
+            "title": "خرید سیم و کابل | کابل ایران"
+          }
+        ],
+        "url": "https://cableiran.com/",
+        "title": "خرید سیم و کابل | کابل ایران",
+        "file": "cableiran-desktop.jpg",
+        "dimensions": {
+          "width": 1440,
+          "height": 11276
+        },
+        "bytes": 1295892
+      },
+      "mobile": {
+        "device": "mobile",
+        "status": "captured",
+        "attempts": [
+          {
+            "url": "https://cableiran.com/",
+            "code": 200,
+            "finalUrl": "https://cableiran.com/",
+            "title": "خرید سیم و کابل | کابل ایران"
+          }
+        ],
+        "url": "https://cableiran.com/",
+        "title": "خرید سیم و کابل | کابل ایران",
+        "file": "cableiran-mobile.jpg",
+        "dimensions": {
+          "width": 390,
+          "height": 11111
+        },
+        "bytes": 420714
+      }
+    }
+  },
+  "bargheasia": {
+    "name": "برق و صنعت آسیا",
+    "capturedAt": "2026-09-27T18:33:50.577Z",
+    "captures": {
+      "desktop": {
+        "device": "desktop",
+        "status": "captured",
+        "attempts": [
+          {
+            "url": "https://bargheasia.com/",
+            "code": 200,
+            "finalUrl": "https://bargheasia.com/",
+            "title": "خرید سیم و کابل | قیمت روز سیم افشان، کابل برق و شبکه"
+          }
+        ],
+        "url": "https://bargheasia.com/",
+        "title": "خرید سیم و کابل | قیمت روز سیم افشان، کابل برق و شبکه",
+        "file": "bargheasia-desktop.jpg",
+        "dimensions": {
+          "width": 1440,
+          "height": 5958
+        },
+        "bytes": 564350
+      },
+      "mobile": {
+        "device": "mobile",
+        "status": "captured",
+        "attempts": [
+          {
+            "url": "https://bargheasia.com/",
+            "code": 200,
+            "finalUrl": "https://bargheasia.com/",
+            "title": "خرید سیم و کابل | قیمت روز سیم افشان، کابل برق و شبکه"
+          }
+        ],
+        "url": "https://bargheasia.com/",
+        "title": "خرید سیم و کابل | قیمت روز سیم افشان، کابل برق و شبکه",
+        "file": "bargheasia-mobile.jpg",
+        "dimensions": {
+          "width": 390,
+          "height": 9035
+        },
+        "bytes": 337195
+      }
+    }
+  },
+  "legrandpars": {
+    "name": "لگراند پارس",
+    "capturedAt": "2026-09-27T18:34:07.214Z",
+    "captures": {
+      "desktop": {
+        "device": "desktop",
+        "status": "captured",
+        "attempts": [
+          {
+            "url": "https://www.legrandpars.ir/",
+            "code": 200,
+            "finalUrl": "https://www.legrandpars.ir/",
+            "title": "لگراند پارس - نمایندگی رسمی تجهیزات و کابل شبکه لگراند LEGRAND"
+          }
+        ],
+        "url": "https://www.legrandpars.ir/",
+        "title": "لگراند پارس - نمایندگی رسمی تجهیزات و کابل شبکه لگراند LEGRAND",
+        "file": "legrandpars-desktop.jpg",
+        "dimensions": {
+          "width": 1440,
+          "height": 1330
+        },
+        "bytes": 133678
+      },
+      "mobile": {
+        "device": "mobile",
+        "status": "captured",
+        "attempts": [
+          {
+            "url": "https://www.legrandpars.ir/",
+            "code": 200,
+            "finalUrl": "https://www.legrandpars.ir/",
+            "title": "لگراند پارس - نمایندگی رسمی تجهیزات و کابل شبکه لگراند LEGRAND"
+          }
+        ],
+        "url": "https://www.legrandpars.ir/",
+        "title": "لگراند پارس - نمایندگی رسمی تجهیزات و کابل شبکه لگراند LEGRAND",
+        "file": "legrandpars-mobile.jpg",
+        "dimensions": {
+          "width": 392,
+          "height": 2098
+        },
+        "bytes": 81921
+      }
+    }
+  }
+}

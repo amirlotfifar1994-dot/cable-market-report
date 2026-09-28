@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>طرح مدل‌محور سایت تأمین کابل | نمونه تعاملی</title>
+  <meta name="description" content="نمونه تعاملی طراحی مدل‌محور برای سایت تأمین‌کننده کابل؛ جست‌وجوی کد، تطبیق مشخصات و استعلام چندقلمی.">
+  <style>
+    @font-face{font-family:Vazirmatn;src:url("assets/fonts/Vazirmatn-Regular.ttf") format("truetype");font-style:normal;font-weight:400;font-display:swap}
+    @font-face{font-family:Vazirmatn;src:url("assets/fonts/Vazirmatn-Medium.ttf") format("truetype");font-style:normal;font-weight:500;font-display:swap}
+    @font-face{font-family:Vazirmatn;src:url("assets/fonts/Vazirmatn-Bold.ttf") format("truetype");font-style:normal;font-weight:700;font-display:swap}
+    :root{--navy:#102a3b;--navy2:#183d4e;--teal:#087e75;--mint:#dff4ef;--gold:#eeb76b;--paper:#f5f7f5;--line:#dbe5e5;--muted:#617683;--white:#fff;--shadow:0 20px 50px rgba(20,51,65,.08)}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:linear-gradient(180deg,#f9faf8 0,#f5f7f5 950px);color:var(--navy);font:15px/1.9 Vazirmatn,Tahoma,sans-serif;-webkit-font-smoothing:antialiased}
+    button,input,select{font:inherit}
+    button{cursor:pointer}
+    a{color:inherit;text-decoration:none}
+    a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+    .wrap{width:min(1200px,calc(100% - 48px));margin-inline:auto}
+    .demo-note{background:#e2f0ed;border-bottom:1px solid #c9e2dc;color:#225850;text-align:center;font-size:11px;font-weight:800;padding:7px 15px}
+    .demo-note a{color:#126f68;text-decoration:underline;text-underline-offset:2px;margin-inline-start:8px}
+    .site-header{background:#fff;position:sticky;top:0;z-index:20;border-bottom:1px solid var(--line);box-shadow:0 8px 25px rgba(15,42,56,.04)}
+    .site-header .wrap{display:flex;align-items:center;gap:30px;min-height:78px}
+    .logo{display:flex;align-items:center;gap:11px;font-weight:900;font-size:17px;white-space:nowrap}
+    .logo-mark{width:39px;height:39px;display:grid;place-items:center;color:white;border-radius:11px;background:linear-gradient(135deg,#0e8c81,#0f5965);font-size:22px;line-height:1}
+    .site-nav{display:flex;gap:26px;margin-inline:auto;color:#385867;font-size:12px;font-weight:800}
+    .site-nav a:hover{color:var(--teal)}
+    .header-cta,.btn-primary{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--teal);color:#fff;border:1px solid var(--teal);border-radius:10px;padding:10px 17px;font-size:12px;font-weight:900;white-space:nowrap}
+    .header-cta:hover,.btn-primary:hover{background:#086960}
+    .header-cta .count{display:grid;place-items:center;min-width:20px;height:20px;border-radius:50%;background:#fff;color:var(--teal);font-size:10px}
+    .hero{background:radial-gradient(circle at 12% 22%,rgba(14,150,132,.27),transparent 28%),linear-gradient(125deg,#0c2536,#174251);color:white;overflow:hidden;position:relative}
+    .hero:before{content:"";position:absolute;inset:0;opacity:.12;background-image:linear-gradient(90deg,#fff 1px,transparent 1px),linear-gradient(#fff 1px,transparent 1px);background-size:48px 48px;mask-image:linear-gradient(90deg,transparent,#000)}
+    .hero .wrap{position:relative;display:grid;grid-template-columns:minmax(0,1.12fr) minmax(360px,.88fr);gap:34px;align-items:center;padding:82px 0 101px}
+    .eyebrow{display:inline-flex;border:1px solid rgba(255,255,255,.25);border-radius:99px;padding:5px 13px;color:#d3eee7;background:rgba(255,255,255,.07);font-size:11px;font-weight:800}
+    h1{font-size:clamp(35px,4.2vw,60px);line-height:1.4;letter-spacing:0;margin:21px 0 14px;max-width:740px}
+    h1 em{font-style:normal;color:#eec48b}
+    .hero-copy{color:#cce0e6;max-width:650px;font-size:15px;margin:0 0 26px}
+    .hero-kpis{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px;color:#d9e9e8;font-size:11px}
+    .hero-kpis span{border:1px solid rgba(255,255,255,.17);border-radius:7px;padding:4px 9px;background:rgba(255,255,255,.05)}
+    .search-box{background:white;color:var(--navy);border-radius:16px;padding:11px;box-shadow:0 22px 50px rgba(3,20,28,.2);max-width:720px}
+    .search-label{display:flex;align-items:center;gap:7px;color:#57707c;font-size:11px;font-weight:800;padding:2px 8px 8px}
+    .search-row{display:flex;gap:8px}
+    .search-row input{min-width:0;flex:1;border:1px solid #d8e4e4;background:#f7faf9;color:#173744;border-radius:9px;padding:12px 14px;direction:rtl}
+    .search-row input::placeholder{color:#8a9ca1}
+    .search-row button{border:0;border-radius:9px;background:var(--teal);color:#fff;padding:10px 22px;font-weight:900;white-space:nowrap}
+    .examples{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:13px;color:#b6d0d7;font-size:11px}
+    .example{border:1px solid rgba(255,255,255,.27);color:#e9f1f1;background:rgba(255,255,255,.05);padding:3px 9px;border-radius:99px;font-size:11px}
+    .example:hover{background:rgba(255,255,255,.15)}
+    .hero-visual{position:relative;min-height:440px;display:flex;align-items:center;justify-content:center;isolation:isolate}
+    .hero-visual:before{content:"";position:absolute;inset:2% -9% 5% -7%;border:1px solid rgba(255,255,255,.13);border-radius:36px;transform:rotate(-5deg);z-index:-1}
+    .hero-visual img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:30% center;border-radius:27px;box-shadow:0 28px 70px rgba(0,0,0,.34);filter:saturate(.94)}
+    .hero-visual:after{content:"";position:absolute;inset:0;border-radius:27px;background:linear-gradient(180deg,transparent 55%,rgba(5,22,31,.45));pointer-events:none}
+    .visual-card{position:absolute;z-index:2;bottom:-15px;right:-24px;width:min(285px,90%);background:rgba(255,255,255,.97);color:var(--navy);border:1px solid rgba(255,255,255,.8);border-radius:15px;padding:17px 19px;box-shadow:0 19px 48px rgba(0,0,0,.23)}
+    .visual-card small{display:block;color:var(--teal);font-weight:800;font-size:10px}
+    .visual-card strong{display:block;font:900 19px Consolas,monospace;direction:ltr;text-align:right;margin:3px 0}
+    .visual-card span{font-size:11px;color:var(--muted)}
+    .value-strip{position:relative;z-index:2;margin-top:-35px;display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+    .value{background:#fff;border:1px solid var(--line);box-shadow:var(--shadow);border-radius:15px;padding:19px;display:flex;gap:12px;align-items:start}
+    .value .icon{width:35px;height:35px;display:grid;place-items:center;border-radius:10px;background:var(--mint);color:var(--teal);font-size:18px;flex:none}
+    .value strong{display:block;font-size:13px}
+    .value p{color:var(--muted);font-size:11px;margin:3px 0 0}
+    main{padding-bottom:85px}
+    section{scroll-margin-top:95px}
+    .section{margin-top:80px}
+    .section-head{display:flex;align-items:end;justify-content:space-between;gap:16px;padding-bottom:20px;border-bottom:1px solid #ccdadb;margin-bottom:22px}
+    .kicker{font-size:11px;color:var(--teal);font-weight:900;margin-bottom:7px}
+    h2{font-size:clamp(25px,2.7vw,35px);line-height:1.4;margin:0}
+    .section-head p{color:var(--muted);font-size:13px;max-width:690px;margin:7px 0 0}
+    .section-side{color:#54747c;font-size:12px;font-weight:800;text-align:left}
+    .family-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px}
+    .family-card{position:relative;display:flex;flex-direction:column;min-height:272px;background:white;border:1px solid var(--line);border-radius:18px;padding:22px 23px;box-shadow:var(--shadow);overflow:hidden;transition:transform .2s ease,box-shadow .2s ease}
+    .family-card:hover{transform:translateY(-3px);box-shadow:0 22px 45px rgba(20,51,65,.13)}
+    .family-card:before{content:"";position:absolute;inset:0 0 auto;height:4px;background:#0a8177}
+    .family-card:nth-child(2):before{background:#c69454}.family-card:nth-child(3):before{background:#537997}
+    .family-card .no{color:#89a5a8;font:900 12px Consolas,monospace;letter-spacing:.08em}
+    .family-card h3{font-size:20px;line-height:1.5;margin:13px 0 5px}
+    .family-card p{color:#5b7380;font-size:12px;margin:0 0 12px}
+    .family-card .criteria{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:18px}
+    .family-card .criteria span{background:#eef5f4;color:#385e66;border-radius:6px;padding:3px 7px;font-size:10px}
+    .family-card button{align-self:flex-start;margin-top:auto;background:transparent;border:0;border-bottom:1px solid #0a8177;color:#0b756d;padding:0 0 2px;font-size:12px;font-weight:900}
+    .family-intro{display:flex;align-items:start;justify-content:space-between;gap:20px;background:#e7f3f0;border:1px solid #d1e7e0;border-radius:13px;padding:14px 17px;margin-top:14px;color:#3b6667;font-size:12px}
+    .family-intro b{color:#0e5c58;white-space:nowrap}
+    .catalogue{display:grid;grid-template-columns:245px minmax(0,1fr);gap:18px;align-items:start}
+    .filters{background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px;box-shadow:var(--shadow);position:sticky;top:94px}
+    .filters h3{margin:0 0 16px;font-size:16px}
+    .field{margin-bottom:15px}
+    .field label{display:block;font-size:11px;font-weight:900;color:#45616c;margin-bottom:6px}
+    .field select{width:100%;border:1px solid #d7e3e2;border-radius:9px;background:#f8faf9;padding:9px;color:#1c4050}
+    .reset{width:100%;border:1px solid #b8d8d2;border-radius:9px;background:#ebf7f4;color:var(--teal);font-size:11px;font-weight:900;padding:9px}
+    .result-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:12px}
+    .result-head strong{font-size:13px}
+    .result-head span{font-size:11px;color:var(--muted)}
+    .model-list{display:grid;gap:12px}
+    .model-card{background:white;border:1px solid var(--line);border-radius:16px;padding:20px 22px;box-shadow:var(--shadow)}
+    .model-top{display:flex;align-items:start;justify-content:space-between;gap:12px}
+    .model-top h3{font:900 21px Consolas,"Segoe UI",monospace;direction:ltr;text-align:right;letter-spacing:.01em;margin:2px 0 5px}
+    .model-eyebrow{font-size:10px;font-weight:900;color:var(--teal)}
+    .model-name{color:#59727f;font-size:12px;margin:0}
+    .model-id{border-radius:7px;background:#eff5f5;color:#4c6975;padding:4px 8px;font:800 10px Consolas,monospace;white-space:nowrap}
+    .specs{display:flex;flex-wrap:wrap;gap:7px;margin:17px 0}
+    .specs span{background:#f1f6f6;color:#385a67;border:1px solid #e2ebea;border-radius:6px;padding:4px 9px;font-size:11px}
+    .model-bottom{border-top:1px solid #e6eeee;padding-top:15px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+    .supply{font-size:11px;color:#627985}.supply b{display:block;color:#1e5f5b;font-size:12px}
+    .model-actions{display:flex;flex-wrap:wrap;gap:7px}
+    .btn-quiet,.btn-outline{border:1px solid #cbdcdd;background:white;color:#2a5a65;border-radius:8px;padding:7px 11px;font-size:11px;font-weight:900}
+    .btn-quiet:hover,.btn-outline:hover{background:#eaf5f2}
+    .btn-quiet[aria-pressed="true"]{background:#e5f3ef;border-color:#69b9ac;color:#08776e}
+    .btn-add{border:1px solid var(--teal);background:var(--teal);color:#fff;border-radius:8px;padding:7px 12px;font-size:11px;font-weight:900}
+    .btn-add:hover{background:#086961}
+    .empty{background:white;border:1px dashed #b8d1d1;border-radius:16px;padding:35px;text-align:center;color:var(--muted)}
+    .empty strong{display:block;color:var(--navy);font-size:17px}
+    .empty p{max-width:470px;margin:7px auto 15px;font-size:12px}
+    .comparison{background:#fff;border:1px solid var(--line);box-shadow:var(--shadow);border-radius:16px;padding:20px;overflow-x:auto}
+    .comparison[hidden]{display:none}
+    .comparison table{border-collapse:collapse;width:100%;min-width:570px}
+    .comparison th,.comparison td{padding:11px 13px;border-bottom:1px solid #e1ebea;text-align:right;font-size:12px}
+    .comparison th{color:#54727d;width:140px;background:#f6f9f8}
+    .comparison tr:last-child th,.comparison tr:last-child td{border-bottom:0}
+    .principles{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+    .principle{background:#fff;border:1px solid var(--line);border-radius:15px;padding:22px;box-shadow:var(--shadow)}
+    .principle .n{color:var(--teal);font:900 12px Consolas,monospace}
+    .principle h3{font-size:15px;margin:10px 0 6px}
+    .principle p{font-size:12px;color:var(--muted);margin:0}
+    .process-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+    .process-step{background:#fff;border:1px solid var(--line);border-radius:15px;padding:20px;box-shadow:var(--shadow)}
+    .process-step .n{display:grid;place-items:center;width:33px;height:33px;border-radius:9px;background:#e4f2ef;color:#0b786f;font:900 13px Consolas,monospace}
+    .process-step h3{font-size:14px;margin:13px 0 5px}
+    .process-step p{font-size:11px;color:var(--muted);margin:0}
+    .process-note{display:flex;gap:12px;align-items:start;background:#fff8ec;border:1px solid #efdcbf;border-radius:12px;padding:14px 16px;color:#745d3b;font-size:12px;margin-top:14px}
+    .process-note b{white-space:nowrap;color:#886125}
+    .faq-list{display:grid;grid-template-columns:1fr 1fr;gap:11px}
+    .faq-list details{background:white;border:1px solid var(--line);border-radius:12px;padding:15px 17px;box-shadow:var(--shadow)}
+    .faq-list summary{list-style:none;cursor:pointer;font-size:13px;font-weight:900;display:flex;align-items:center;justify-content:space-between;gap:12px}
+    .faq-list summary::-webkit-details-marker{display:none}
+    .faq-list summary:after{content:"+";color:var(--teal);font-size:19px;line-height:1}
+    .faq-list details[open] summary:after{content:"−"}
+    .faq-list p{color:#5b7480;font-size:12px;margin:12px 0 1px;border-top:1px solid #e5eeee;padding-top:11px}
+    .data-needed{background:#fff;border:1px solid var(--line);border-radius:18px;padding:24px 27px;display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:25px;align-items:center;box-shadow:var(--shadow)}
+    .data-needed h3{font-size:18px;margin:0 0 5px}
+    .data-needed p{font-size:12px;color:var(--muted);margin:0}
+    .data-needed ul{display:grid;grid-template-columns:1fr 1fr;gap:6px 16px;padding-right:20px;margin:0;color:#425f6c;font-size:11px}
+    .banner{background:linear-gradient(115deg,#103346,#18545b);color:#fff;border-radius:20px;padding:29px 33px;display:flex;align-items:center;justify-content:space-between;gap:25px}
+    .banner h2{font-size:25px}.banner p{margin:7px 0 0;color:#d4e8e8;font-size:12px}
+    .banner button{border:0;background:var(--gold);color:#233544;border-radius:9px;padding:10px 16px;font-size:12px;font-weight:900;white-space:nowrap}
+    footer{background:#102b3b;color:#c5d9de;padding:25px 0;font-size:11px}
+    footer .wrap{display:flex;justify-content:space-between;gap:20px}
+    dialog{border:0;border-radius:18px;padding:0;box-shadow:0 30px 90px rgba(0,0,0,.27);color:var(--navy)}
+    dialog::backdrop{background:rgba(7,25,35,.65)}
+    .detail-dialog{width:min(92vw,660px)}
+    .rfq-dialog{width:min(92vw,690px)}
+    .dialog-head{display:flex;align-items:start;justify-content:space-between;gap:14px;padding:22px 25px;border-bottom:1px solid var(--line)}
+    .dialog-head small{display:block;color:var(--teal);font-weight:900;font-size:11px}
+    .dialog-head h2{font-size:22px;margin:1px 0 0}
+    .dialog-head button{border:0;background:#eff5f4;color:#244956;width:30px;height:30px;border-radius:8px;font-size:20px;line-height:1}
+    .dialog-content{padding:22px 25px;max-height:68vh;overflow:auto}
+    .detail-lead{font-size:13px;color:var(--muted);margin:0 0 14px}
+    .detail-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+    .detail-grid div{background:#f5f8f7;border-radius:9px;padding:10px 12px}
+    .detail-grid small{display:block;color:#67808a;font-size:10px}
+    .detail-grid strong{font-size:12px}
+    .detail-note{margin:17px 0;background:#fff7e9;border:1px solid #edd8b7;border-radius:10px;padding:11px 13px;color:#795c35;font-size:11px}
+    .dialog-foot{display:flex;justify-content:flex-end;gap:8px;padding:15px 25px;border-top:1px solid var(--line)}
+    .rfq-row{display:grid;grid-template-columns:minmax(0,1fr) 110px 30px;gap:9px;align-items:center;border-bottom:1px solid var(--line);padding:11px 0}
+    .rfq-row:last-child{border-bottom:0}
+    .rfq-row strong{display:block;font:900 13px Consolas,monospace;direction:ltr;text-align:right}
+    .rfq-row small{color:var(--muted);font-size:11px}
+    .rfq-row input{border:1px solid #d3e1e0;border-radius:8px;padding:7px;width:100%;direction:ltr;text-align:center}
+    .rfq-row button{border:0;background:#fff0ed;color:#b4574d;border-radius:8px;width:30px;height:30px;font-weight:900}
+    .rfq-explainer{font-size:11px;color:#627984;background:#f1f6f5;border-radius:9px;padding:10px 12px;margin-top:15px}
+    .toast{position:fixed;bottom:18px;left:18px;z-index:60;background:#123a47;color:white;border-radius:10px;padding:9px 15px;box-shadow:0 12px 30px rgba(0,0,0,.2);font-size:12px;opacity:0;transform:translateY(12px);pointer-events:none;transition:.2s}
+    .toast.show{opacity:1;transform:translateY(0)}
+    /* Keep the interactive concept as readable as the report pages. */
+    .demo-note,.site-nav,.header-cta,.btn-primary{font-size:13px}
+    .demo-note{padding:9px 15px}
+    .hero-copy{font-size:16px;line-height:2.05}
+    .eyebrow,.hero-kpis,.search-label,.examples,.example{font-size:12px}
+    .value{padding:23px}
+    .value strong{font-size:15px}
+    .value p,.section-head p,.family-card p,.family-intro,.model-name,.empty p,.principle p,.process-step p,.process-note,.faq-list p,.data-needed p,.data-needed ul,.banner p{font-size:13px}
+    .section-head{position:relative;padding-bottom:23px}
+    .section-head:after{content:"";position:absolute;right:0;bottom:-1px;width:58px;height:2px;background:var(--teal)}
+    .kicker,.section-side,.field label,.result-head span,.supply,.btn-quiet,.btn-outline,.btn-add,.reset{font-size:12px}
+    .family-card,.model-card,.principle,.process-step,.faq-list details{box-shadow:0 12px 34px rgba(20,51,65,.065)}
+    .family-card .criteria span,.model-eyebrow,.model-id,.detail-grid small{font-size:11px}
+    .family-card button,.result-head strong,.specs span,.supply b,.comparison th,.comparison td,.detail-grid strong,.detail-note,.rfq-explainer{font-size:12px}
+    .process-step h3,.principle h3{font-size:16px}
+    .detail-lead{font-size:14px}
+    .banner{box-shadow:0 20px 42px rgba(11,51,65,.15)}
+    @media(max-width:980px){.site-nav{display:none}.site-header .wrap{justify-content:space-between}.hero .wrap{grid-template-columns:1fr}.hero-visual{min-height:300px;margin-top:18px}.visual-card{right:15px;bottom:-12px}.catalogue{grid-template-columns:1fr}.filters{position:static;display:grid;grid-template-columns:repeat(3,1fr);gap:8px 13px}.filters h3,.filters .reset{grid-column:1/-1}.field{margin:0}.family-grid{grid-template-columns:repeat(2,1fr)}.process-grid{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:700px){.wrap{width:min(100% - 28px,1200px)}.site-header .wrap{min-height:65px}.logo{font-size:14px}.header-cta{padding:8px 10px;font-size:12px}.hero .wrap{padding:53px 0 75px}.hero-copy{font-size:14px}.value-strip{grid-template-columns:1fr;gap:8px;margin-top:-24px}.value{padding:16px 18px}.section{margin-top:58px}.section-side{display:none}.filters{grid-template-columns:1fr 1fr}.principles{grid-template-columns:1fr}.family-grid{grid-template-columns:1fr}.family-card{min-height:235px}.faq-list{grid-template-columns:1fr}.data-needed{grid-template-columns:1fr}.banner{display:block;padding:23px}.banner button{margin-top:17px}.model-bottom{align-items:stretch;flex-direction:column}.model-actions button{flex:1}.detail-grid{grid-template-columns:1fr}footer .wrap{display:block}footer span{display:block;margin-top:6px}}
+    @media(max-width:430px){.search-row{flex-direction:column}.search-row button{min-height:42px}.hero-visual{min-height:215px}.visual-card{width:210px;padding:11px 13px;right:6px;bottom:-10px}.visual-card strong{font-size:15px}.visual-card span{font-size:9px}.filters{grid-template-columns:1fr}.model-card{padding:17px}.model-top h3{font-size:18px}.family-intro,.process-note{display:block}.family-intro b,.process-note b{display:block;margin-bottom:4px}.process-grid{grid-template-columns:1fr}.data-needed ul{grid-template-columns:1fr}.rfq-row{grid-template-columns:minmax(0,1fr) 75px 28px}.dialog-head,.dialog-content,.dialog-foot{padding-inline:17px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+  </style>
+</head>
+<body>
+  <div class="demo-note">نمونه تعاملی طراحی • نام شرکت، مدل‌ها و مشخصات کالاها نمایشی‌اند و موجودی واقعی را نشان نمی‌دهند. <a href="index.html" target="_top">بازگشت به صفحه اصلی گزارش‌ها ←</a></div>
+  <header class="site-header"><div class="wrap">
+    <a class="logo" href="#top"><span class="logo-mark" aria-hidden="true">◎</span><span>نام شرکت شما</span></a>
+    <nav class="site-nav" aria-label="فهرست اصلی"><a href="#families">خانواده‌ها</a><a href="#models">مدل‌ها</a><a href="#process">استعلام پروژه</a><a href="#faq">پرسش‌های فنی</a></nav>
+    <button class="header-cta" id="open-rfq" type="button">لیست استعلام <span class="count" id="rfq-count">۰</span></button>
+  </div></header>
+  <section class="hero" id="top"><div class="wrap">
+    <div>
+      <span class="eyebrow">راهکار تأمین کابل برای پروژه‌های صنعتی و شبکه</span>
+      <h1>کابل درست را از روی <em>مدل و مشخصات</em> پیدا کنید.</h1>
+      <p class="hero-copy">کد سازنده را دارید؟ مستقیم مدل را پیدا کنید. اگر هنوز انتخاب نکرده‌اید، خانواده و ویژگی‌های فنی را مشخص کنید و مدل‌ها را کنار هم ببینید. درخواست شما با کد و مقدار دقیق ثبت می‌شود.</p>
+      <form class="search-box" id="search-form" role="search">
+        <label class="search-label" for="model-search">جست‌وجوی مدل، پارت‌نامبر یا نیاز فنی</label>
+        <div class="search-row"><input id="model-search" type="search" autocomplete="off" placeholder="مثلاً IC-02-1.5-SH یا کابل ابزار دقیق شیلددار"><button type="submit">پیدا کردن مدل ←</button></div>
+      </form>
+      <div class="examples"><span>نمونه جست‌وجو:</span><button class="example" type="button" data-example="IC-02-1.5-SH">IC-02-1.5-SH</button><button class="example" type="button" data-example="کابل شبکه">کابل شبکه</button><button class="example" type="button" data-example="LSZH">LSZH</button></div>
+      <div class="hero-kpis"><span>جست‌وجوی پارت‌نامبر</span><span>مقایسه مشخصات</span><span>استعلام چندقلمی</span></div>
+    </div>
+    <div class="hero-visual"><img src="industrial-cable-hero.png" alt="تصویر مفهومی کابل چندرشته با هادی مسی؛ تصویر تولیدشده برای نمایش طراحی" decoding="async"><div class="visual-card"><small>یک نتیجه، یک مدل مشخص</small><strong>IC-02-1.5-SH</strong><span>ویژگی‌های کلیدی → مدارک فنی → استعلام همان مدل</span></div></div>
+  </div></section>
+  <div class="wrap value-strip" aria-label="مزیت‌های مسیر مدل‌محور">
+    <div class="value"><span class="icon">⌕</span><div><strong>پیدا کردن کد دقیق</strong><p>جست‌وجوی فارسی، لاتین و شکل‌های مختلف پارت‌نامبر</p></div></div>
+    <div class="value"><span class="icon">≡</span><div><strong>تصمیم بر پایه داده</strong><p>ویژگی‌های ثابت و قابل‌مقایسه برای هر مدل</p></div></div>
+    <div class="value"><span class="icon">＋</span><div><strong>استعلام چندقلمی</strong><p>هر مدل با مقدار موردنیاز به یک درخواست پروژه‌ای اضافه می‌شود</p></div></div>
+  </div>
+  <main class="wrap">
+    <section class="section" id="families">
+      <div class="section-head"><div><div class="kicker">مسیر انتخاب بر اساس نیاز</div><h2>اگر کد مدل را ندارید، از خانواده کابل شروع کنید</h2><p>خانواده‌ها میان نیاز پروژه و مدل‌های دقیق پل می‌زنند. برای انتخاب نهایی، ویژگی‌هایی مثل ساختار، شیلد، روکش و محیط نصب باید مشخص شوند.</p></div></div>
+      <div class="family-grid">
+        <article class="family-card"><span class="no">01 / INSTRUMENTATION</span><h3>کابل ابزار دقیق</h3><p>برای سیگنال، اندازه‌گیری و ارتباط تجهیزات کنترلی؛ انتخاب بر پایه تعداد زوج، سطح مقطع و نوع شیلد.</p><div class="criteria"><span>تعداد زوج</span><span>سطح مقطع</span><span>نوع شیلد</span><span>روکش</span></div><button type="button" data-family="ابزار دقیق">دیدن مدل‌های این خانواده ←</button></article>
+        <article class="family-card"><span class="no">02 / CONTROL</span><h3>کابل کنترل</h3><p>برای مدار فرمان و اتصال تجهیزات؛ تعداد رشته، انعطاف‌پذیری، ولتاژ و شرایط نصب در انتخاب اثر دارند.</p><div class="criteria"><span>تعداد رشته</span><span>انعطاف</span><span>ولتاژ</span><span>محیط نصب</span></div><button type="button" data-family="کنترل">دیدن مدل‌های این خانواده ←</button></article>
+        <article class="family-card"><span class="no">03 / NETWORK</span><h3>کابل شبکه</h3><p>برای شبکه ساختاریافته؛ رده کابل، شیلد، جنس روکش و مدارک تست باید با نیاز پروژه هم‌خوان باشند.</p><div class="criteria"><span>رده Cat</span><span>شیلد</span><span>روکش</span><span>مدارک تست</span></div><button type="button" data-family="شبکه">دیدن مدل‌های این خانواده ←</button></article>
+      </div>
+      <div class="family-intro"><b>نکته فنی</b><span>این سه خانواده فقط نمونهٔ ساختار صفحه‌اند. دسته‌ها، برندها و ویژگی‌های قابل فیلتر پس از دریافت سبد واقعی مشتری نهایی می‌شوند.</span></div>
+    </section>
+    <section class="section" id="models">
+      <div class="section-head"><div><div class="kicker">۰۱ / کاتالوگ مدل‌ها</div><h2>از مشخصات به مدل قابل استعلام</h2><p>فیلترها فقط برای محدود کردن انتخاب‌اند؛ هر نتیجه یک صفحه مدل مستقل با شناسه، مدارک و مسیر استعلام خواهد داشت.</p></div><div class="section-side">نمونه رابط کاربری<br>۴ مدل نمایشی</div></div>
+      <div class="catalogue">
+        <aside class="filters" aria-label="فیلتر مدل‌ها"><h3>فیلترهای فنی</h3>
+          <div class="field"><label for="family-filter">خانواده</label><select id="family-filter"><option value="">همه خانواده‌ها</option><option value="ابزار دقیق">کابل ابزار دقیق</option><option value="کنترل">کابل کنترل</option><option value="شبکه">کابل شبکه</option></select></div>
+          <div class="field"><label for="shield-filter">شیلد</label><select id="shield-filter"><option value="">همه ساختارها</option><option value="شیلددار">شیلددار</option><option value="بدون شیلد">بدون شیلد</option></select></div>
+          <div class="field"><label for="jacket-filter">روکش</label><select id="jacket-filter"><option value="">همه روکش‌ها</option><option value="LSZH">LSZH</option><option value="PVC">PVC</option></select></div>
+          <button class="reset" id="reset-filters" type="button">پاک کردن فیلترها</button>
+        </aside>
+        <div><div class="result-head"><strong id="result-count">۴ مدل نمایشی</strong><span id="result-context">نتیجه‌ها بر اساس کد و مشخصات مرتب می‌شوند</span></div><div class="model-list" id="model-list"></div></div>
+      </div>
+    </section>
+    <section class="section" id="compare">
+      <div class="section-head"><div><div class="kicker">۰۲ / تطبیق مدل‌ها</div><h2>تفاوت مدل‌های نزدیک، در یک نگاه</h2><p>دکمه «مقایسه» روی کارت‌ها، ویژگی‌های یکسان و متفاوت را کنار هم می‌آورد.</p></div></div>
+      <div class="comparison" id="comparison" hidden></div>
+      <div class="empty" id="comparison-empty"><strong>دو مدل را برای مقایسه انتخاب کنید</strong><p>در سایت نهایی، مقایسه به مشخصات تأییدشده در دیتاشیت سازنده متصل می‌شود.</p><a class="btn-outline" href="#models">رفتن به مدل‌ها ↑</a></div>
+    </section>
+    <section class="section" id="approach">
+      <div class="section-head"><div><div class="kicker">۰۳ / منطق طراحی</div><h2>هر صفحه مدل، یک پاسخ کامل به جست‌وجوی خریدار</h2></div></div>
+      <div class="principles">
+        <div class="principle"><span class="n">01 / هویت</span><h3>کد سازنده و نام‌گذاری یکتا</h3><p>نام فارسی، برند، پارت‌نامبر اصلی و نام‌های جایگزین کنار هم ثبت می‌شوند تا مدل اشتباه با مدل مشابه یکی نشود.</p></div>
+        <div class="principle"><span class="n">02 / شواهد</span><h3>مشخصات و مدرک قابل بررسی</h3><p>دیتاشیت، استاندارد، عکس واقعی و سند اصالت فقط برای همان مدل و پس از تأیید منتشر می‌شوند.</p></div>
+        <div class="principle"><span class="n">03 / اقدام</span><h3>استعلام متصل به همان مدل</h3><p>کد مدل، واحد فروش، مقدار، مقصد و موعد پروژه همراه درخواست ارسال می‌شود؛ ابهام فروش کاهش می‌یابد.</p></div>
+      </div>
+    </section>
+    <section class="section" id="process">
+      <div class="section-head"><div><div class="kicker">۰۴ / مسیر استعلام پروژه‌ای</div><h2>از مدل انتخاب‌شده تا درخواست قابل پاسخ</h2><p>فرم استعلام باید اطلاعاتی را بگیرد که فروش برای پاسخ دقیق لازم دارد؛ خریدار هم در هر مرحله بداند درخواستش به کدام مدل‌ها مربوط است.</p></div></div>
+      <div class="process-grid">
+        <div class="process-step"><span class="n">01</span><h3>افزودن مدل</h3><p>کد، برند و واحد هر قلم به‌طور خودکار وارد لیست می‌شود.</p></div>
+        <div class="process-step"><span class="n">02</span><h3>ثبت مقدار و زمان</h3><p>متراژ یا تعداد، مقصد پروژه و موعد موردنیاز مشخص می‌شود.</p></div>
+        <div class="process-step"><span class="n">03</span><h3>پیوست فنی</h3><p>در صورت نیاز، BOM، نقشه یا توضیح تطبیق مدل افزوده می‌شود.</p></div>
+        <div class="process-step"><span class="n">04</span><h3>بررسی و پاسخ</h3><p>تیم فروش مدل، امکان تأمین و گزینه جایگزین را تأیید می‌کند.</p></div>
+      </div>
+      <div class="process-note"><b>در نسخه عملیاتی</b><span>زمان پاسخ، مسئول پیگیری و روش اطلاع‌رسانی باید بر اساس فرآیند واقعی شرکت تعریف شوند؛ در این نمونه هیچ وعده زمانی یا موجودی فرض نشده است.</span></div>
+    </section>
+    <section class="section" id="faq">
+      <div class="section-head"><div><div class="kicker">۰۵ / پرسش‌های خریدار</div><h2>پاسخ‌های لازم، پیش از تماس با فروش</h2><p>این بخش نمونه محتوای پیشنهادی است و باید با سیاست واقعی تأمین، اصالت‌سنجی و فروش مشتری تنظیم شود.</p></div></div>
+      <div class="faq-list">
+        <details><summary>اگر پارت‌نامبر دقیق را ندانم، چطور مدل را پیدا کنم؟</summary><p>از خانواده کابل شروع کنید و ویژگی‌های اصلی مثل تعداد رشته یا زوج، سطح مقطع، شیلد، روکش و شرایط نصب را محدود کنید. در صورت ابهام، لیست پروژه یا نقشه برای بررسی فنی ارسال می‌شود.</p></details>
+        <details><summary>اگر مدل موردنظر در کاتالوگ نبود چه می‌شود؟</summary><p>مسیر «استعلام مدل ناموجود» باید کد یا مشخصات درخواستی را دریافت کند. تیم فروش پس از بررسی تأمین یا مدل جایگزین، پاسخ مستند ارائه می‌دهد.</p></details>
+        <details><summary>اصالت و مشخصات فنی چگونه بررسی می‌شود؟</summary><p>برای هر مدل، دیتاشیت سازنده و مدارک قابل انتشار همان کالا کنار کد و تاریخ بازبینی قرار می‌گیرد. روش ارائه اسناد محموله باید با فرآیند واقعی شرکت تأیید شود.</p></details>
+        <details><summary>چرا قیمت بعضی مدل‌ها نمایش داده نمی‌شود؟</summary><p>برای کالاهای وارداتی، قیمت و زمان تأمین ممکن است به مقدار، مقصد و تاریخ سفارش وابسته باشد. اگر داده قابل نگهداری نباشد، نمایش «استعلام قیمت» همراه واحد فروش شفاف‌تر است.</p></details>
+      </div>
+    </section>
+    <section class="section"><div class="data-needed"><div><h3>برای واقعی‌سازی این طراحی چه داده‌ای لازم است؟</h3><p>این موارد جای متن‌ها و مدل‌های نمایشی را می‌گیرند و طراحی نهایی را با کسب‌وکار مشتری هماهنگ می‌کنند.</p></div><ul><li>نام و هویت بصری شرکت</li><li>برندها و مدارک نمایندگی قابل انتشار</li><li>۲۰ تا ۵۰ مدل اولویت‌دار و دیتاشیت‌ها</li><li>واحد فروش و حداقل سفارش هر مدل</li><li>قواعد موجودی، قیمت و زمان تأمین</li><li>فرآیند پاسخ‌گویی و دریافت BOM</li></ul></div></section>
+    <section class="section"><div class="banner"><div><h2>لیست پروژه دارید؟</h2><p>در نسخه عملیاتی، خریدار می‌تواند چند مدل را اضافه کند یا BOM را برای تطبیق فنی بفرستد.</p></div><button id="banner-rfq" type="button">دیدن لیست استعلام ←</button></div></section>
+  </main>
+  <footer><div class="wrap"><strong>طرح مدل‌محور سایت تأمین کابل</strong><span>نمونه طراحی و تعامل؛ بدون اتصال به موجودی، قیمت یا ارسال درخواست واقعی.</span></div></footer>
+
+  <dialog class="detail-dialog" id="detail-dialog" aria-label="جزئیات مدل"><div class="dialog-head"><div><small>پرونده مدل</small><h2 id="detail-title"></h2></div><button class="close-dialog" type="button" aria-label="بستن">×</button></div><div class="dialog-content" id="detail-content"></div><div class="dialog-foot"><button class="btn-outline close-dialog" type="button">بستن</button><button class="btn-primary" id="detail-add" type="button">افزودن به استعلام</button></div></dialog>
+  <dialog class="rfq-dialog" id="rfq-dialog" aria-label="لیست استعلام"><div class="dialog-head"><div><small>درخواست پروژه</small><h2>مدل‌های انتخاب‌شده</h2></div><button class="close-dialog" type="button" aria-label="بستن">×</button></div><div class="dialog-content"><div id="rfq-list"></div><div class="rfq-explainer">این فقط پیش‌نمایش طراحی است. در سایت عملیاتی، نام شرکت، مقصد، موعد تحویل و فایل BOM نیز در مرحله بعد دریافت می‌شود.</div></div><div class="dialog-foot"><button class="btn-outline close-dialog" type="button">ادامه بررسی مدل‌ها</button><button class="btn-primary" id="rfq-preview" type="button">پیش‌نمایش درخواست</button></div></dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script>
+    (function(){
+      var models=[
+        {id:"M-001",code:"IC-02-1.5-SH",brand:"برند نمونه A",name:"کابل ابزار دقیق شیلددار",family:"ابزار دقیق",structure:"۲ زوج · ۱.۵ mm²",shield:"شیلددار",jacket:"LSZH",unit:"متر",use:"سیگنال و کنترل در پروژه صنعتی"},
+        {id:"M-002",code:"IC-04-1.0-SH",brand:"برند نمونه A",name:"کابل ابزار دقیق چندزوج",family:"ابزار دقیق",structure:"۴ زوج · ۱.۰ mm²",shield:"شیلددار",jacket:"PVC",unit:"متر",use:"تجهیزات اندازه‌گیری و اتوماسیون"},
+        {id:"M-003",code:"CT-07-1.5-PVC",brand:"برند نمونه B",name:"کابل کنترل چندرشته",family:"کنترل",structure:"۷ رشته · ۱.۵ mm²",shield:"بدون شیلد",jacket:"PVC",unit:"متر",use:"تابلو و مدارهای فرمان"},
+        {id:"M-004",code:"LAN-C6-SFTP-LSZH",brand:"برند نمونه C",name:"کابل شبکه ساختاریافته",family:"شبکه",structure:"Cat6 · ۴ زوج",shield:"شیلددار",jacket:"LSZH",unit:"متر",use:"شبکه داخلی ساختمان و رک"}
+      ];
+      var selected=[];var comparing=[];var activeDetail=null;var toastTimer;
+      var $=function(id){return document.getElementById(id)};
+      function normalize(value){return String(value||"").toLowerCase().replace(/[٠-٩]/g,function(c){return String("٠١٢٣٤٥٦٧٨٩".indexOf(c))}).replace(/[۰-۹]/g,function(c){return String("۰۱۲۳۴۵۶۷۸۹".indexOf(c))}).replace(/[ي]/g,"ی").replace(/[ك]/g,"ک").replace(/[\sـ_–—-]+/g,"").trim()}
+      function escapeHtml(value){return String(value).replace(/[&<>"']/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[c]})}
+      function showToast(message){var el=$("toast");el.textContent=message;el.classList.add("show");clearTimeout(toastTimer);toastTimer=setTimeout(function(){el.classList.remove("show")},3200)}
+      function render(){
+        var query=normalize($("model-search").value);var family=$("family-filter").value,shield=$("shield-filter").value,jacket=$("jacket-filter").value;
+        var found=models.filter(function(m){return (!family||m.family===family)&&(!shield||m.shield===shield)&&(!jacket||m.jacket===jacket)&&(!query||normalize([m.code,m.brand,m.name,m.family,m.structure,m.shield,m.jacket,m.use].join(" ")).indexOf(query)>=0)});
+        found.sort(function(a,b){return Number(normalize(b.code)===query)-Number(normalize(a.code)===query)});
+        $("result-count").textContent=found.length.toLocaleString("fa-IR")+" مدل نمایشی";
+        $("result-context").textContent=query?"جست‌وجو: «"+$("model-search").value+"»":"نتیجه‌ها بر اساس کد و مشخصات مرتب می‌شوند";
+        $("model-list").innerHTML=found.length?found.map(function(m){return '<article class="model-card"><div class="model-top"><div><span class="model-eyebrow">'+escapeHtml(m.brand)+' · '+escapeHtml(m.family)+'</span><h3 dir="ltr">'+escapeHtml(m.code)+'</h3><p class="model-name">'+escapeHtml(m.name)+'</p></div><span class="model-id">'+escapeHtml(m.id)+'</span></div><div class="specs"><span>'+escapeHtml(m.structure)+'</span><span>'+escapeHtml(m.shield)+'</span><span>روکش '+escapeHtml(m.jacket)+'</span><span>واحد: '+escapeHtml(m.unit)+'</span></div><div class="model-bottom"><div class="supply"><b>زمان تأمین: پس از استعلام</b>دیتاشیت و اصالت در نسخه واقعی، پس از تأیید</div><div class="model-actions"><button class="btn-quiet" type="button" data-action="detail" data-id="'+m.id+'">جزئیات مدل</button><button class="btn-quiet" type="button" data-action="compare" data-id="'+m.id+'" aria-pressed="'+(comparing.indexOf(m.id)>=0)+'">مقایسه</button><button class="btn-add" type="button" data-action="add" data-id="'+m.id+'">+ افزودن به استعلام</button></div></div></article>'}).join(""):'<div class="empty"><strong>مدل منطبق پیدا نشد</strong><p>در سایت نهایی، خریدار می‌تواند کد ناموجود یا فایل پروژه را هم برای بررسی تیم فنی بفرستد.</p><button class="btn-outline" type="button" id="empty-reset">نمایش همه مدل‌ها</button></div>';
+        var reset=$("empty-reset");if(reset)reset.addEventListener("click",clearFilters);
+      }
+      function clearFilters(){$("model-search").value="";$("family-filter").value="";$("shield-filter").value="";$("jacket-filter").value="";render()}
+      function modelById(id){return models.find(function(m){return m.id===id})}
+      function addToRfq(id){if(selected.indexOf(id)<0)selected.push(id);$("rfq-count").textContent=selected.length.toLocaleString("fa-IR");showToast("مدل به لیست استعلام اضافه شد")}
+      function openDetail(id){var m=modelById(id);if(!m)return;activeDetail=id;$("detail-title").textContent=m.code;$("detail-content").innerHTML='<p class="detail-lead">'+escapeHtml(m.brand)+' · '+escapeHtml(m.name)+'</p><div class="detail-grid"><div><small>کد مدل</small><strong dir="ltr">'+escapeHtml(m.code)+'</strong></div><div><small>خانواده</small><strong>'+escapeHtml(m.family)+'</strong></div><div><small>ساختار</small><strong>'+escapeHtml(m.structure)+'</strong></div><div><small>شیلد</small><strong>'+escapeHtml(m.shield)+'</strong></div><div><small>روکش</small><strong>'+escapeHtml(m.jacket)+'</strong></div><div><small>واحد استعلام</small><strong>'+escapeHtml(m.unit)+'</strong></div><div><small>کاربرد نمونه</small><strong>'+escapeHtml(m.use)+'</strong></div><div><small>تأمین</small><strong>پس از استعلام</strong></div></div><p class="detail-note">اطلاعات این مدل نمایشی است. در محصول واقعی، دیتاشیت سازنده، گواهی، عکس و تاریخ بازبینی همین‌جا قرار می‌گیرد.</p>';$("detail-dialog").showModal()}
+      function renderComparison(){var box=$("comparison"),empty=$("comparison-empty");if(comparing.length<2){box.hidden=true;empty.hidden=false;return}var cols=comparing.map(modelById);var rows=[["برند","brand"],["خانواده","family"],["ساختار","structure"],["شیلد","shield"],["روکش","jacket"],["واحد","unit"],["کاربرد","use"]];box.innerHTML='<table><thead><tr><th scope="col">ویژگی</th>'+cols.map(function(m){return '<th scope="col"><strong dir="ltr">'+escapeHtml(m.code)+'</strong></th>'}).join("")+'</tr></thead><tbody>'+rows.map(function(r){return '<tr><th scope="row">'+r[0]+'</th>'+cols.map(function(m){return '<td>'+escapeHtml(m[r[1]])+'</td>'}).join("")+'</tr>'}).join("")+'</tbody></table>';box.hidden=false;empty.hidden=true}
+      function openRfq(){var list=$("rfq-list");list.innerHTML=selected.length?selected.map(function(id){var m=modelById(id);return '<div class="rfq-row" data-id="'+id+'"><div><strong>'+escapeHtml(m.code)+'</strong><small>'+escapeHtml(m.name)+' · واحد: '+escapeHtml(m.unit)+'</small></div><input type="number" min="1" inputmode="numeric" value="100" aria-label="مقدار '+escapeHtml(m.code)+' به متر"><button type="button" data-remove="'+id+'" aria-label="حذف '+escapeHtml(m.code)+'">×</button></div>'}).join(""):'<div class="empty"><strong>لیست استعلام خالی است</strong><p>از کارت مدل‌ها، اقلام موردنیاز پروژه را اضافه کنید.</p></div>';$("rfq-dialog").showModal()}
+      $("search-form").addEventListener("submit",function(e){e.preventDefault();render();$("models").scrollIntoView({behavior:"smooth"})});
+      $("model-search").addEventListener("input",render);
+      ["family-filter","shield-filter","jacket-filter"].forEach(function(id){$(id).addEventListener("change",render)});
+      $("reset-filters").addEventListener("click",clearFilters);
+      document.querySelectorAll(".example").forEach(function(el){el.addEventListener("click",function(){$("model-search").value=el.dataset.example;render();$("models").scrollIntoView({behavior:"smooth"})})});
+      document.querySelectorAll("[data-family]").forEach(function(el){el.addEventListener("click",function(){clearFilters();$("family-filter").value=el.dataset.family;render();$("models").scrollIntoView({behavior:"smooth"})})});
+      $("model-list").addEventListener("click",function(e){var b=e.target.closest("button[data-action]");if(!b)return;var id=b.dataset.id;if(b.dataset.action==="add")addToRfq(id);if(b.dataset.action==="detail")openDetail(id);if(b.dataset.action==="compare"){var i=comparing.indexOf(id);if(i>=0)comparing.splice(i,1);else if(comparing.length<3)comparing.push(id);else{showToast("حداکثر سه مدل را هم‌زمان مقایسه کنید");return}render();renderComparison();showToast(comparing.length<2?"یک مدل دیگر برای مقایسه انتخاب کنید":"جدول مقایسه به‌روز شد")}});
+      $("open-rfq").addEventListener("click",openRfq);$("banner-rfq").addEventListener("click",openRfq);
+      $("detail-add").addEventListener("click",function(){if(activeDetail)addToRfq(activeDetail);$("detail-dialog").close()});
+      $("rfq-list").addEventListener("click",function(e){var b=e.target.closest("button[data-remove]");if(!b)return;selected=selected.filter(function(id){return id!==b.dataset.remove});$("rfq-count").textContent=selected.length.toLocaleString("fa-IR");$("rfq-dialog").close();openRfq()});
+      $("rfq-preview").addEventListener("click",function(){showToast(selected.length?"این پیش‌نمایش است؛ ارسال واقعی پس از توسعه سایت فعال می‌شود":"ابتدا یک مدل به لیست اضافه کنید")});
+      document.querySelectorAll(".close-dialog").forEach(function(b){b.addEventListener("click",function(){b.closest("dialog").close()})});
+      document.querySelectorAll("dialog").forEach(function(d){d.addEventListener("click",function(e){if(e.target===d)d.close()})});
+      render();renderComparison();
+    }());
+  </script>
+</body>
+</html>

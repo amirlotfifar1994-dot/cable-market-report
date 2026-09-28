@@ -1,0 +1,746 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="description" content="گزارش تحلیلی بازار، رقبا، سئو و طراحی سایت برای تأمین‌کننده کابل وارداتی">
+  <title>گزارش رقبا و راهبرد سایت | تأمین‌کننده کابل وارداتی</title>
+  <style>
+    :root {
+      --ink:#16283b; --ink-2:#355166; --muted:#64778a; --navy:#10263a;
+      --teal:#087c78; --teal-soft:#e6f5f2; --gold:#e6a44f; --paper:#f6f8f8;
+      --white:#fff; --line:#dce5e9; --red:#a74742; --red-soft:#fff0ed;
+      --shadow:0 15px 45px rgba(16,38,58,.085); --radius:20px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--paper);color:var(--ink);font-family:Tahoma,"Segoe UI",Arial,sans-serif;line-height:1.85}
+    a{color:var(--teal);text-underline-offset:4px}
+    a:hover{color:#075c5a}
+    button{font:inherit}
+    .wrap{width:min(1180px,calc(100% - 44px));margin-inline:auto}
+    .topbar{background:#0b1d2d;color:#cde6e5;font-size:12px}
+    .topbar .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:9px 0}
+    .topbar span{letter-spacing:.01em}
+    .topbar a{color:#dcefed;text-decoration:none}
+    .nav{position:sticky;top:0;z-index:20;backdrop-filter:blur(15px);background:rgba(255,255,255,.93);border-bottom:1px solid var(--line)}
+    .nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:18px;min-height:67px}
+    .brand{display:flex;align-items:center;gap:10px;color:var(--navy);font-size:14px;font-weight:800;text-decoration:none;white-space:nowrap}
+    .brand-mark{display:grid;place-items:center;width:34px;height:34px;border-radius:10px;background:var(--teal);color:white;font-size:18px;box-shadow:0 7px 15px rgba(8,124,120,.2)}
+    .navlinks{display:flex;align-items:center;gap:19px;overflow-x:auto;scrollbar-width:none}
+    .navlinks a{font-size:12px;font-weight:700;color:var(--ink-2);text-decoration:none;white-space:nowrap}
+    .navlinks a:hover{color:var(--teal)}
+    .print-btn{border:1px solid #bcd6d4;background:#eff9f7;color:var(--teal);border-radius:10px;padding:7px 12px;cursor:pointer;font-size:12px;font-weight:700;white-space:nowrap}
+    .hero{background:radial-gradient(circle at 9% 25%,rgba(24,164,152,.24),transparent 27%),linear-gradient(125deg,#0f2539 0%,#18354a 60%,#0e2836 100%);color:white;position:relative;overflow:hidden}
+    .hero:before,.hero:after{content:"";position:absolute;border:1px solid rgba(255,255,255,.09);width:510px;height:510px;border-radius:50%;left:-185px;top:-230px}
+    .hero:after{width:360px;height:360px;left:-110px;top:-155px;border-color:rgba(230,164,79,.2)}
+    .hero .wrap{position:relative;z-index:1;display:grid;grid-template-columns:minmax(0,1.2fr) minmax(270px,.8fr);align-items:center;gap:50px;padding:75px 0 74px}
+    .eyebrow{display:inline-flex;gap:8px;align-items:center;border:1px solid rgba(255,255,255,.2);background:rgba(255,255,255,.07);border-radius:999px;color:#d4edeb;padding:5px 13px;font-size:11px;font-weight:700}
+    .hero h1{font-size:clamp(32px,4.8vw,60px);line-height:1.3;letter-spacing:-.04em;margin:24px 0 14px;max-width:690px}
+    .hero h1 em{font-style:normal;color:#8ee0d5}
+    .hero p{color:#c4d6e1;max-width:670px;margin:0;font-size:15px}
+    .hero-meta{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px;color:#bcd1dc;font-size:12px}
+    .hero-meta span{padding:7px 12px;background:rgba(255,255,255,.06);border-radius:9px}
+    .hero-art{position:relative;min-height:270px;display:grid;place-items:center}
+    .rings{width:260px;height:260px;border-radius:50%;border:16px solid #d5ab71;box-shadow:0 0 0 9px #344659,0 0 0 21px #e8bd81,0 0 0 32px #2a3f51,0 25px 50px rgba(0,0,0,.22);display:grid;place-items:center;background:#16364a;transform:rotate(-12deg)}
+    .rings:after{content:"";width:130px;height:130px;border:13px solid #b77544;border-radius:50%;background:radial-gradient(circle at center,#17394b 0 22px,#bd8253 23px 37px,#143449 38px);box-shadow:0 0 0 10px #18374b}
+    .art-tag{position:absolute;bottom:8px;left:0;background:rgba(255,255,255,.11);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.18);border-radius:12px;padding:8px 13px;color:#d9e9ed;font-size:11px}
+    main{padding:38px 0 60px}
+    .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:-72px;position:relative;z-index:2}
+    .stat{background:white;border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);padding:22px 22px 19px}
+    .stat .num{font-size:31px;line-height:1.1;font-weight:900;color:var(--navy);font-variant-numeric:tabular-nums}
+    .stat .label{font-size:12px;color:var(--muted);margin-top:8px}
+    .stat.accent{background:var(--teal);border-color:var(--teal);color:white}
+    .stat.accent .num,.stat.accent .label{color:white}
+    section{scroll-margin-top:95px}
+    .section{margin-top:70px}
+    .section-head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:24px}
+    .kicker{font-size:11px;letter-spacing:.04em;font-weight:900;color:var(--teal);margin-bottom:7px}
+    h2{font-size:clamp(22px,2.7vw,33px);line-height:1.45;letter-spacing:-.02em;margin:0;color:var(--navy)}
+    h3{font-size:17px;line-height:1.5;margin:0;color:var(--navy)}
+    p{margin:0 0 12px}
+    .lead{font-size:15px;color:var(--ink-2);max-width:870px}
+    .panel{background:white;border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}
+    .summary{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(280px,.8fr);gap:18px}
+    .summary .panel{padding:27px}
+    .summary-main{border-right:5px solid var(--teal)}
+    .summary-main strong{color:var(--teal)}
+    .note{background:#f2f7f7;border:1px solid #d9e9e7;border-radius:13px;padding:14px 17px;color:var(--ink-2);font-size:13px}
+    .note.warn{background:#fff8ed;border-color:#f1dfbd}
+    .checklist{padding:0;margin:14px 0 0;list-style:none}
+    .checklist li{position:relative;padding-right:26px;margin:9px 0;font-size:13px;color:var(--ink-2)}
+    .checklist li:before{content:"✓";position:absolute;right:0;color:var(--teal);font-weight:900}
+    .scope-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+    .scope-grid .panel{padding:22px}
+    .scope-grid h3{margin-bottom:8px}
+    .scope-grid p{font-size:13px;color:var(--ink-2);margin:0}
+    .pill{display:inline-flex;align-items:center;border-radius:99px;font-size:10px;font-weight:800;padding:3px 9px;line-height:1.7;background:#e9f3f4;color:#2c5e69}
+    .pill.industrial{background:#e9f3fb;color:#28617f}
+    .pill.network{background:#eeeafb;color:#625595}
+    .pill.general{background:#fff1df;color:#8a5b22}
+    .pill.legacy{background:#e9f6f2;color:#087c78}
+    .filters{display:flex;gap:7px;flex-wrap:wrap;align-items:center;margin-bottom:18px}
+    .filter{border:1px solid var(--line);background:white;color:var(--ink-2);border-radius:999px;padding:8px 14px;cursor:pointer;font-size:12px;font-weight:700}
+    .filter.active{background:var(--navy);border-color:var(--navy);color:white}
+    .cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+    .competitor{padding:23px;transition:transform .18s ease,box-shadow .18s ease}
+    .competitor:hover{transform:translateY(-3px);box-shadow:0 20px 50px rgba(16,38,58,.12)}
+    .competitor[hidden]{display:none}
+    .competitor-top{display:flex;justify-content:space-between;gap:12px;align-items:flex-start;margin-bottom:14px}
+    .competitor-title{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+    .competitor-title h3{font-size:18px}
+    .competitor .desc{color:var(--muted);font-size:12px;margin-bottom:15px}
+    .evidence{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    .evidence > div{background:#f6f9f9;border-radius:12px;padding:12px 13px;min-height:118px}
+    .evidence .gap{background:#fff7f4}
+    .evidence b{display:block;font-size:11px;color:var(--teal);margin-bottom:4px}
+    .evidence .gap b{color:var(--red)}
+    .evidence p{font-size:12px;line-height:1.8;color:var(--ink-2);margin:0}
+    .source-row{display:flex;gap:10px;flex-wrap:wrap;border-top:1px solid var(--line);margin-top:16px;padding-top:12px}
+    .source-row a{font-size:11px;font-weight:700;text-decoration:none}
+    .source-row a:after{content:" ↗";font-family:Arial}
+    .mini-legend{font-size:11px;color:var(--muted);margin:10px 0 0}
+    .atlas{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+    .atlas-item{padding:20px}
+    .atlas-item h3{font-size:17px;margin-bottom:3px}
+    .atlas-item .atlas-sub{font-size:11px;color:var(--muted);margin-bottom:15px}
+    .shot-pair{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(0,.85fr);gap:11px}
+    .shot{margin:0;min-width:0}
+    .shot a.preview{display:block;height:215px;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#edf2f4;position:relative;cursor:zoom-in}
+    .shot img{width:100%;height:100%;object-fit:cover;object-position:top center;display:block;transition:transform .25s ease}
+    .shot a.preview:hover img{transform:scale(1.025)}
+    .shot .preview:after{content:"مشاهده تمام‌صفحه ↗";position:absolute;bottom:8px;right:8px;background:rgba(16,38,58,.87);color:white;border-radius:7px;font-size:10px;font-weight:700;padding:3px 9px}
+    .shot figcaption{display:flex;justify-content:space-between;gap:8px;align-items:center;font-size:11px;color:var(--ink-2);padding-top:7px}
+    .shot figcaption a{font-size:10px;text-decoration:none}
+    .atlas-error{border:1px dashed #e0b3a8;background:#fff8f4;border-radius:13px;padding:17px;color:#7a4940;font-size:12px;min-height:90px}
+    .atlas-error b{display:block;margin-bottom:4px}
+    dialog.shot-dialog{border:0;border-radius:18px;padding:0;box-shadow:0 25px 90px rgba(0,0,0,.3);width:min(94vw,1220px);max-height:92vh;background:#f5f8f8}
+    dialog.shot-dialog::backdrop{background:rgba(7,22,34,.75)}
+    .dialog-head{position:sticky;top:0;z-index:2;background:#10263a;color:white;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 14px;font-size:12px}
+    .dialog-head button{border:0;background:#fff;color:#10263a;border-radius:7px;padding:3px 10px;cursor:pointer}
+    .dialog-body{max-height:calc(92vh - 48px);overflow:auto;text-align:center;padding:10px}
+    .dialog-body img{display:block;height:auto;width:auto;max-width:100%;margin:auto}
+    .priority-list{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+    .priority{padding:22px;display:grid;grid-template-columns:35px 1fr;gap:13px}
+    .priority .icon{display:grid;place-items:center;width:35px;height:35px;border-radius:10px;background:var(--teal-soft);color:var(--teal);font-weight:900}
+    .priority h3{font-size:15px;margin-bottom:5px}
+    .priority p{font-size:12px;color:var(--ink-2);margin:0}
+    .priority .level{font-size:10px;font-weight:900;color:var(--teal);margin-bottom:3px}
+    .priority.p1 .icon{background:#eef2fa;color:#556b9d}
+    .priority.p1 .level{color:#556b9d}
+    .priority.p2 .icon{background:#fff3e4;color:#96672b}
+    .priority.p2 .level{color:#96672b}
+    .table-wrap{overflow-x:auto;background:white;border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow)}
+    table{border-collapse:collapse;width:100%;min-width:680px}
+    th,td{text-align:right;vertical-align:top;padding:15px 17px;border-bottom:1px solid var(--line);font-size:12px}
+    th{background:#eef4f4;color:#284d5a;font-weight:900}
+    tr:last-child td{border-bottom:0}
+    td{color:var(--ink-2)}
+    td:first-child{font-weight:800;color:var(--navy)}
+    code,.ltr{direction:ltr;unicode-bidi:isolate;display:inline-block;font-family:Consolas,monospace}
+    code{background:#edf3f5;padding:1px 6px;border-radius:5px;color:#214f60}
+    .journey{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:18px 0}
+    .step{position:relative;background:white;border:1px solid var(--line);border-radius:15px;padding:18px 15px;min-height:120px;box-shadow:var(--shadow)}
+    .step .n{color:var(--teal);font-weight:900;font-size:12px}
+    .step h3{font-size:14px;margin:8px 0 4px}
+    .step p{font-size:11px;color:var(--muted);margin:0}
+    .layout-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    .layout-grid .panel{padding:23px}
+    .layout-grid ol{margin:10px 0 0;padding-right:21px;font-size:12px;color:var(--ink-2)}
+    .layout-grid li{margin-bottom:7px}
+    .platform{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    .platform .panel{padding:24px}
+    .platform .recommended{border:2px solid var(--teal);position:relative}
+    .platform .rec-tag{display:inline-block;background:var(--teal);color:white;border-radius:7px;font-size:10px;font-weight:800;padding:3px 9px;margin-bottom:12px}
+    .platform ul{padding-right:20px;color:var(--ink-2);font-size:12px}
+    .platform li{margin:7px 0}
+    .platform .foot{background:#f2f8f7;border-radius:11px;padding:12px 14px;color:var(--teal);font-size:12px;font-weight:800}
+    .inputs{counter-reset:item;display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+    .input{background:white;border:1px solid var(--line);border-radius:13px;padding:17px 18px;display:flex;gap:11px;align-items:flex-start;font-size:12px;color:var(--ink-2)}
+    .input:before{counter-increment:item;content:counter(item,decimal-leading-zero);color:var(--teal);font-weight:900}
+    .refs{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+    .ref{padding:14px 17px;background:white;border:1px solid var(--line);border-radius:12px;font-size:12px}
+    .ref a{font-weight:800;text-decoration:none}
+    .ref small{display:block;color:var(--muted);margin-top:3px}
+    footer{background:#0f2639;color:#bfced8;padding:30px 0;font-size:11px}
+    footer .wrap{display:flex;align-items:center;justify-content:space-between;gap:15px}
+    footer a{color:#8ee0d5}
+    /* Editorial layout for a long, evidence-led report. */
+    :root{--paper:#f4f6f5;--line:#dce6e6;--shadow:0 12px 38px rgba(16,38,58,.055);--radius:18px}
+    body{font-size:14px;line-height:1.9;background:linear-gradient(180deg,#f8faf9 0,#f4f6f5 650px)}
+    a:focus-visible,button:focus-visible{outline:3px solid #e5aa5b;outline-offset:3px}
+    .wrap{width:min(1220px,calc(100% - 56px))}
+    .topbar{background:#091c2b;letter-spacing:.015em}
+    .nav{box-shadow:0 7px 24px rgba(11,29,45,.04)}
+    .nav .wrap{min-height:74px}
+    .brand{font-size:15px}
+    .brand-mark{width:38px;height:38px;border-radius:11px;background:linear-gradient(145deg,#0d8d81,#075e64)}
+    .navlinks a{font-size:12px;transition:color .2s ease}
+    .navlinks a[aria-current="location"]{color:#087c78}
+    .print-btn{padding:9px 14px}
+    .reading-progress{position:absolute;inset:auto 0 -2px 0;height:3px;background:linear-gradient(90deg,#d59a50,#0b9788);transform:scaleX(0);transform-origin:right center;pointer-events:none}
+    .hero{background:radial-gradient(circle at 10% 20%,rgba(23,173,152,.26),transparent 31%),linear-gradient(125deg,#0c2434,#173b49 65%,#102b3b)}
+    .hero .wrap{gap:60px;padding:88px 0 110px}
+    .hero h1{font-size:clamp(37px,4.8vw,64px);line-height:1.25;margin:26px 0 18px;letter-spacing:-.035em}
+    .hero p{font-size:16px;line-height:2;max-width:670px;color:#d1e0e6}
+    .hero-meta{margin-top:27px}
+    .hero-meta span{border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.065)}
+    .hero-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:29px}
+    .hero-actions a{display:inline-flex;align-items:center;justify-content:center;min-height:43px;padding:8px 17px;border-radius:9px;font-size:12px;font-weight:800;text-decoration:none;transition:transform .2s ease,background .2s ease}
+    .hero-actions a:hover{transform:translateY(-2px)}
+    .hero-actions .primary{background:#f0b971;color:#182c38}
+    .hero-actions .secondary{color:#e8f4f3;border:1px solid rgba(255,255,255,.32);background:rgba(255,255,255,.055)}
+    .hero-art{min-height:330px}
+    .rings{width:286px;height:286px;box-shadow:0 0 0 9px #344b5a,0 0 0 21px #e3b273,0 0 0 33px #284554,0 28px 65px rgba(0,0,0,.27)}
+    .art-tag{bottom:0;left:5px;font-size:12px}
+    main{padding-bottom:86px}
+    .stats{gap:15px;margin-top:-69px}
+    .stat{padding:24px 22px 22px;border-radius:17px;box-shadow:0 15px 35px rgba(16,38,58,.09)}
+    .stat .num{font-size:34px}
+    .stat .label{font-size:12px;line-height:1.7}
+    .section{margin-top:82px}
+    .section-head{align-items:end;padding-bottom:19px;border-bottom:1px solid #ccdada;margin-bottom:23px}
+    .section-head>div:first-child{min-width:0}
+    .kicker{display:inline-flex;align-items:center;min-height:26px;padding:2px 10px;border-radius:6px;background:#e2f0ee;color:#116d68;font-size:11px;letter-spacing:0;margin-bottom:12px}
+    h2{font-size:clamp(26px,2.9vw,36px);line-height:1.4;letter-spacing:-.025em}
+    h3{line-height:1.55}
+    .lead{font-size:15px;line-height:1.95;margin:9px 0 0;color:#435d6a}
+    .panel{border-color:#dce6e7}
+    .summary .panel{padding:31px}
+    .summary-main{border-right-width:4px}
+    .summary-main p:not(.lead){font-size:14px}
+    .note{font-size:13px;line-height:1.9}
+    .checklist li,.scope-grid p{font-size:13px;line-height:1.9}
+    .competitor{padding:25px 26px;position:relative;overflow:hidden}
+    .competitor:before{content:"";position:absolute;right:0;top:0;bottom:0;width:4px;background:#0e8d80}
+    .competitor[data-tags="industrial"]:before{background:#467f9d}
+    .competitor[data-tags="network"]:before{background:#776ab0}
+    .competitor[data-tags="general"]:before{background:#ce9950}
+    .competitor-title h3{font-size:19px}
+    .competitor .desc{font-size:13px;line-height:1.8;color:#51697a}
+    .evidence{gap:10px}
+    .evidence > div{min-height:126px;padding:15px}
+    .evidence b{font-size:11px;letter-spacing:.01em}
+    .evidence p{font-size:12px;line-height:1.9}
+    .source-row{margin-top:19px;padding-top:15px}
+    .source-row a{font-size:12px}
+    .section-side{text-align:left;color:#56727b;font-size:12px;line-height:1.65;white-space:nowrap}
+    .section-side strong{display:block;color:#10263a;font-size:21px}
+    .atlas-nav{display:flex;gap:8px;overflow-x:auto;padding:2px 1px 17px;margin-bottom:6px;scrollbar-width:thin}
+    .atlas-nav a{display:inline-flex;align-items:center;gap:8px;white-space:nowrap;background:white;border:1px solid #d9e5e5;color:#395763;border-radius:999px;padding:7px 12px;font-size:11px;font-weight:800;text-decoration:none;transition:background .2s ease,color .2s ease}
+    .atlas-nav a:hover{background:#0b776f;color:white}
+    .atlas-nav a span{font:800 10px Consolas,monospace;color:#0b8278}
+    .atlas-nav a:hover span{color:#ffe0af}
+    .atlas{grid-template-columns:1fr;gap:19px}
+    .atlas-item{padding:25px 27px;scroll-margin-top:98px}
+    .atlas-item-head{display:flex;align-items:center;gap:14px;margin-bottom:18px}
+    .atlas-index{display:grid;place-items:center;flex:none;width:44px;height:44px;background:#e5f2f0;border:1px solid #cae3df;color:#087c78;border-radius:12px;font:800 15px Consolas,monospace}
+    .atlas-item h3{font-size:19px;line-height:1.35;margin:0}
+    .atlas-item .atlas-sub{font-size:12px;line-height:1.6;margin:2px 0 0}
+    .atlas-site{margin-right:auto;font-size:12px;font-weight:800;text-decoration:none;white-space:nowrap}
+    .shot-pair{grid-template-columns:minmax(0,2fr) minmax(175px,.62fr);gap:20px;align-items:start}
+    .shot a.preview{height:310px;box-shadow:0 12px 25px rgba(16,38,58,.1);background:#d8e2e5}
+    .shot--desktop a.preview{border:8px solid #e6ecef;border-radius:14px}
+    .shot--desktop a.preview:before{content:"";position:absolute;inset:0 0 auto;height:24px;background:radial-gradient(circle,#e47770 0 3px,transparent 4px) calc(100% - 15px) center/12px 12px no-repeat,radial-gradient(circle,#e7c76a 0 3px,transparent 4px) calc(100% - 30px) center/12px 12px no-repeat,radial-gradient(circle,#65bd9b 0 3px,transparent 4px) calc(100% - 45px) center/12px 12px no-repeat,#f8fafb;border-bottom:1px solid #d9e2e4;z-index:1}
+    .shot--desktop img{position:absolute;inset:24px 0 0;width:100%;height:calc(100% - 24px)}
+    .shot--mobile a.preview{border:7px solid #243643;border-radius:24px;max-width:250px;margin-inline:auto}
+    .shot--mobile a.preview:before{content:"";position:absolute;z-index:2;top:0;left:50%;transform:translateX(-50%);width:59px;height:11px;border-radius:0 0 8px 8px;background:#243643}
+    .shot--mobile img{border-radius:15px}
+    .shot .preview:after{bottom:13px;right:13px;font-size:11px;padding:5px 11px;background:rgba(9,33,45,.9)}
+    .shot figcaption{font-size:12px;padding-top:10px}
+    .shot figcaption a{font-size:11px;font-weight:800}
+    .atlas-error{min-height:140px;display:flex;flex-direction:column;justify-content:center;font-size:13px;line-height:1.9}
+    .dialog-head{padding:13px 18px;font-size:14px}
+    .dialog-head button{padding:5px 12px;font-weight:800}
+    .dialog-body{padding:14px}
+    .priority p,.platform ul,.layout-grid ol,.input,.ref{font-size:13px}
+    th,td{font-size:13px;line-height:1.8}
+    .mini-legend{font-size:12px;line-height:1.85}
+    .model-spotlight{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:22px;align-items:center;background:linear-gradient(120deg,#0d2b3a,#16434b);color:white;border-radius:22px;padding:29px;margin-bottom:18px;overflow:hidden}
+    .model-spotlight .eyebrow{color:#cdece7}
+    .model-spotlight h3{color:white;font-size:26px;margin:14px 0 10px;line-height:1.4}
+    .model-spotlight p{color:#d0e4e8;font-size:13px;line-height:1.95}
+    .model-spotlight ul{padding-right:19px;color:#d9e9eb;font-size:12px;margin:14px 0 20px}
+    .model-spotlight li{margin:5px 0}
+    .prototype-link{display:inline-flex;align-items:center;justify-content:center;background:#edb979;color:#1c3440;border-radius:9px;padding:9px 16px;font-size:12px;font-weight:900;text-decoration:none}
+    .prototype-link:hover{color:#102b37;background:#ffd096}
+    .model-screen{background:#f9fbfa;color:#173543;border:8px solid #c6d7d7;border-radius:17px;box-shadow:0 22px 45px rgba(0,0,0,.19);overflow:hidden;transform:rotate(-1deg)}
+    .model-screen-top{height:27px;background:#edf2f3;border-bottom:1px solid #d7e2e3;display:flex;align-items:center;gap:5px;padding:0 10px}
+    .model-screen-top i{width:6px;height:6px;border-radius:50%;background:#ce9479}
+    .model-screen-top i:nth-child(2){background:#e4c66e}.model-screen-top i:nth-child(3){background:#75baa4}
+    .model-screen-body{padding:19px 20px 21px}
+    .model-screen-label{font-size:10px;color:#0a786e;font-weight:900}
+    .model-screen h4{font-size:18px;line-height:1.4;margin:6px 0 13px}
+    .model-search-demo{border:1px solid #cddedf;border-radius:8px;background:#fff;padding:9px 12px;color:#7a8e96;font-size:11px;margin-bottom:11px}
+    .model-result-demo{border:1px solid #dce8e8;border-radius:9px;background:#fff;padding:11px 13px}
+    .model-result-demo strong{display:block;font:900 15px Consolas,monospace;direction:ltr;text-align:right;color:#183c4a}
+    .model-result-demo small{display:block;color:#647985;font-size:10px;margin-top:4px}
+    .model-chips{display:flex;flex-wrap:wrap;gap:5px;margin-top:9px}
+    .model-chips span{border-radius:5px;background:#e8f3f1;color:#23665f;padding:2px 6px;font-size:9px}
+    .model-result-foot{display:flex;justify-content:space-between;align-items:center;gap:8px;border-top:1px solid #e3ecec;padding-top:9px;margin-top:11px;font-size:10px;color:#607b85}
+    .model-result-foot b{background:#0a8075;color:#fff;border-radius:5px;padding:3px 8px}
+    .model-rules{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:17px 0}
+    .model-rule{background:#fff;border:1px solid var(--line);border-radius:13px;padding:16px;font-size:12px;color:var(--ink-2)}
+    .model-rule b{display:block;color:var(--teal);font-size:12px;margin-bottom:5px}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+    @media(max-width:920px){
+      .hero .wrap{grid-template-columns:1fr;padding:58px 0 85px}
+      .hero-art{display:none}
+      .summary,.layout-grid,.platform{grid-template-columns:1fr}
+      .navlinks{max-width:52vw}
+      .model-spotlight{grid-template-columns:1fr}
+    }
+    @media(max-width:700px){
+      .wrap{width:min(100% - 28px,1180px)}
+      .nav .wrap{gap:10px}
+      .brand span:last-child{display:none}
+      .navlinks{gap:13px;max-width:calc(100vw - 134px)}
+      .navlinks a{font-size:11px}
+      .print-btn{padding:6px 8px}
+      .hero .wrap{padding:50px 0 82px}
+      .hero h1{font-size:32px}
+      .hero p{font-size:13px}
+      .hero-actions{margin-top:22px}
+      .hero-actions a{flex:1;min-width:130px}
+      .stats{grid-template-columns:repeat(2,1fr);margin-top:-54px}
+      .stat{padding:17px}
+      .stat .num{font-size:25px}
+      .section{margin-top:52px}
+      .cards,.scope-grid,.priority-list,.inputs,.refs,.atlas{grid-template-columns:1fr}
+      .evidence{grid-template-columns:1fr}
+      .evidence > div{min-height:unset}
+      .journey{grid-template-columns:repeat(2,1fr)}
+      .model-spotlight{padding:21px}
+      .model-spotlight h3{font-size:22px}
+      .model-rules{grid-template-columns:1fr}
+      .section-head{align-items:start}
+      .section-side{display:none}
+      .atlas-item{padding:19px}
+      .shot-pair{gap:12px;grid-template-columns:minmax(0,1.5fr) minmax(155px,.75fr)}
+      .shot a.preview{height:260px}
+      footer .wrap{display:block}
+      footer span{display:block;margin-top:7px}
+    }
+    @media(max-width:540px){
+      .topbar .wrap span:first-child{display:none}
+      .topbar .wrap{justify-content:center}
+      .hero h1{font-size:32px}
+      .shot-pair{grid-template-columns:1fr;gap:19px}
+      .shot--desktop a.preview{height:235px}
+      .shot--mobile a.preview{height:280px;width:min(100%,220px)}
+      .atlas-item-head{flex-wrap:wrap}
+      .atlas-site{margin-right:0;margin-left:auto}
+    }
+    @media print{
+      @page{size:A4;margin:15mm}
+      body{background:white;color:#111;font-size:10pt}
+      .topbar,.nav,.filters,.print-btn{display:none!important}
+      .hero{background:#10263a!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+      .hero .wrap{padding:25px 0}
+      .hero-art{display:none}
+      .stats{margin-top:14px}
+      .stat,.panel,.step,.table-wrap{box-shadow:none}
+      .section{margin-top:30px}
+      .competitor,.priority,.stat,.panel,.step,.atlas-item{break-inside:avoid}
+      .shot a.preview{height:130px}
+      .shot .preview:after,dialog.shot-dialog{display:none}
+      .cards,.priority-list,.scope-grid,.summary,.layout-grid,.platform{gap:8px}
+      .competitor[hidden]{display:block!important}
+      a{color:#075a58;text-decoration:underline}
+      footer{display:none}
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar"><div class="wrap"><span>گزارش بازار و راهبرد دیجیتال • نسخه قابل ارائه</span><span>۵ مهر ۱۴۰۵ / ۲۷ سپتامبر ۲۰۲۶</span></div></div>
+  <nav class="nav" aria-label="فهرست گزارش"><div class="wrap">
+    <a class="brand" href="#top"><span class="brand-mark" aria-hidden="true">◉</span><span>تحلیل بازار کابل</span></a>
+    <div class="navlinks">
+      <a href="#summary">خلاصه</a><a href="#scope">روش بررسی</a><a href="#competitors">رقبا</a><a href="#screenshots">تصاویر</a>
+      <a href="#gaps">فرصت‌ها</a><a href="#seo">سئو</a><a href="#design">طراحی</a><a href="model-first-site-concept-standalone.html" target="_blank" rel="noopener noreferrer">نمونه سایت ↗</a><a href="#platform">فناوری</a><a href="#sources">منابع</a>
+    </div>
+    <button class="print-btn" type="button" onclick="window.print()" aria-label="چاپ گزارش">چاپ / PDF</button>
+  </div><div class="reading-progress" id="reading-progress" aria-hidden="true"></div></nav>
+  <header class="hero" id="top"><div class="wrap">
+    <div>
+      <span class="eyebrow">تحلیل رقابتی · سئو · تجربه کاربری</span>
+      <h1>نقشه ساخت سایت <em>مدل‌محور کابل وارداتی</em></h1>
+      <p>از تحلیل رقبا تا طراحی تجربه خرید: خریدار باید مدل درست را با کد یا مشخصات پیدا کند، مدارک آن را ببیند و همان کالا را دقیق استعلام کند.</p>
+      <div class="hero-meta"><span>بازار هدف: ایران</span><span>مدل کسب‌وکار: تأمین و نمایندگی فروش</span><span>تمرکز: لید و استعلام B2B</span></div>
+      <div class="hero-actions"><a class="primary" href="#summary">شروع مطالعه ←</a><a class="secondary" href="#screenshots">مشاهده تصاویر رقبا ↗</a></div>
+    </div>
+    <div class="hero-art" aria-hidden="true"><div class="rings"></div><div class="art-tag">از مشخصات فنی تا استعلام پروژه</div></div>
+  </div></header>
+  <main class="wrap">
+    <div class="stats" aria-label="اعداد کلیدی گزارش">
+      <div class="stat accent"><div class="num">۱۰</div><div class="label">سایت مرتبط بررسی‌شده</div></div>
+      <div class="stat"><div class="num">۳ + ۷</div><div class="label">رقبای اولیه + سایت‌های تکمیلی</div></div>
+      <div class="stat"><div class="num">۴</div><div class="label">اولویت حیاتی برای نسخه اول</div></div>
+      <div class="stat"><div class="num">۱۸</div><div class="label">تصویر تمام‌صفحه در دو اندازه</div></div>
+    </div>
+
+    <section class="section" id="summary">
+      <div class="section-head"><div><div class="kicker">۰۱ / جمع‌بندی مدیریتی</div><h2>سایت باید مدل درست را سریع پیدا و استعلام کند</h2></div></div>
+      <div class="summary">
+        <div class="panel summary-main">
+          <p class="lead">سه رقیب گزارش اولیه همچنان مهم‌اند، اما برای واردکننده کابل، رقیب واقعی با <strong>برندها، مدل‌ها و نوع پروژه مشتری</strong> تعیین می‌شود. در کابل صنعتی، ولتا تدبیر و مانیاد صنعت؛ در کابل شبکه، رایا ارتباط نیروانا و لگراندکو؛ و در جست‌وجوهای عمومی، فروشگاه‌های بزرگ هم وارد میدان می‌شوند.</p>
+          <p>مزیت قابل ساخت برای مشتری: <strong>مدارک اصالت و دیتاشیت سازنده + پیدا کردن سریع پارت‌نامبر + استعلام دقیق چندقلمی</strong>. این ترکیب هم به خریدار فنی کمک می‌کند و هم صفحات قابل جست‌وجوی ارزشمند می‌سازد.</p>
+          <div class="note">عدد ۱۰، تعداد سایت‌های این نمونه بررسی است؛ تعداد کل رقبا یا تعداد رقبای مستقیم نهایی نیست. فهرست برندها و SKUهای مشتری برای بستن نقشه رقابت لازم است.</div>
+        </div>
+        <div class="panel">
+          <h3>تصمیم پیشنهادی برای نسخه اول</h3>
+          <ul class="checklist">
+            <li>کاتالوگ ساختاریافته برای خانواده‌ها و مدل‌های مهم</li>
+            <li>فرم RFQ چندردیفی و قابل پیگیری برای پروژه‌ها</li>
+            <li>نمایش روشن واحد قیمت، موجودی یا زمان تأمین</li>
+            <li>وردپرس برای ویرایش روزمره توسط تیم فروش؛ سفارشی‌سازی مدل داده و استعلام</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="scope">
+      <div class="section-head"><div><div class="kicker">۰۲ / روش بررسی</div><h2>آنچه بررسی شده و مرز شواهد</h2></div></div>
+      <div class="scope-grid">
+        <div class="panel"><h3>دامنه بازار</h3><p>مشتری تأمین‌کننده و نماینده فروش است و واردات دارد. تولیدکنندگان داخلی فقط هنگام هم‌پوشانی کالا، پروژه یا عبارت جست‌وجو در رقابت مستقیم قرار می‌گیرند.</p></div>
+        <div class="panel"><h3>روش نمونه‌برداری</h3><p>صفحه اصلی، دسته‌بندی، نمونه محصول/محتوا و مسیر استعلام یا خرید سایت‌های مرتبط بررسی شد. برای صفحات غیرقابل بازشدن از نتیجه ایندکس‌شده یا فهرست رسمی استفاده شد.</p></div>
+        <div class="panel"><h3>محدودیت اندازه‌گیری</h3><p>ترافیک، رتبه واقعی، بک‌لینک، نرخ تبدیل، Core Web Vitals و وضعیت کامل ایندکس اندازه‌گیری نشده‌اند. تصویر تمام‌صفحه ۹ سایت در دسکتاپ و موبایل ثبت شد؛ چلیپا کابل خطای گواهی HTTPS داشت.</p></div>
+      </div>
+    </section>
+
+    <section class="section" id="competitors">
+      <div class="section-head"><div><div class="kicker">۰۳ / نقشه رقابت</div><h2>۱۰ سایت، چهار نوع رقابت</h2><p class="lead">فیلتر کنید و قوت و خلأ مستند هر سایت را ببینید. «فرصت» به معنی نقص قطعی در تمام صفحات آن رقیب نیست.</p></div></div>
+      <div class="filters" role="group" aria-label="فیلتر رقبا">
+        <button class="filter active" type="button" data-filter="all" aria-pressed="true">همه · ۱۰</button>
+        <button class="filter" type="button" data-filter="legacy" aria-pressed="false">سه رقیب گزارش اولیه</button>
+        <button class="filter" type="button" data-filter="industrial" aria-pressed="false">صنعتی و خاص</button>
+        <button class="filter" type="button" data-filter="network" aria-pressed="false">شبکه و وارداتی</button>
+        <button class="filter" type="button" data-filter="general" aria-pressed="false">فروشگاه عمومی</button>
+      </div>
+      <div class="cards" id="competitor-cards">
+        <article class="panel competitor" data-tags="legacy">
+          <div class="competitor-top"><div class="competitor-title"><h3>برق‌سان</h3><span class="pill legacy">گزارش اولیه</span></div><span class="pill">اهمیت زیاد</span></div>
+          <p class="desc">تأمین‌کننده چند برند؛ رقیب جدی در محصول، قیمت و جذب استعلام.</p>
+          <div class="evidence"><div><b>قوت مشاهده‌شده</b><p>دسته‌بندی گسترده، دیتاشیت و جدول فنی در صفحه محصول، فهرست قیمت و فرم پیش‌فاکتور.</p></div><div class="gap"><b>خلأ / فرصت</b><p>اقلام RFQ در یک متن آزاد گرفته می‌شوند. در نمونه محصول ۱٫۵، دیدگاهی درباره سیم ارت ۲٫۵ درج شده است.</p></div></div>
+          <div class="source-row"><a href="https://www.barghsan.com/" target="_blank" rel="noopener noreferrer">صفحه اصلی</a><a href="https://www.barghsan.com/pre-sale-invoice/" target="_blank" rel="noopener noreferrer">فرم پیش‌فاکتور</a><a href="https://www.barghsan.com/product/%D8%B3%DB%8C%D9%85-%D8%A8%D8%B1%D9%82-%D8%A7%D9%81%D8%B4%D8%A7%D9%86-1-5-%D8%AE%D8%B1%D8%A7%D8%B3%D8%A7%D9%86-%D8%A7%D9%81%D8%B4%D8%A7%D8%B1%D9%86%DA%98%D8%A7%D8%AF/" target="_blank" rel="noopener noreferrer">نمونه محصول</a></div>
+        </article>
+        <article class="panel competitor" data-tags="legacy">
+          <div class="competitor-top"><div class="competitor-title"><h3>جهان کابل آرکا</h3><span class="pill legacy">گزارش اولیه</span></div><span class="pill">وابسته به سبد کالا</span></div>
+          <p class="desc">نماینده افشارنژاد و فاراتل؛ مهم در کابل داخلی و پروژه‌های هم‌پوشان.</p>
+          <div class="evidence"><div><b>قوت مشاهده‌شده</b><p>صفحات مشخصات فنی مفصل، ابزار محاسبه، فهرست قیمت و لینک استعلام در صفحه اصلی.</p></div><div class="gap"><b>خلأ / فرصت</b><p>متن قابل‌خزش صفحه اصلی شامل email@example.com و شمارنده‌های ۰ است؛ نمونه محصول با Super User و تاریخ ویرایش ۱۴۰۲ دیده شد.</p></div></div>
+          <div class="source-row"><a href="https://jahancablearka.com/" target="_blank" rel="noopener noreferrer">صفحه اصلی</a><a href="https://www.jahancablearka.com/%DA%A9%D8%A7%D8%A8%D9%84-%D8%B3%D8%A8%DA%A9-%D8%A8%D8%A7-%D8%B9%D8%A7%DB%8C%D9%82-%D9%88-%D8%B1%D9%88%DA%A9%D8%B4-300-500v-nym-pvc/item/182-%DA%A9%D8%A7%D8%A8%D9%84-%D8%A7%D9%81%D8%B4%D8%A7%D9%86-3x35-16-nyy-flexible-%D8%A7%D9%81%D8%B4%D8%A7%D8%B1%D9%86%DA%98%D8%A7%D8%AF-%D8%AE%D8%B1%D8%A7%D8%B3%D8%A7%D9%86" target="_blank" rel="noopener noreferrer">نمونه محصول</a></div>
+        </article>
+        <article class="panel competitor" data-tags="legacy">
+          <div class="competitor-top"><div class="competitor-title"><h3>چلیپا کابل پویا</h3><span class="pill legacy">گزارش اولیه</span></div><span class="pill">بررسی محدود</span></div>
+          <p class="desc">نماینده افشارنژاد و شاهین؛ معرفی‌شده در کابل‌های تخصصی.</p>
+          <div class="evidence"><div><b>قوت تأییدشده</b><p>حضور در فهرست نمایندگان سازنده و معرفی کابل شیلددار، زره‌دار، ابزار دقیق و نسوز.</p></div><div class="gap"><b>خلأ / محدودیت</b><p>منابع مختلف به دامنه‌های .com و .ir ارجاع می‌دهند؛ سایت مستقل با ابزار حاضر قابل بررسی نبود. درباره ظاهر یا سئوی آن حکم قطعی نداریم.</p></div></div>
+          <div class="source-row"><a href="https://www.khorasanelectric.com/index.php/fa/about-us/resellers.html" target="_blank" rel="noopener noreferrer">فهرست سازنده</a><a href="https://ecasb.com/fa/vk-33169" target="_blank" rel="noopener noreferrer">معرفی ایکسب</a></div>
+        </article>
+        <article class="panel competitor" data-tags="industrial">
+          <div class="competitor-top"><div class="competitor-title"><h3>ولتا تدبیر</h3><span class="pill industrial">صنعتی و خاص</span></div><span class="pill">اهمیت زیاد</span></div>
+          <p class="desc">تأمین کابل خاص و برندهای خارجی برای صنعت نفت، گاز و پتروشیمی.</p>
+          <div class="evidence"><div><b>قوت مشاهده‌شده</b><p>ذکر BELDEN، DRAKA، NEXANS، LEONI، LAPP و گروه‌های کابل خاص در صفحه اصلی.</p></div><div class="gap"><b>خلأ / فرصت</b><p>در صفحه بررسی‌شده مسیر روشن جست‌وجوی پارت‌نامبر، مقایسه مدل‌ها و RFQ پروژه‌ای دیده نشد.</p></div></div>
+          <div class="source-row"><a href="https://voltatadbir.ir/" target="_blank" rel="noopener noreferrer">صفحه اصلی و دسته‌ها</a></div>
+        </article>
+        <article class="panel competitor" data-tags="industrial">
+          <div class="competitor-top"><div class="competitor-title"><h3>مانیاد صنعت</h3><span class="pill industrial">صنعتی و خاص</span></div><span class="pill">اهمیت زیاد</span></div>
+          <p class="desc">کابل ابزار دقیق، کنترل و LAPP؛ معیار مهم برای پروژه‌های تخصصی.</p>
+          <div class="evidence"><div><b>قوت مشاهده‌شده</b><p>شاخه‌های تخصصی، صفحات LAPP، گواهی، پروژه، کاتالوگ و چند زبان.</p></div><div class="gap"><b>خلأ / فرصت</b><p>ناوبری عمیق است؛ CTA استعلام نمونه محصول برجسته نیست و یک واحد فنی باید با دیتاشیت سازنده بازبینی شود.</p></div></div>
+          <div class="source-row"><a href="https://maniadsanat.com/products/" target="_blank" rel="noopener noreferrer">دسته‌ها</a><a href="https://maniadsanat.com/product/lapp-kabel-unitronic-100-pvc-msra-21204/" target="_blank" rel="noopener noreferrer">نمونه UNITRONIC 100</a></div>
+        </article>
+        <article class="panel competitor" data-tags="network">
+          <div class="competitor-top"><div class="competitor-title"><h3>رایا ارتباط نیروانا</h3><span class="pill network">شبکه و وارداتی</span></div><span class="pill">اهمیت زیاد</span></div>
+          <p class="desc">واردات Legrand و Nexans؛ فروش خرد و عمده تجهیزات شبکه.</p>
+          <div class="evidence"><div><b>قوت مشاهده‌شده</b><p>بیان روشن مدل واردات، صفحات کالا با پارت‌نامبر، ویژگی و قیمت متری.</p></div><div class="gap"><b>فرصت تمایز</b><p>خود شرکت به مسئله کالای تقلبی اشاره می‌کند؛ نمایش مدارک راستی‌آزمایی هر محموله برای مشتری مزیت است.</p></div></div>
+          <div class="source-row"><a href="https://renirvana.com/about-us/" target="_blank" rel="noopener noreferrer">درباره شرکت</a><a href="https://renirvana.com/product/cable-legrand-cat6-utp/" target="_blank" rel="noopener noreferrer">نمونه پارت 032755</a></div>
+        </article>
+        <article class="panel competitor" data-tags="network">
+          <div class="competitor-top"><div class="competitor-title"><h3>لگراندکو</h3><span class="pill network">شبکه و وارداتی</span></div><span class="pill">اهمیت زیاد</span></div>
+          <p class="desc">فروش تخصصی کابل شبکه لگراند با صفحات دسته، محصول و مقاله.</p>
+          <div class="evidence"><div><b>قوت مشاهده‌شده</b><p>دسته حاوی مدل‌ها، قیمت، توضیح و FAQ؛ صفحات محصول با مشخصات CAT6 و LSZH.</p></div><div class="gap"><b>خلأ / فرصت</b><p>پیام پیش‌فرض انگلیسی ووکامرس در متن ایندکس‌شده دیده می‌شود؛ تمایز مدل‌های نزدیک نیاز به مقایسه روشن دارد.</p></div></div>
+          <div class="source-row"><a href="https://legrand-co.ir/product-category/%DA%A9%D8%A7%D8%A8%D9%84-%D8%B4%D8%A8%DA%A9%D9%87-%D9%84%DA%AF%D8%B1%D8%A7%D9%86%D8%AF/" target="_blank" rel="noopener noreferrer">دسته کابل شبکه</a><a href="https://www.legrand-co.ir/product/%DA%A9%D8%A7%D8%A8%D9%84-%D8%B4%D8%A8%DA%A9%D9%87-%D9%84%DA%AF%D8%B1%D8%A7%D9%86%D8%AF-cat-6-utp-%D9%88%D8%A7%D8%B1%D8%AF%D8%A7%D8%AA%DB%8C/" target="_blank" rel="noopener noreferrer">نمونه محصول</a></div>
+        </article>
+        <article class="panel competitor" data-tags="general">
+          <div class="competitor-top"><div class="competitor-title"><h3>کابل ایران</h3><span class="pill general">فروشگاه عمومی</span></div><span class="pill">جست‌وجوی عمومی</span></div>
+          <p class="desc">فروشگاه گسترده سیم، کابل و شبکه؛ رقیب عبارت‌های خرید عمومی.</p>
+          <div class="evidence"><div><b>قوت مشاهده‌شده</b><p>دسته‌بندی بر پایه برند، CAT، روکش، جنس هادی و محیط نصب با قیمت و مشخصات کوتاه.</p></div><div class="gap"><b>فرصت تمایز</b><p>تمرکز عمیق روی چند خانواده وارداتی، مدرک اصالت و پاسخ فنی B2B می‌تواند جایگاه اختصاصی بسازد.</p></div></div>
+          <div class="source-row"><a href="https://cableiran.com/143-fluke-test-lan-cable" target="_blank" rel="noopener noreferrer">دسته تست فلوک</a></div>
+        </article>
+        <article class="panel competitor" data-tags="general">
+          <div class="competitor-top"><div class="competitor-title"><h3>برق و صنعت آسیا</h3><span class="pill general">فروشگاه عمومی</span></div><span class="pill">جست‌وجو و قیمت</span></div>
+          <p class="desc">فروشگاه چندبرندی با صدها محصول و درخواست پیش‌فاکتور.</p>
+          <div class="evidence"><div><b>قوت مشاهده‌شده</b><p>فهرست بزرگ کالا، دسته‌های توضیح‌دار و CTA پیش‌فاکتور بالای فروشگاه.</p></div><div class="gap"><b>خلأ مستند</b><p>در فهرست، واحد «تومان/متری» برای کیستون، پچ‌کورد و پچ‌پنل هم دیده می‌شود؛ شفافیت واحد فروش اهمیت دارد.</p></div></div>
+          <div class="source-row"><a href="https://bargheasia.com/shop/" target="_blank" rel="noopener noreferrer">فروشگاه</a><a href="https://bargheasia.com/product-category/%D8%B3%DB%8C%D9%85-%D9%88-%DA%A9%D8%A7%D8%A8%D9%84/%DA%A9%D8%A7%D8%A8%D9%84-%DA%A9%D9%86%D8%AA%D8%B1%D9%84-%D9%81%D8%B1%D9%85%D8%A7%D9%86/" target="_blank" rel="noopener noreferrer">دسته کابل کنترل</a></div>
+        </article>
+        <article class="panel competitor" data-tags="network">
+          <div class="competitor-top"><div class="competitor-title"><h3>لگراند پارس</h3><span class="pill network">شبکه و وارداتی</span></div><span class="pill">اهمیت متوسط</span></div>
+          <p class="desc">فروش همکاری، تجهیزات شبکه لگراند و جست‌وجوی مدل.</p>
+          <div class="evidence"><div><b>قوت مشاهده‌شده</b><p>واردات، تست فلوک، فاکتور رسمی و فروش همکاری را در صفحه اصلی مطرح می‌کند.</p></div><div class="gap"><b>خلأ مستند</b><p>صفحه اصلی کوتاه است و زیر «بهترین مقالات» لینک‌های نامرتبط با کابل دیده می‌شود.</p></div></div>
+          <div class="source-row"><a href="https://www.legrandpars.ir/" target="_blank" rel="noopener noreferrer">صفحه اصلی</a></div>
+        </article>
+      </div>
+      <p class="mini-legend">توجه: برچسب اهمیت، برآورد راهبردی بر اساس مدل کسب‌وکار و محتوای قابل مشاهده است؛ رتبه‌بندی ترافیک یا سهم بازار نیست.</p>
+    </section>
+
+    <!-- screenshot-gallery-start -->
+    <section class="section" id="screenshots">
+      <div class="section-head"><div><div class="kicker">۰۴ / اطلس تصویری</div><h2>صفحه خانه رقبا، کامل و در دو اندازه</h2><p class="lead">از ۹ سایت، ۱۸ تصویر تمام‌صفحه ثبت شد. پیش‌نمایش، بخش آغازین هر صفحه را نشان می‌دهد؛ برای دیدن کل صفحه روی تصویر بزنید.</p></div><div class="section-side">۱۸ تصویر<br><strong>۹ وب‌سایت</strong></div></div>
+      <nav class="atlas-nav" aria-label="فهرست تصاویر رقبا"><a href="#shot-barghsan"><span>01</span>برق‌سان</a><a href="#shot-jahancablearka"><span>02</span>جهان کابل آرکا</a><a href="#shot-chalipacable"><span>03</span>چلیپا کابل پویا</a><a href="#shot-voltatadbir"><span>04</span>ولتا تدبیر</a><a href="#shot-maniadsanat"><span>05</span>مانیاد صنعت</a><a href="#shot-renirvana"><span>06</span>رایا ارتباط نیروانا</a><a href="#shot-legrandco"><span>07</span>لگراندکو</a><a href="#shot-cableiran"><span>08</span>کابل ایران</a><a href="#shot-bargheasia"><span>09</span>برق و صنعت آسیا</a><a href="#shot-legrandpars"><span>10</span>لگراند پارس</a></nav>
+      <div class="atlas"><article class="panel atlas-item" id="shot-barghsan">
+        <header class="atlas-item-head"><span class="atlas-index">01</span><div><h3>برق‌سان</h3><p class="atlas-sub">صفحه اصلی در دسکتاپ و گوشی</p></div><a class="atlas-site" href="https://www.barghsan.com/" target="_blank" rel="noopener noreferrer">سایت رقیب ↗</a></header>
+        <div class="shot-pair"><figure class="shot shot--desktop">
+          <a class="preview" href="competitor-screenshots/barghsan-desktop.jpg" data-title="برق‌سان · دسکتاپ · صفحه خانه" target="_blank" rel="noopener noreferrer" aria-label="نمایش تصویر تمام‌صفحه برق‌سان · دسکتاپ · صفحه خانه"><img src="competitor-screenshots/barghsan-desktop.jpg" alt="نمای تمام‌صفحه صفحه خانه برق‌سان در حالت دسکتاپ" loading="lazy" decoding="async"></a>
+          <figcaption><span>دسکتاپ · تمام‌صفحه</span><a href="competitor-screenshots/barghsan-desktop.jpg" download>دریافت تصویر ↓</a></figcaption>
+        </figure><figure class="shot shot--mobile">
+          <a class="preview" href="competitor-screenshots/barghsan-mobile.jpg" data-title="برق‌سان · گوشی · صفحه خانه" target="_blank" rel="noopener noreferrer" aria-label="نمایش تصویر تمام‌صفحه برق‌سان · گوشی · صفحه خانه"><img src="competitor-screenshots/barghsan-mobile.jpg" alt="نمای تمام‌صفحه صفحه خانه برق‌سان در حالت گوشی" loading="lazy" decoding="async"></a>
+          <figcaption><span>گوشی · تمام‌صفحه</span><a href="competitor-screenshots/barghsan-mobile.jpg" download>دریافت تصویر ↓</a></figcaption>
+        </figure></div>
+      </article>
+<article class="panel atlas-item" id="shot-jahancablearka">
+        <header class="atlas-item-head"><span class="atlas-index">02</span><div><h3>جهان کابل آرکا</h3><p class="atlas-sub">صفحه اصلی در دسکتاپ و گوشی</p></div><a class="atlas-site" href="https://jahancablearka.com/" target="_blank" rel="noopener noreferrer">سایت رقیب ↗</a></header>
+        <div class="shot-pair"><figure class="shot shot--desktop">
+          <a class="preview" href="competitor-screenshots/jahancablearka-desktop.jpg" data-title="جهان کابل آرکا · دسکتاپ · صفحه خانه" target="_blank" rel="noopener noreferrer" aria-label="نمایش تصویر تمام‌صفحه جهان کابل آرکا · دسکتاپ · صفحه خانه"><img src="competitor-screenshots/jahancablearka-desktop.jpg" alt="نمای تمام‌صفحه صفحه خانه جهان کابل آرکا در حالت دسکتاپ" loading="lazy" decoding="async"></a>
+          <figcaption><span>دسکتاپ · تمام‌صفحه</span><a href="competitor-screenshots/jahancablearka-desktop.jpg" download>دریافت تصویر ↓</a></figcaption>
+        </figure><figure class="shot shot--mobile">
+          <a class="preview" href="competitor-screenshots/jahancablearka-mobile.jpg" data-title="جهان کابل آرکا · گوشی · صفحه خانه" target="_blank" rel="noopener noreferrer" aria-label="نمایش تصویر تمام‌صفحه جهان کابل آرکا · گوشی · صفحه خانه"><img src="competitor-screenshots/jahancablearka-mobile.jpg" alt="نمای تمام‌صفحه صفحه خانه جهان کابل آرکا در حالت گوشی" loading="lazy" decoding="async"></a>
+          <figcaption><span>گوشی · تمام‌صفحه</span><a href="competitor-screenshots/jahancablearka-mobile.jpg" download>دریافت تصویر ↓</a></figcaption>
+        </figure></div>
+      </article>
+<article class="panel atlas-item" id="shot-chalipacable">
+        <header class="atlas-item-head"><span class="atlas-index">03</span><div><h3>چلیپا کابل پویا</h3><p class="atlas-sub">تصویر صفحه خانه قابل ثبت نبود</p></div></header>
+        <div class="atlas-error"><b>ثبت تصویر ممکن نشد</b>هر دو دامنه معرفی‌شده چلیپا کابل خطای گواهی HTTPS دادند. از هشدار امنیتی عبور نشده و تصویری به‌جای صفحه خانه قرار نگرفته است.</div>
+      </article>
+<article class="panel atlas-item" id="shot-voltatadbir">
+        <header class="atlas-item-head"><span class="atlas-index">04</span><div><h3>ولتا تدبیر</h3><p class="atlas-sub">صفحه اصلی در دسکتاپ و گوشی</p></div><a class="atlas-site" href="https://voltatadbir.ir/" target="_blank" rel="noopener noreferrer">سایت رقیب ↗</a></header>
+        <div class="shot-pair"><figure class="shot shot--desktop">
+          <a class="preview" href="competitor-screenshots/voltatadbir-desktop.jpg" data-title="ولتا تدبیر · دسکتاپ · صفحه خانه" target="_blank" rel="noopener noreferrer" aria-label="نمایش تصویر تمام‌صفحه ولتا تدبیر · دسکتاپ · صفحه خانه"><img src="competitor-screenshots/voltatadbir-desktop.jpg" alt="نمای تمام‌صفحه صفحه خانه ولتا تدبیر در حالت دسکتاپ" loading="lazy" decoding="async"></a>
+          <figcaption><span>دسکتاپ · تمام‌صفحه</span><a href="competitor-screenshots/voltatadbir-desktop.jpg" download>دریافت تصویر ↓</a></figcaption>
+        </figure><figure class="shot shot--mobile">
+          <a class="preview" href="competitor-screenshots/voltatadbir-mobile.jpg" data-title="ولتا تدبیر · گوشی · صفحه خانه" target="_blank" rel="noopener noreferrer" aria-label="نمایش تصویر تمام‌صفحه ولتا تدبیر · گوشی · صفحه خانه"><img src="competitor-screenshots/voltatadbir-mobile.jpg" alt="نمای تمام‌صفحه صفحه خانه ولتا تدبیر در حالت گوشی" loading="lazy" decoding="async"></a>
+          <figcaption><span>گوشی · تمام‌صفحه</span><a href="competitor-screenshots/voltatadbir-mobile.jpg" download>دریافت تصویر ↓</a></figcaption>
+        </figure></div>
+      </article>
+<article class="panel atlas-item" id="shot-maniadsanat">
+        <header class="atlas-item-head"><span class="atlas-index">05</span><div><h3>مانیاد صنعت</h3><p class="atlas-sub">صفحه اصلی در دسکتاپ و گوشی</p></div><a class="atlas-site" href="https://maniadsanat.com/" target="_blank" rel="noopener noreferrer">سایت رقیب ↗</a></header>
+        <div class="shot-pair"><figure class="shot shot--desktop">
+          <a class="preview" href="competitor-screenshots/maniadsanat-desktop.jpg" data-title="مانیاد صنعت · دسکتاپ · صفحه خانه" target="_blank" rel="noopener noreferrer" aria-label="نمایش تصویر تمام‌صفحه مانیاد صنعت · دسکتاپ · صفحه خانه"><img src="competitor-screenshots/maniadsanat-desktop.jpg" alt="نمای تمام‌صفحه صفحه خانه مانیاد صنعت در حالت دسکتاپ" loading="lazy" decoding="async"></a>
+          <figcaption><span>دسکتاپ · تمام‌صفحه</span><a href="competitor-screenshots/maniadsanat-desktop.jpg" download>دریافت تصویر ↓</a></figcaption>
+        </figure><figure class="shot shot--mobile">
+          <a class="preview" href="competitor-screenshots/maniadsanat-mobile.jpg" data-title="مانیاد صنعت · گوشی · صفحه خانه" target="_blank" rel="noopener noreferrer" aria-label="نمایش تصویر تمام‌صفحه مانیاد صنعت · گوشی · صفحه خانه"><img src="competitor-screenshots/maniadsanat-mobile.jpg" alt="نمای تمام‌صفحه صفحه خانه مانیاد صنعت در حالت گوشی" loading="lazy" decoding="async"></a>
+          <figcaption><span>گوشی · تمام‌صفحه</span><a href="competitor-screenshots/maniadsanat-mobile.jpg" download>دریافت تصویر ↓</a></figcaption>
+        </figure></div>
+      </article>
+<article class="panel atlas-item" id="shot-renirvana">
+        <header class="atlas-item-head"><span class="atlas-index">06</span><div><h3>رایا ارتباط نیروانا</h3><p class="atlas-sub">صفحه اصلی در دسکتاپ و گوشی</p></div><a class="atlas-site" href="https://renirvana.com/" target="_blank" rel="noopener noreferrer">سایت رقیب ↗</a></header>
+        <div class="shot-pair"><figure class="shot shot--desktop">
+          <a class="preview" href="competitor-screenshots/renirvana-desktop.jpg" data-title="رایا ارتباط نیروانا · دسکتاپ · صفحه خانه" target="_blank" rel="noopener noreferrer" aria-label="نمایش تصویر تمام‌صفحه رایا ارتباط نیروانا · دسکتاپ · صفحه خانه"><img src="competitor-screenshots/renirvana-desktop.jpg" alt="نمای تمام‌صفحه صفحه خانه رایا ارتباط نیروانا در حالت دسکتاپ" loading="lazy" decoding="async"></a>
+          <figcaption><span>دسکتاپ · تمام‌صفحه</span><a href="competitor-screenshots/renirvana-desktop.jpg" download>دریافت تصویر ↓</a></figcaption>
+        </figure><figure class="shot shot--mobile">
+          <a class="preview" href="competitor-screenshots/renirvana-mobile.jpg" data-title="رایا ارتباط نیروانا · گوشی · صفحه خانه" target="_blank" rel="noopener noreferrer" aria-label="نمایش تصویر تمام‌صفحه رایا ارتباط نیروانا · گوشی · صفحه خانه"><img src="competitor-screenshots/renirvana-mobile.jpg" alt="نمای تمام‌صفحه صفحه خانه رایا ارتباط نیروانا در حالت گوشی" loading="lazy" decoding="async"></a>
+          <figcaption><span>گوشی · تمام‌صفحه</span><a href="competitor-screenshots/renirvana-mobile.jpg" download>دریافت تصویر ↓</a></figcaption>
+        </figure></div>
+      </article>
+<article class="panel atlas-item" id="shot-legrandco">
+        <header class="atlas-item-head"><span class="atlas-index">07</span><div><h3>لگراندکو</h3><p class="atlas-sub">صفحه اصلی در دسکتاپ و گوشی</p></div><a class="atlas-site" href="https://legrand-co.ir/" target="_blank" rel="noopener noreferrer">سایت رقیب ↗</a></header>
+        <div class="shot-pair"><figure class="shot shot--desktop">
+          <a class="preview" href="competitor-screenshots/legrandco-desktop.jpg" data-title="لگراندکو · دسکتاپ · صفحه خانه" target="_blank" rel="noopener noreferrer" aria-label="نمایش تصویر تمام‌صفحه لگراندکو · دسکتاپ · صفحه خانه"><img src="competitor-screenshots/legrandco-desktop.jpg" alt="نمای تمام‌صفحه صفحه خانه لگراندکو در حالت دسکتاپ" loading="lazy" decoding="async"></a>
+          <figcaption><span>دسکتاپ · تمام‌صفحه</span><a href="competitor-screenshots/legrandco-desktop.jpg" download>دریافت تصویر ↓</a></figcaption>
+        </figure><figure class="shot shot--mobile">
+          <a class="preview" href="competitor-screenshots/legrandco-mobile.jpg" data-title="لگراندکو · گوشی · صفحه خانه" target="_blank" rel="noopener noreferrer" aria-label="نمایش تصویر تمام‌صفحه لگراندکو · گوشی · صفحه خانه"><img src="competitor-screenshots/legrandco-mobile.jpg" alt="نمای تمام‌صفحه صفحه خانه لگراندکو در حالت گوشی" loading="lazy" decoding="async"></a>
+          <figcaption><span>گوشی · تمام‌صفحه</span><a href="competitor-screenshots/legrandco-mobile.jpg" download>دریافت تصویر ↓</a></figcaption>
+        </figure></div>
+      </article>
+<article class="panel atlas-item" id="shot-cableiran">
+        <header class="atlas-item-head"><span class="atlas-index">08</span><div><h3>کابل ایران</h3><p class="atlas-sub">صفحه اصلی در دسکتاپ و گوشی</p></div><a class="atlas-site" href="https://cableiran.com/" target="_blank" rel="noopener noreferrer">سایت رقیب ↗</a></header>
+        <div class="shot-pair"><figure class="shot shot--desktop">
+          <a class="preview" href="competitor-screenshots/cableiran-desktop.jpg" data-title="کابل ایران · دسکتاپ · صفحه خانه" target="_blank" rel="noopener noreferrer" aria-label="نمایش تصویر تمام‌صفحه کابل ایران · دسکتاپ · صفحه خانه"><img src="competitor-screenshots/cableiran-desktop.jpg" alt="نمای تمام‌صفحه صفحه خانه کابل ایران در حالت دسکتاپ" loading="lazy" decoding="async"></a>
+          <figcaption><span>دسکتاپ · تمام‌صفحه</span><a href="competitor-screenshots/cableiran-desktop.jpg" download>دریافت تصویر ↓</a></figcaption>
+        </figure><figure class="shot shot--mobile">
+          <a class="preview" href="competitor-screenshots/cableiran-mobile.jpg" data-title="کابل ایران · گوشی · صفحه خانه" target="_blank" rel="noopener noreferrer" aria-label="نمایش تصویر تمام‌صفحه کابل ایران · گوشی · صفحه خانه"><img src="competitor-screenshots/cableiran-mobile.jpg" alt="نمای تمام‌صفحه صفحه خانه کابل ایران در حالت گوشی" loading="lazy" decoding="async"></a>
+          <figcaption><span>گوشی · تمام‌صفحه</span><a href="competitor-screenshots/cableiran-mobile.jpg" download>دریافت تصویر ↓</a></figcaption>
+        </figure></div>
+      </article>
+<article class="panel atlas-item" id="shot-bargheasia">
+        <header class="atlas-item-head"><span class="atlas-index">09</span><div><h3>برق و صنعت آسیا</h3><p class="atlas-sub">صفحه اصلی در دسکتاپ و گوشی</p></div><a class="atlas-site" href="https://bargheasia.com/" target="_blank" rel="noopener noreferrer">سایت رقیب ↗</a></header>
+        <div class="shot-pair"><figure class="shot shot--desktop">
+          <a class="preview" href="competitor-screenshots/bargheasia-desktop.jpg" data-title="برق و صنعت آسیا · دسکتاپ · صفحه خانه" target="_blank" rel="noopener noreferrer" aria-label="نمایش تصویر تمام‌صفحه برق و صنعت آسیا · دسکتاپ · صفحه خانه"><img src="competitor-screenshots/bargheasia-desktop.jpg" alt="نمای تمام‌صفحه صفحه خانه برق و صنعت آسیا در حالت دسکتاپ" loading="lazy" decoding="async"></a>
+          <figcaption><span>دسکتاپ · تمام‌صفحه</span><a href="competitor-screenshots/bargheasia-desktop.jpg" download>دریافت تصویر ↓</a></figcaption>
+        </figure><figure class="shot shot--mobile">
+          <a class="preview" href="competitor-screenshots/bargheasia-mobile.jpg" data-title="برق و صنعت آسیا · گوشی · صفحه خانه" target="_blank" rel="noopener noreferrer" aria-label="نمایش تصویر تمام‌صفحه برق و صنعت آسیا · گوشی · صفحه خانه"><img src="competitor-screenshots/bargheasia-mobile.jpg" alt="نمای تمام‌صفحه صفحه خانه برق و صنعت آسیا در حالت گوشی" loading="lazy" decoding="async"></a>
+          <figcaption><span>گوشی · تمام‌صفحه</span><a href="competitor-screenshots/bargheasia-mobile.jpg" download>دریافت تصویر ↓</a></figcaption>
+        </figure></div>
+      </article>
+<article class="panel atlas-item" id="shot-legrandpars">
+        <header class="atlas-item-head"><span class="atlas-index">10</span><div><h3>لگراند پارس</h3><p class="atlas-sub">صفحه اصلی در دسکتاپ و گوشی</p></div><a class="atlas-site" href="https://www.legrandpars.ir/" target="_blank" rel="noopener noreferrer">سایت رقیب ↗</a></header>
+        <div class="shot-pair"><figure class="shot shot--desktop">
+          <a class="preview" href="competitor-screenshots/legrandpars-desktop.jpg" data-title="لگراند پارس · دسکتاپ · صفحه خانه" target="_blank" rel="noopener noreferrer" aria-label="نمایش تصویر تمام‌صفحه لگراند پارس · دسکتاپ · صفحه خانه"><img src="competitor-screenshots/legrandpars-desktop.jpg" alt="نمای تمام‌صفحه صفحه خانه لگراند پارس در حالت دسکتاپ" loading="lazy" decoding="async"></a>
+          <figcaption><span>دسکتاپ · تمام‌صفحه</span><a href="competitor-screenshots/legrandpars-desktop.jpg" download>دریافت تصویر ↓</a></figcaption>
+        </figure><figure class="shot shot--mobile">
+          <a class="preview" href="competitor-screenshots/legrandpars-mobile.jpg" data-title="لگراند پارس · گوشی · صفحه خانه" target="_blank" rel="noopener noreferrer" aria-label="نمایش تصویر تمام‌صفحه لگراند پارس · گوشی · صفحه خانه"><img src="competitor-screenshots/legrandpars-mobile.jpg" alt="نمای تمام‌صفحه صفحه خانه لگراند پارس در حالت گوشی" loading="lazy" decoding="async"></a>
+          <figcaption><span>گوشی · تمام‌صفحه</span><a href="competitor-screenshots/legrandpars-mobile.jpg" download>دریافت تصویر ↓</a></figcaption>
+        </figure></div>
+      </article></div>
+      <p class="mini-legend">ثبت تصاویر: ۲۷ سپتامبر ۲۰۲۶. عرض مرورگر دسکتاپ ۱۴۴۰ پیکسل و نمای گوشی ۳۹۰ پیکسل بوده است. محتوای پویا ممکن است هنگام مراجعه بعدی تفاوت داشته باشد.</p>
+    </section>
+    <!-- screenshot-gallery-end -->
+
+    <section class="section" id="gaps">
+      <div class="section-head"><div><div class="kicker">۰۵ / اولویت‌های محصول</div><h2>خلأهای بازار را به قابلیت تبدیل کنیم</h2></div></div>
+      <div class="priority-list">
+        <div class="panel priority"><span class="icon">۱</span><div><div class="level">P0 · حیاتی</div><h3>اصالت و داده فنی معتبر</h3><p>برند، پارت‌نامبر، عکس واقعی، مبدأ، دیتاشیت سازنده، مدارک تست قابل انتشار و تاریخ بازبینی برای هر مدل.</p></div></div>
+        <div class="panel priority"><span class="icon">۲</span><div><div class="level">P0 · حیاتی</div><h3>استعلام دقیق B2B</h3><p>چند ردیف کالا با SKU و متراژ، مقصد، موعد تحویل، پیوست BOM/نقشه، تأیید دریافت و زمان پاسخ.</p></div></div>
+        <div class="panel priority"><span class="icon">۳</span><div><div class="level">P0 · حیاتی</div><h3>پیدا کردن مدل درست</h3><p>جست‌وجوی فارسی، لاتین و کد کالا؛ دسته‌بندی بر اساس کاربرد، برند و مشخصات فنی، با راهنمای انتخاب.</p></div></div>
+        <div class="panel priority"><span class="icon">۴</span><div><div class="level">P0 · حیاتی</div><h3>قیمت و تأمین شفاف</h3><p>واحد، تاریخ و موجودی معتبر؛ در نبود قیمت قابل نگهداری، استعلام قیمت با زمان پاسخ مشخص.</p></div></div>
+        <div class="panel priority p1"><span class="icon">۵</span><div><div class="level">P1 · رشد</div><h3>مقایسه فنی و کاربرد</h3><p>جدول مقایسه، تفاوت استانداردها، سازگاری، حداقل سفارش و شرایط تحویل برای تصمیم مهندسی.</p></div></div>
+        <div class="panel priority p1"><span class="icon">۶</span><div><div class="level">P1 · اعتماد</div><h3>مدارک و نمونه پروژه</h3><p>پروژه‌های قابل انتشار، فرآیند کنترل کیفیت، مستندات نمایندگی/واردات و معرفی تیم فنی.</p></div></div>
+        <div class="panel priority p1"><span class="icon">۷</span><div><div class="level">P1 · سئو</div><h3>صفحات دقیق خانواده و مدل</h3><p>برای مدل‌های مهم صفحه مستقل و برای نیازهای پروژه، راهنمای انتخاب متصل به کالاهای واقعی.</p></div></div>
+        <div class="panel priority p2"><span class="icon">۸</span><div><div class="level">P2 · مشروط</div><h3>نسخه انگلیسی</h3><p>وقتی مشتری یا تأمین‌کننده خارجی از سایت استفاده می‌کند، با داده فنی یکپارچه بین زبان‌ها.</p></div></div>
+      </div>
+    </section>
+
+    <section class="section" id="seo">
+      <div class="section-head"><div><div class="kicker">۰۶ / برنامه سئو</div><h2>از قصد جست‌وجو تا صفحه درست</h2><p class="lead">اولویت با صفحه‌هایی است که به تصمیم خرید و استعلام واقعی وصل می‌شوند.</p></div></div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>قصد جست‌وجو</th><th>نمونه عبارت</th><th>صفحه پیشنهادی</th><th>اطلاعات ضروری</th></tr></thead>
+          <tbody>
+            <tr><td>برند و مدل</td><td><code>LAPP UNITRONIC 100</code>، <code>Legrand 032755</code></td><td>صفحه مدل</td><td>پارت‌نامبر، دیتاشیت، ویژگی، اصالت و استعلام همان کالا</td></tr>
+            <tr><td>خانواده محصول</td><td>کابل ابزار دقیق شیلددار وارداتی؛ کابل شبکه <span class="ltr">Cat6 SFTP LSZH</span></td><td>دسته قابل فیلتر</td><td>تفاوت مدل‌ها، کاربرد، محصولات واقعی و مسیر انتخاب</td></tr>
+            <tr><td>نیاز پروژه</td><td>کابل مقاوم روغن خط تولید؛ کابل ضد حریق پروژه</td><td>راهنمای انتخاب</td><td>شرایط کاربرد، محدودیت‌ها، استاندارد و مدل‌های مناسب</td></tr>
+            <tr><td>تجاری</td><td>قیمت کابل نگزنس؛ تأمین عمده کابل لگراند</td><td>صفحه برند یا دسته</td><td>روش قیمت‌گذاری، واحد، حداقل سفارش و زمان پاسخ</td></tr>
+            <tr><td>اعتماد</td><td>تشخیص کابل لگراند اصل؛ تست فلوک کابل</td><td>راهنمای مستند</td><td>روش راستی‌آزمایی، مثال مدارک و لینک به کالا</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="note" style="margin-top:15px"><strong>قاعده سئوی مدل‌محور:</strong> هر مدل واقعی یک نشانی مرجع داشته باشد. نوشتارهای متفاوت پارت‌نامبر و نام‌های جایگزین به همان صفحه هدایت شوند. صفحه‌های فیلتر فقط وقتی نشانی قابل ایندکس بگیرند که تقاضای جست‌وجوی مستقل و محتوای یکتا دارند.</div>
+      <div class="scope-grid" style="margin-top:15px">
+        <div class="panel"><h3>پایه فنی</h3><p>لینک HTML از منو به دسته و از دسته به محصول، عنوان و توضیح یکتا، sitemap، canonical و تصویر با متن جایگزین معنادار.</p></div>
+        <div class="panel"><h3>صفحه محصول</h3><p>داده ساختاریافته فقط مطابق اطلاعات واقعی همان صفحه؛ قیمت و موجودی ساختگی یا کهنه منتشر نشود.</p></div>
+        <div class="panel"><h3>کنترل فیلترها</h3><p>صفحات ترکیبی کم‌محتوا و تکراری به‌طور بی‌رویه ساخته نشوند؛ فقط ترکیب‌های با تقاضای واقعی صفحه مستقل بگیرند.</p></div>
+      </div>
+      <div class="note warn" style="margin-top:15px">هیچ حجم جست‌وجو، رتبه یا ترافیکی در این گزارش تخمین زده نشده است. راهنمای رسمی گوگل: <a href="https://developers.google.com/search/docs/specialty/ecommerce/help-google-understand-your-ecommerce-site-structure" target="_blank" rel="noopener noreferrer">ساختار فروشگاه</a>، <a href="https://developers.google.com/search/docs/specialty/ecommerce/share-your-product-data-with-google" target="_blank" rel="noopener noreferrer">داده محصول</a> و <a href="https://developers.google.com/search/docs/fundamentals/creating-helpful-content" target="_blank" rel="noopener noreferrer">محتوای مفید</a>.</div>
+    </section>
+
+    <section class="section" id="design">
+      <div class="section-head"><div><div class="kicker">۰۷ / تجربه و معماری سایت</div><h2>طراحی مدل‌محور: هر مسیر به یک مدل مشخص برسد</h2><p class="lead">پارت‌نامبر و مشخصات فنی، هسته تجربه‌اند. دسته و برند به پیدا شدن مدل کمک می‌کنند؛ اقدام نهایی استعلام همان مدل با مقدار موردنیاز است.</p></div></div>
+      <div class="model-spotlight">
+        <div><span class="eyebrow">اصل طراحی پیشنهادی</span><h3>از جست‌وجوی کد تا استعلام دقیق، در چهار گام</h3><p>کاربر حرفه‌ای می‌تواند مستقیم کد سازنده را وارد کند. کاربری که کد ندارد، با ویژگی‌های فنی به مدل برسد. هر دو مسیر به پرونده یک مدل یکتا ختم می‌شوند.</p><ul><li>جست‌وجوی فارسی، لاتین و شکل‌های مختلف کد</li><li>تفاوت روشن مدل‌های نزدیک و گزینه‌های جایگزین</li><li>دیتاشیت، اصالت، واحد و زمان تأمین کنار CTA</li></ul><a class="prototype-link" href="model-first-site-concept-standalone.html" target="_blank" rel="noopener noreferrer">باز کردن نمونه تعاملی طراحی ↗</a></div>
+        <div class="model-screen" aria-label="نمای شماتیک جست‌وجوی مدل"><div class="model-screen-top"><i></i><i></i><i></i></div><div class="model-screen-body"><span class="model-screen-label">نمونه نمایشی رابط کاربری</span><h4>کد مدل را جست‌وجو کنید</h4><div class="model-search-demo" dir="ltr">IC-02-1.5-SH &nbsp;⌕</div><div class="model-result-demo"><strong>IC-02-1.5-SH</strong><small>کابل ابزار دقیق · برند نمونه A</small><div class="model-chips"><span>۲ زوج</span><span>شیلددار</span><span>LSZH</span><span>واحد: متر</span></div><div class="model-result-foot"><span>زمان تأمین: پس از استعلام</span><b>+ افزودن به استعلام</b></div></div></div></div>
+      </div>
+      <div class="journey" aria-label="مسیر مدل‌محور خریدار">
+        <div class="step"><span class="n">۰۱</span><h3>جست‌وجو یا فیلتر</h3><p>کد دقیق، نام مدل یا مشخصات</p></div>
+        <div class="step"><span class="n">۰۲</span><h3>تشخیص مدل درست</h3><p>مقایسه ویژگی و تفاوت نسخه‌ها</p></div>
+        <div class="step"><span class="n">۰۳</span><h3>اعتبارسنجی</h3><p>دیتاشیت، استاندارد و اصالت</p></div>
+        <div class="step"><span class="n">۰۴</span><h3>استعلام همان مدل</h3><p>کد، مقدار، واحد، مقصد و موعد</p></div>
+      </div>
+      <div class="model-rules">
+        <div class="model-rule"><b>یک شناسه برای هر مدل</b>کد سازنده، نام‌های جایگزین و نسخه‌های نوشتاری به یک صفحه مرجع وصل شوند؛ مدل‌های متفاوت ادغام نشوند.</div>
+        <div class="model-rule"><b>داده فنی قابل نگهداری</b>ویژگی‌ها به‌صورت فیلد ساختاریافته ذخیره شوند تا فیلتر، مقایسه و صفحه مدل از یک منبع بخوانند.</div>
+        <div class="model-rule"><b>وضعیت تجاری صادقانه</b>واحد فروش، حداقل سفارش، تاریخ قیمت و موجودی فقط وقتی نمایش یابند که قابل‌به‌روزرسانی و تأیید باشند.</div>
+      </div>
+      <div class="note" style="margin-bottom:16px"><strong>مسیر پروژه‌ای:</strong> خریدار چند مدل را به لیست RFQ اضافه می‌کند یا BOM/نقشه می‌فرستد؛ تیم فروش کدها و جایگزین‌ها را تأیید و پیش‌فاکتور صادر می‌کند.</div>
+      <div class="layout-grid">
+        <div class="panel"><h3>صفحه اصلی مدل‌محور</h3><ol><li>جست‌وجوی کد و مدل در مرکز دید اول.</li><li>مسیر دوم برای انتخاب بر اساس کاربرد و مشخصات.</li><li>نتیجه‌های مدل با کد برجسته، چهار ویژگی کلیدی و وضعیت تأمین.</li><li>دسترسی سریع به برندهای واقعی و خانواده‌های پرفروش.</li><li>لیست استعلام همیشه در دسترس؛ امکان افزودن چند مدل.</li><li>مدارک اعتماد شرکت پس از مسیر انتخاب محصول.</li></ol></div>
+        <div class="panel"><h3>صفحه مرجع هر مدل</h3><ol><li>نام یکتا، برند، پارت‌نامبر اصلی و نام‌های جایگزین.</li><li>جدول مشخصات ساختاریافته و واحد فروش.</li><li>دیتاشیت سازنده، عکس واقعی و تاریخ بازبینی داده.</li><li>وضعیت موجودی یا زمان تأمین و حداقل سفارش تأییدشده.</li><li>مقایسه با مدل‌های نزدیک با ذکر تفاوت واقعی.</li><li>دکمه استعلام همان مدل کنار اطلاعات تصمیم‌ساز.</li></ol></div>
+      </div>
+      <p class="mini-legend">نمونه تعاملی، طرح رابط کاربری است و از مدل‌های نمایشی استفاده می‌کند؛ موجودی، برندهای مشتری و مشخصات نهایی باید با داده واقعی تأیید شوند.</p>
+    </section>
+
+    <section class="section" id="platform">
+      <div class="section-head"><div><div class="kicker">۰۸ / انتخاب فنی</div><h2>وردپرس یا کدنویسی اختصاصی؟</h2></div></div>
+      <div class="platform">
+        <div class="panel recommended"><span class="rec-tag">پیشنهاد برای نسخه اول</span><h3>وردپرس + مدل داده و RFQ سفارشی</h3><p class="lead">برای تیم فروش که باید محصول، دیتاشیت و محتوا را مرتب تغییر دهد، راه‌اندازی و اداره روزمره ساده‌تر است.</p><ul><li>هر مدل شناسه یکتا، کد سازنده و فیلدهای فنی ساختاریافته داشته باشد.</li><li>جست‌وجو شکل‌های مختلف نوشتن پارت‌نامبر را به مدل درست وصل کند.</li><li>فرم RFQ چندردیفی و متصل به مدل، کار اصلی سایت باشد.</li><li>ووکامرس فقط در صورت فروش آنلاین واقعی اضافه شود.</li><li>سرعت، امنیت، نشانی صفحات و کنترل ایندکس در اجرا مدیریت شوند.</li></ul><div class="foot">انتخاب مناسب تا وقتی فرآیند اصلی، دریافت استعلام و مدیریت کاتالوگ است.</div></div>
+        <div class="panel"><span class="pill">گزینه رشد</span><h3 style="margin-top:12px">پیاده‌سازی اختصاصی</h3><p class="lead">وقتی قواعد عملیات فراتر از یک کاتالوگ و استعلام معمول می‌رود.</p><ul><li>اتصال پیچیده و دوطرفه به ERP یا انبار.</li><li>قیمت‌گذاری اختصاصی برای مشتری یا نماینده.</li><li>پنل نمایندگان و سطح دسترسی چندلایه.</li><li>منطق فنی سنگین برای تطبیق و پیشنهاد کالا.</li></ul><div class="foot">CMS و روند انتشار محتوا باید از ابتدا در معماری تعریف شود.</div></div>
+      </div>
+      <div class="note" style="margin-top:15px">نام فناوری به‌تنهایی رتبه سئو نمی‌آورد. گوگل نیز تصریح می‌کند نمره خوب Core Web Vitals تضمین‌کننده رتبه برتر نیست. <a href="https://developers.google.com/search/docs/appearance/page-experience" target="_blank" rel="noopener noreferrer">راهنمای تجربه صفحه گوگل ↗</a></div>
+    </section>
+
+    <section class="section" id="next">
+      <div class="section-head"><div><div class="kicker">۰۹ / ورودی تصمیم نهایی</div><h2>پنج داده برای دقیق‌کردن نسخه اجرایی</h2></div></div>
+      <div class="inputs">
+        <div class="input">برندهای خارجی و ۲۰ تا ۵۰ SKU یا خانواده پرفروش، همراه مشخصات اصلی.</div>
+        <div class="input">سهم کابل صنعتی و ابزار دقیق در برابر کابل شبکه و تجهیزات جانبی.</div>
+        <div class="input">بازار جغرافیایی، نوع خریدار و امکان فروش قطعی آنلاین.</div>
+        <div class="input">مدارک مجاز برای انتشار: نمایندگی، دیتاشیت، تست، پروژه و تصویر محموله.</div>
+        <div class="input">قواعد قیمت، موجودی، حداقل سفارش، زمان تأمین و زمان پاسخ به استعلام.</div>
+      </div>
+    </section>
+
+    <section class="section" id="sources">
+      <div class="section-head"><div><div class="kicker">۱۰ / منابع و اعتبار</div><h2>شواهد، روش و محدودیت‌ها</h2></div></div>
+      <div class="refs">
+        <div class="ref"><a href="https://www.khorasanelectric.com/index.php/fa/about-us/resellers.html" target="_blank" rel="noopener noreferrer">فهرست نمایندگی‌های خراسان ↗</a><small>تأیید جایگاه جهان کابل آرکا و چلیپا کابل پویا.</small></div>
+        <div class="ref"><a href="https://ecasb.com/fa/vk-33169" target="_blank" rel="noopener noreferrer">معرفی چلیپا کابل پویا ↗</a><small>گروه محصولات تخصصی و نشانی‌های اعلام‌شده.</small></div>
+        <div class="ref"><a href="https://developers.google.com/search/docs/specialty/ecommerce" target="_blank" rel="noopener noreferrer">راهنمای تجارت الکترونیک گوگل ↗</a><small>ساختار، کشف محصولات و داده‌های فروشگاهی.</small></div>
+        <div class="ref"><a href="https://developers.google.com/search/docs/appearance/page-experience" target="_blank" rel="noopener noreferrer">راهنمای تجربه صفحه گوگل ↗</a><small>حدود اثر Core Web Vitals و تجربه صفحه.</small></div>
+      </div>
+      <div class="note warn" style="margin-top:15px">این سند یک بررسی رقابتی مبتنی بر صفحات عمومی و تصاویر ثبت‌شده در تاریخ بالا است. هیچ ادعای قطعی درباره رتبه، ترافیک، نرخ تبدیل، سرعت یا کارکرد تعاملی نسخه موبایل رقبا ندارد. لینک شواهد هر رقیب در کارت همان سایت آمده است.</div>
+    </section>
+  </main>
+  <dialog class="shot-dialog" id="shot-dialog" aria-label="تصویر تمام‌صفحه رقیب"><div class="dialog-head"><strong id="dialog-title"></strong><button type="button" id="dialog-close">بستن ×</button></div><div class="dialog-body"><img id="dialog-image" alt=""></div></dialog>
+  <footer><div class="wrap"><strong>گزارش راهبرد سایت تأمین‌کننده کابل وارداتی</strong><span>نسخه تجمیع‌شده از دو گزارش پروژه · ۵ مهر ۱۴۰۵</span><a href="#top">بازگشت به بالا ↑</a></div></footer>
+  <script>
+    (function () {
+      var progress = document.getElementById("reading-progress");
+      function updateProgress() {
+        var length = document.documentElement.scrollHeight - window.innerHeight;
+        var ratio = length > 0 ? Math.min(1, Math.max(0, window.scrollY / length)) : 0;
+        if (progress) progress.style.transform = "scaleX(" + ratio + ")";
+      }
+      window.addEventListener("scroll", updateProgress, { passive: true });
+      updateProgress();
+      if ("IntersectionObserver" in window) {
+        var navItems = Array.prototype.slice.call(document.querySelectorAll(".navlinks a[href^='#']"));
+        var observer = new IntersectionObserver(function (entries) {
+          entries.forEach(function (entry) {
+            if (!entry.isIntersecting) return;
+            navItems.forEach(function (item) { item.removeAttribute("aria-current"); });
+            var active = navItems.find(function (item) { return item.getAttribute("href") === "#" + entry.target.id; });
+            if (active) active.setAttribute("aria-current", "location");
+          });
+        }, { rootMargin: "-105px 0px -65% 0px" });
+        document.querySelectorAll("main section[id]").forEach(function (section) { observer.observe(section); });
+      }
+      var buttons = Array.prototype.slice.call(document.querySelectorAll(".filter"));
+      var cards = Array.prototype.slice.call(document.querySelectorAll(".competitor"));
+      buttons.forEach(function (button) {
+        button.addEventListener("click", function () {
+          var tag = button.getAttribute("data-filter");
+          buttons.forEach(function (item) {
+            var selected = item === button;
+            item.classList.toggle("active", selected);
+            item.setAttribute("aria-pressed", selected ? "true" : "false");
+          });
+          cards.forEach(function (card) {
+            card.hidden = tag !== "all" && card.getAttribute("data-tags").split(" ").indexOf(tag) === -1;
+          });
+        });
+      });
+      var dialog = document.getElementById("shot-dialog");
+      var dialogImage = document.getElementById("dialog-image");
+      var dialogTitle = document.getElementById("dialog-title");
+      document.querySelectorAll(".shot").forEach(function (shot) {
+        var embedded = shot.querySelector("img");
+        if (!embedded || embedded.getAttribute("src").indexOf("data:image/") !== 0) return;
+        var preview = shot.querySelector("a.preview");
+        var download = shot.querySelector("figcaption a");
+        if (preview) preview.href = embedded.src;
+        if (download) download.href = embedded.src;
+      });
+      document.querySelectorAll(".shot a.preview").forEach(function (link) {
+        link.addEventListener("click", function (event) {
+          if (!dialog || !dialog.showModal) return;
+          event.preventDefault();
+          dialogImage.src = link.href;
+          dialogImage.alt = link.getAttribute("data-title") || "";
+          dialogTitle.textContent = link.getAttribute("data-title") || "تصویر تمام‌صفحه";
+          dialog.showModal();
+        });
+      });
+      document.getElementById("dialog-close").addEventListener("click", function () { dialog.close(); });
+      dialog.addEventListener("click", function (event) { if (event.target === dialog) dialog.close(); });
+    }());
+  </script>
+</body>
+</html>
