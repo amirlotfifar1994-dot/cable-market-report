@@ -799,3 +799,5 @@ tbody tr:hover{background:var(--surface2)}
   .premium-page-tabs button{font-size:10px}
   section[id],.competitor,.atlas-item{scroll-margin-top:112px}
 }
+
+.report-rail-expanded{grid-template-columns:repeat(3,minmax(0,1fr))}@media(max-width:650px){.report-rail-expanded{grid-template-columns:repeat(2,minmax(0,1fr))}}

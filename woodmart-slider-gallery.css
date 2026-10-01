@@ -9,3 +9,5 @@
 @media(max-width:700px){.wm-motion>summary{align-items:flex-start;flex-direction:column;padding:15px}.wm-motion-note{flex-direction:column;align-items:flex-start;gap:10px;padding:0 15px 15px}.wm-motion iframe{height:830px}.wm-slider-map{grid-template-columns:1fr}.wm-slider-map article{padding:20px}}
 @media print{.wm-motion{display:none}.wm-slider-map{grid-template-columns:repeat(3,1fr)}}
 .wm-fresh-intro img,.wm-fresh-intro a:nth-child(2) img{object-position:top}
+.wm-tabs{flex-wrap:wrap}.wm-tabs button{flex:0 1 auto}.wm-live-page-link{color:var(--copper)}
+@media(max-width:690px){.wm-tabs button{flex:1 0 28%;font-size:9px}}

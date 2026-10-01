@@ -1,7 +1,7 @@
 (function(){
   const q=new URLSearchParams(location.search);
   const theme=['wave','pulse','orbit'].includes(q.get('theme'))?q.get('theme'):'wave';
-  const page=['home','catalog','product'].includes(q.get('page'))?q.get('page'):'home';
+  const page=['home','catalog','product','about','contact','account','login'].includes(q.get('page'))?q.get('page'):'home';
   const preview=q.get('preview')==='1';
   const {items,money,cards,title,catalog,product}=window.CableCommerceParts;
   const asset='assets/woodmart-studio/';
@@ -61,7 +61,14 @@
     return body;
   }
   const root=document.getElementById('store');root.className='commerce theme-'+theme+' page-'+page+(preview?' m-preview':'');
-  root.innerHTML=(preview?'':mainHeader)+(page==='home'?home():page==='catalog'?catalogPage():productPage())+(preview?'':footer);
+  const content=page==='home'?home():page==='catalog'?catalogPage():page==='product'?productPage():window.CableCustomerPages.render(theme,page);
+  root.innerHTML=(preview?'':mainHeader)+content+(preview?'':footer);
+  if(!preview){
+    const nav=root.querySelector('.c-header nav');nav.classList.add('m-site-nav');nav.innerHTML=[['catalog','همه کالاها'],['home','خانه'],['about','درباره ما'],['contact','تماس با ما'],['account','حساب مشتری'],['login','ورود / ثبت‌نام']].map(([key,name])=>'<a href="woodmart-slider-render.html?theme='+theme+'&page='+key+'" '+(key===page?'aria-current="page"':'')+'>'+name+'</a>').join('');
+    root.querySelector('.c-account').innerHTML='<a href="woodmart-slider-render.html?theme='+theme+'&page=account">حساب مشتری</a> <b>سبد نمونه <i>۰</i></b>';
+    root.querySelector('.c-footer .c-wrap>div:last-child').innerHTML='<nav class="u-footer-links"><a href="woodmart-slider-render.html?theme='+theme+'&page=about">درباره ما</a><a href="woodmart-slider-render.html?theme='+theme+'&page=contact">تماس</a><a href="woodmart-slider-render.html?theme='+theme+'&page=account">پیش‌فاکتورها</a></nav>';
+    if(['about','contact','account','login'].includes(page))window.CableCustomerPages.init(theme,page);
+  }
   root.querySelectorAll('[data-slider]').forEach(el=>{
     const slides=[...el.querySelectorAll('[data-slide]')],dots=[...el.querySelectorAll('[data-index]')];
     const play=el.querySelector('[data-play]');let index=0,playing=false,timer=null,startX=null,hovering=false,visible=true;

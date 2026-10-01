@@ -33,3 +33,12 @@ Three more concepts — Wave (full-width hero slider), Pulse (featured-product s
 - [Orbit live concept](woodmart-slider-render.html?theme=orbit)
 
 The previews are design demonstrations, not an installed WordPress store or Elementor import files. Native WoodMart implementation paths are documented; reproducing Pulse's exact featured-product hero dynamically may require a custom template or limited development. All live prices in a real implementation must come from WooCommerce product data.
+
+## Customer pages, security, and SEO roadmap
+
+Wave, Pulse, and Orbit now each include seven page concepts: home, catalog, product, about, contact, customer account, and email/SMS login. The gallery contains 78 desktop/mobile images in total. The sample customer account includes customer-specific quotes, request submission, quote details, a printable HTML download, and a demonstration acceptance action. Login is a clearly marked OTP simulation with no email/SMS delivery or authentication backend.
+
+- [Security and customer-account implementation report](security.html)
+- [Scenario-based SEO roadmap](seo-roadmap.html)
+
+The SEO report combines four product-market scenarios with three sales models, links opportunities to the existing competitor evidence, and includes technical, content, development, measurement, and six-month execution plans. Brand/SKU data remains unknown; examples and workload figures are proposals, not traffic forecasts. Security controls are implementation requirements, not protections applied to an installed store.
