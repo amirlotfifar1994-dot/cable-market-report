@@ -1,0 +1,11 @@
+.wm-motion{margin:20px 0 24px;border:1px solid var(--line);border-radius:16px;overflow:hidden;background:var(--surface)}
+.wm-motion>summary{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:17px 20px;cursor:pointer;font-weight:800;color:var(--cyan2);list-style:none}
+.wm-motion>summary::-webkit-details-marker{display:none}.wm-motion>summary span:after{content:' +';margin-inline-start:10px}.wm-motion[open]>summary span:after{content:' −'}
+.wm-motion>summary small{font-size:11px;font-weight:500;color:var(--muted)}
+.wm-motion-note{padding:0 20px 18px;display:flex;align-items:center;gap:28px;border-bottom:1px solid var(--line)}.wm-motion-note p{font-size:12px;line-height:1.95;margin:0;color:var(--muted);flex:1}.wm-motion-note a{font-size:12px;color:var(--cyan2);white-space:nowrap}
+.wm-motion iframe{display:block;width:100%;height:690px;background:#f7f5f0;border:0}
+.wm-slider-map{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin:22px 0}.wm-slider-map article{padding:24px;border:1px solid var(--line);border-radius:18px;background:var(--surface)}.wm-slider-map small{font-size:10px;letter-spacing:1px;color:var(--cyan2)}.wm-slider-map h3{margin:10px 0;font-size:21px}.wm-slider-map p{color:var(--muted);font-size:13px;line-height:2}.wm-slider-map ol{padding-inline-start:20px;margin:12px 0 0;font-size:12px;line-height:2.1}.wm-slider-map li+li{margin-top:7px}
+.wm-slider-strip{display:flex;flex-wrap:wrap;gap:12px;padding:18px 22px;border:1px solid var(--line);border-radius:14px;background:var(--surface)}.wm-slider-strip span{font-size:12px;color:var(--muted)}.wm-slider-strip strong{font-size:13px;color:var(--text)}
+@media(max-width:700px){.wm-motion>summary{align-items:flex-start;flex-direction:column;padding:15px}.wm-motion-note{flex-direction:column;align-items:flex-start;gap:10px;padding:0 15px 15px}.wm-motion iframe{height:830px}.wm-slider-map{grid-template-columns:1fr}.wm-slider-map article{padding:20px}}
+@media print{.wm-motion{display:none}.wm-slider-map{grid-template-columns:repeat(3,1fr)}}
+.wm-fresh-intro img,.wm-fresh-intro a:nth-child(2) img{object-position:top}
