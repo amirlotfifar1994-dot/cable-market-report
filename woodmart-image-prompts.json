@@ -1,0 +1,22 @@
+{
+  "method": "Built-in image_gen",
+  "note": "AI concept imagery. Not manufacturer-specific product evidence or a photograph of the client warehouse.",
+  "prompts": [
+    {
+      "name": "copper",
+      "prompt": "Use case: product-mockup. Asset type: premium hero photo for a Persian WooCommerce industrial cable importer website. Create a photorealistic professional studio photograph, wide landscape 16:9 composition. A beautifully lit heavy black industrial cable in a gentle curve with one neatly cut cross section revealing warm copper strands, insulating colored cores and braided shield; technically plausible physical layers, no surreal wire shapes. Product occupies LEFT 60 percent, RIGHT 40 percent deep charcoal negative space for RTL headline to be overlaid by HTML. Palette charcoal black, brushed graphite, warm copper highlights. Background seamless dark studio, controlled soft side light and crisp macro texture. High end industrial product photography, editorial, no digital sci-fi embellishments. No lettering, no logos, no numbers, no watermark. This is a visual concept, not a manufacturer-specific certified product."
+    },
+    {
+      "name": "atelier",
+      "prompt": "Use case: product-mockup. Asset type: a wide landscape hero photograph for a light premium cable e-commerce homepage editable in Elementor. Photorealistic studio product still life: two neatly wound black and muted pale gray electrical cable coils, a compact charcoal industrial cable reel and one clean short cable sample with copper cross section. Set on three low warm ivory rectangular plinths on a soft off-white seamless background. Refined industrial catalogue photography, contemporary minimal retail look, tactile rubber and copper, no packaging. Objects arranged in LEFT two-thirds, RIGHT third clean negative space for Persian RTL text overlay. Soft large window light, restrained shadows, calm warm neutral whites with muted sage hints, no people, no text, no labels, no logos, no watermark. Technically plausible cable construction. Wide 16:9 composition, usable real product photography aesthetic."
+    },
+    {
+      "name": "depot",
+      "prompt": "Use case: photorealistic-natural. Asset type: industrial cable importer website hero photograph. Wide 16:9 high-end architectural editorial photograph of a modern organized cable warehouse, large wooden cable drums wound with black industrial cable in foreground, receding warehouse aisle and stacked reels, steel roof structure, natural side light. A large foreground drum left of center, low camera perspective, composition suitable for a navy and lime contemporary B2B website. Color neutral cool concrete and steel with warm wood, authentic industrial proportions and tidy loading area, no people required. Right third has darker uncluttered warehouse wall negative space for Persian HTML headline. Realistic commercial photography, crisp, cinematic but truthful, no shipping labels, no text, no logos, no watermark, no brand claims."
+    },
+    {
+      "name": "coil",
+      "prompt": "Use case: product-mockup. Asset type: ecommerce product photo to be used in editable WoodMart WooCommerce product cards. A single neat medium-sized coil of black flexible electrical cable on pure white seamless studio background, photographed at slight three-quarter elevated angle. One short end extends toward camera showing a tiny physically plausible copper cable cross section. Compact fully visible coil centered with generous clear margins, crisp rubber texture and soft grounded shadow, premium catalogue photography, square composition. No plugs, no extra objects, no labels, no brand, no lettering, no watermark. This is an illustrative sample image, not a specific certified cable."
+    }
+  ]
+}

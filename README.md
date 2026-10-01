@@ -13,3 +13,12 @@
 - [تمپلیت‌های قابل اجرای وودمارت و المنتور](woodmart-templates.html)
 
 این سایت از فایل‌های HTML، CSS و JavaScript ایستا ساخته شده و برای انتشار در GitHub Pages به فرایند ساخت نیاز ندارد. مسیر همهٔ پیوندهای داخلی نسبی است تا در زیرمسیر مخزن نیز کار کند.
+
+## WoodMart commerce studio
+
+The WoodMart gallery now includes three additional concepts (Copper, Line, Depot), 18 new desktop/mobile page images, four AI concept photos, an interactive price desk prototype, and a WooCommerce implementation brief. The price desk is a standalone demonstration and does not connect to a real store.
+
+- [Implementation brief](woodmart-build-brief.md)
+- [New image package](woodmart-commerce-images.zip)
+- [Sample price CSV](sample-woocommerce-price-update.csv)
+- [Image generation prompts](woodmart-image-prompts.json)
