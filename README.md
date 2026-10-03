@@ -42,3 +42,9 @@ Wave, Pulse, and Orbit now each include seven page concepts: home, catalog, prod
 - [Scenario-based SEO roadmap](seo-roadmap.html)
 
 The SEO report combines four product-market scenarios with three sales models, links opportunities to the existing competitor evidence, and includes technical, content, development, measurement, and six-month execution plans. Brand/SKU data remains unknown; examples and workload figures are proposals, not traffic forecasts. Security controls are implementation requirements, not protections applied to an installed store.
+
+## تکمیل سئو · ۳ اکتبر ۲۰۲۶
+
+- مطالعه موردی معرفی‌شده تیم: دیپلم‌سرا؛ مشاهدات عمومی و وضعیت مستند عملکرد جدا شده‌اند.
+- نقشه کلمه → صفحه → اقدام، فایل CSV و الگوی گزارش ماهانه در `seo-roadmap.html`.
+- مشاهدات محدود در `diplomsara-seo-observations.md`؛ رتبه و رشد عددی بدون داده درج نشده‌اند.

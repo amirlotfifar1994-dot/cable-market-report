@@ -1,0 +1,8 @@
+﻿cluster,example_query,intent,target_page_type,reference_url,sales_mode,data_needed,cta,priority,owner,search_volume,current_clicks,current_impressions,average_position,country,device,date_range,status
+exact-model,خرید کابل [پارت‌نامبر],خرید/استعلام,product,/product/[model-code]/,طبق SKU,دیتاشیت، واحد، قیمت/تأمین,خرید یا RFQ,P0,فروش + سئو,,,,,,,,نمونه پیشنهادی؛ نیازمند تأیید داده
+family,کابل ابزار دقیق شیلددار,انتخاب خانواده,category,/product-category/[family]/,همه,کالاهای قابل عرضه، معیار انتخاب,مشاهده مدل,P0,سئو + فنی,,,,,,,,نمونه پیشنهادی؛ نیازمند تأیید داده
+brand,کابل [برند واقعی],برند,brand,/brand/[verified-brand]/,همه,مدل‌ها و مدرک ادعای نمایندگی,انتخاب مدل,P0/P1,فروش + سئو,,,,,,,,نمونه پیشنهادی؛ نیازمند تأیید داده
+model-price,قیمت کابل [مدل] هر متر,قیمت,product,/product/[model-code]/,خرید/استعلام,واحد و اعتبار قیمت,خرید/استعلام قیمت,P0,فروش,,,,,,,,نمونه پیشنهادی؛ نیازمند تأیید داده
+comparison,تفاوت کابل [مدل A] و [مدل B],مقایسه,comparison,/compare/[model-a]-[model-b]/,همه,تفاوت منبع‌دار دو مدل,انتخاب کالا,P1,فنی + سئو,,,,,,,,نمونه پیشنهادی؛ نیازمند تأیید داده
+application,انتخاب کابل برای [نیاز واقعی],راهنما,guide,/guides/[selection-topic]/,همه,منبع و محدودیت کاربرد,مشاهده خانواده,P1,فنی + سئو,,,,,,,,نمونه پیشنهادی؛ نیازمند تأیید داده
+project,تأمین کابل پروژه [نوع],تأمین پروژه,service,/services/project-supply/,استعلام,BOM، مقدار، موعد و مقصد,RFQ پروژه,P0,فروش + سئو,,,,,,,,نمونه پیشنهادی؛ نیازمند تأیید داده
