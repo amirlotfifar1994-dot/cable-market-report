@@ -27,6 +27,8 @@ GROUPS = [
         field('filters','ویژگی‌های لازم برای جست‌وجو و فیلتر','کاربرد، برند، سایز، ولتاژ، جنس هادی، استاندارد و ...؛ ویژگی قابل فیلتر را از توضیح فنی جدا کنید.','textarea'),
         field('units','واحد فروش و حداقل سفارش','متر، حلقه، قرقره یا عدد؛ طول بسته، حداقل سفارش، امکان برش و ضرایب سفارش را مشخص کنید.','textarea',True),
         field('catalog_source','اطلاعات فعلی کالا کجاست؟','اکسل، نرم‌افزار انبار، کاتالوگ یا سایت قبلی؟ مسئول آماده‌سازی عنوان، SKU، مشخصات، عکس و دیتاشیت کیست؟','textarea'),
+        field('product_codes','کد کالا و نام‌های جایگزین','SKU هر تنوع، کد سازنده و نام فارسی/انگلیسی؛ آیا مشتری با کد یا نام دیگری جست‌وجو می‌کند؟ قاعده جلوگیری از کالای تکراری چیست؟','textarea'),
+        field('technical_source','مرجع مشخصات فنی و استانداردها','دیتاشیت کدام سازنده و کدام نسخه ملاک است؟ چه کسی کاربرد، جنس هادی، ولتاژ و استاندارد هر مدل را تأیید می‌کند؟ اطلاعات ناموجود حدس زده نشود.','textarea'),
     ]),
     ('sales','قیمت، موجودی و روش فروش','تعیین می‌کند فروشگاه و استعلام چگونه اجرا شوند.', 'woodmart-templates.html#pricing',[
         field('sales_model','روش فروش سایت','روش اصلی را انتخاب کنید؛ جزئیات دسته‌های متفاوت را در سؤال بعد بنویسید.','select',True,['خرید آنلاین با قیمت','استعلام و پیش‌فاکتور','ترکیبی: قیمت برای بعضی کالاها، استعلام برای بقیه','هنوز تصمیم نگرفته‌ایم']),
@@ -36,6 +38,8 @@ GROUPS = [
         field('stock_rules','وضعیت موجودی و زمان تأمین','موجود، ناموجود، در راه یا سفارشی؛ نمایش تعداد دقیق لازم است؟ زمان تأمین وارداتی و جایگزین مدل چیست؟','textarea'),
         field('quote_process','مراحل استعلام و پیش‌فاکتور','چه اطلاعاتی از خریدار بگیریم؟ مسئول پاسخ، زمان پاسخ، تأیید قیمت، تاریخ اعتبار و قالب سربرگ.','textarea'),
         field('shipping','ارسال و تحویل','شهرهای تحت پوشش، باربری/پیک، هزینه و مسئول محاسبه، تحویل حضوری، ارسال قرقره و سفارش حجیم.','textarea'),
+        field('shipping_specs','وزن و ابعاد بسته یا قرقره','وزن، ابعاد، طول واقعی بسته و محدودیت حمل هر کالا چگونه ثبت می‌شود؟ حمل بر اساس وزن، متراژ یا توافق فروش است؟','textarea'),
+        field('project_rfq','استعلام چند کالا و درخواست تأمین پروژه','مشتری باید چند مدل/متراژ را در یک درخواست بدهد یا فایل فهرست کالا (BOM) بفرستد؟ تحویل مرحله‌ای، مدل جایگزین و تأیید فنی با چه کسی است؟','textarea'),
         field('returns','قواعد ضمانت، برش و مرجوعی','اصالت، گارانتی، کابل برش‌خورده، کالای سفارشی و خسارت حمل؛ متن نهایی سیاست‌ها را چه کسی تأیید می‌کند؟','textarea'),
     ]),
     ('audience','مشتری و بازار هدف','برای اولویت طراحی، محتوا و سئو.', 'seo-roadmap.html#paths',[
@@ -82,6 +86,7 @@ GROUPS = [
         field('deadline','زمان مطلوب انتشار و دلیل آن','تاریخ یا بازه و وابستگی به نمایشگاه، کمپین یا رویداد؛ اگر آزاد است مشخص کنید.',essential=True),
         field('launch_must','امکانات ضروری نسخه اول','حداکثر ۵ نیاز اصلی؛ باقی موارد را برای فاز بعد مشخص کنید.','textarea',True),
         field('approval','مسئول تأیید نهایی و معیار تحویل','تأیید طرح، اطلاعات کالا، قیمت و محتوای فنی با چه کسانی است؟ چه چیزی نشانه پذیرش نسخه اول است؟','textarea'),
+        field('success_measure','موفقیت نسخه اول را با چه چیزی بسنجیم؟','استعلام معتبر، سفارش، تماس یا کاهش کار دستی فروش؟ وضعیت فعلی، هدف قابل بررسی، دستگاه‌های اصلی مشتری و نیازهای خوانایی/دسترسی را مشخص کنید.','textarea'),
         field('asset_dates','زمان آماده‌شدن اطلاعات و فایل‌ها','مسئول و موعد آماده‌سازی لوگو، فهرست کالا، عکس، توضیح فنی و متن درباره/تماس.','textarea'),
         field('other','خواسته‌ها و سؤال‌های باقی‌مانده','مواردی که در سؤال‌های بالا پوشش داده نشده است.','textarea'),
     ]),
@@ -124,4 +129,6 @@ html=f'''<!doctype html><html lang="fa" dir="rtl"><head><meta charset="utf-8"><m
 <section class="section cb-summary" id="brief-summary"><div class="section-head"><div><div class="kicker">جمع‌بندی قابل تحویل به تیم طراحی</div><h2>پاسخ‌ها را به شرح پروژه تبدیل کنیم</h2><p>خلاصه شامل پاسخ‌ها و موارد باقی‌مانده است؛ تأیید دامنه، هزینه و زمان اجرا در جلسه جمع‌بندی انجام می‌شود.</p></div></div><div class="cb-summary-actions"><button class="btn btn-primary" type="button" id="cb-download">دانلود خلاصه پاسخ‌ها</button><button class="btn btn-secondary" type="button" id="cb-copy">کپی خلاصه</button><button class="btn btn-secondary" type="button" id="cb-print">چاپ خلاصه</button><button class="cb-clear" type="button" id="cb-reset">پاک‌کردن پاسخ‌ها…</button></div><div id="cb-reset-confirm" hidden class="cb-reset-confirm"><p>همه پاسخ‌های فرم و نسخه ذخیره‌شده در این مرورگر پاک شوند؟</p><button type="button" class="btn btn-secondary" id="cb-reset-cancel">انصراف</button><button type="button" class="btn btn-secondary" id="cb-reset-yes">بله، پاک شود</button></div><p id="cb-export-status" role="status"></p><details class="cb-summary-preview"><summary>مشاهده خلاصه و سؤال‌های باقی‌مانده</summary><pre id="cb-summary-text">خلاصه پس از فعال‌شدن فرم نمایش داده می‌شود.</pre></details><div class="cb-next"><strong>بعد از دریافت اطلاعات</strong><p>دسته‌بندی‌ها و نمونه محصول تأیید می‌شوند؛ سپس طرح وودمارت، قواعد فروش و دامنه نسخه اول به برآورد و برنامه اجرا تبدیل می‌شوند.</p><a href="index.html#step-design">بازگشت به مرحله انتخاب طرح ←</a></div></section></main>
 <footer class="site-footer"><div class="wrap"><strong>اطلاعات کارفرما · فروشگاه کابل</strong><span>۱۲ مهر ۱۴۰۵ · پرسش‌نامه شروع طراحی</span></div></footer><script src="reports-site.js"></script><script src="client-brief.js?v=brief-1"></script></body></html>'''
 (ROOT/'client-brief.html').write_text(html,encoding='utf-8')
+from visual_upgrade import upgrade_page
+upgrade_page(ROOT/'client-brief.html')
 print(f'Client brief generated: {total} questions, {essential} starting items')

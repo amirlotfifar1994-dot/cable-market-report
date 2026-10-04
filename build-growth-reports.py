@@ -1,6 +1,7 @@
 from pathlib import Path
 from seo_case_study import CASE_STUDY, KEYWORD_PLAYBOOK, CASE_PROOF
 from security_details import enrich_security
+from visual_upgrade import upgrade_page
 
 ROOT=Path(__file__).parent
 NAV=[('index.html','نقشه راه'),('competitors.html','رقبا'),('strategy.html','راهبرد'),('build-paths.html','مسیر ساخت'),('design.html','طراحی'),('templates.html','تمپلیت‌ها'),('woodmart-templates.html','وودمارت'),('security.html','امنیت'),('seo-roadmap.html','سئو'),('client-brief.html','اطلاعات کارفرما')]
@@ -13,6 +14,7 @@ def report(filename,title,description,eyebrow,hero,lead,meta,image,body,script='
 <header class="hero"><div class="wrap"><div><span class="eyebrow">{eyebrow}</span><h1>{hero}</h1><p>{lead}</p><div class="hero-meta">{''.join('<span>'+m+'</span>' for m in meta)}</div><div class="hero-actions"><a class="primary" href="#start-here">از اینجا شروع کنید ←</a><a class="secondary" href="woodmart-templates.html#gallery">طرح‌های وودمارت</a></div></div><div class="hero-art"><img src="{image}" alt="تصویر مفهومی کابل برای گزارش اجرایی"></div></div></header>
 <main class="wrap page-main">{body}</main><footer class="site-footer"><div class="wrap"><strong>{title}</strong><span>۳ اکتبر ۲۰۲۶ · برنامه پیشنهادی؛ اجرای واقعی پس از تعیین داده و زیرساخت</span></div></footer><button class="toc-fab" id="toc-fab" type="button" aria-expanded="false" aria-controls="toc-panel">فهرست بخش‌ها</button><nav class="toc-panel" id="toc-panel" aria-label="فهرست همین صفحه" hidden><strong>در این صفحه</strong></nav><script src="reports-site.js"></script>{script}</body></html>'''
     (ROOT/filename).write_text(doc,encoding='utf-8')
+    upgrade_page(ROOT/filename)
 
 SECURITY='''
 <section class="ir-intro" id="start-here"><div><div class="kicker">امنیت همراه تجربه مشتری</div><h2>حساب مشخص، سند خصوصی، عملیات قابل پیگیری</h2><p>مشتری از سایت عمومی کالا را پیدا می‌کند؛ پس از ورود، فقط درخواست‌ها و پیش‌فاکتورهای خودش را می‌بیند. فروش قیمت‌گذاری و صدور سند را انجام می‌دهد و مدیر فنی امنیت، دسترسی و بازیابی را نگه می‌دارد.</p></div><aside><strong>وضعیت این خروجی:</strong> گزارش و نمونه رابط HTML است. هیچ تنظیم امنیتی روی وردپرس، سرویس OTP یا پایگاه‌داده واقعی اعمال نشده است؛ داده‌های پنل نمایشی‌اند.</aside></section>
