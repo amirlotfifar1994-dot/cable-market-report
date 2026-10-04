@@ -104,8 +104,9 @@ for i,(slug,title,lead,related,fields) in enumerate(GROUPS,1):
     count=len(fields)
     body=''.join(render_field(f) for f in fields)
     if slug=='customer':
-        first=render_field(fields[0]); rest=''.join(render_field(f) for f in fields[1:])
-        body=first+f'<div class="cb-account-fields cb-fields">{rest}</div><p id="cb-account-note" class="cb-inline-note" hidden>پنل مشتری در دامنه فعلی نیست؛ اگر بعداً اضافه شود، ورود و دسترسی اسناد دوباره بررسی می‌شود.</p>'
+        first=render_field(fields[0]); rest=''.join(render_field(f) for f in fields[1:4])
+        staff=''.join(render_field(f) for f in fields[4:])
+        body=first+f'<div class="cb-account-fields cb-fields">{rest}</div><p id="cb-account-note" class="cb-inline-note" hidden>پنل مشتری در دامنه فعلی نیست؛ اگر بعداً اضافه شود، ورود و دسترسی اسناد دوباره بررسی می‌شود.</p>'+staff
     panels.append(f'<section class="cb-section" id="brief-{slug}"><details class="cb-panel"'+(' open' if i<=2 else '')+f'><summary><span class="cb-section-num">{i:02}</span><span class="cb-section-title"><strong>{title}</strong><small>{lead}</small></span><span class="cb-count" data-group="{slug}">۰ / {count}</span><span class="cb-chevron" aria-hidden="true">＋</span></summary><div class="cb-panel-body"><div class="cb-fields">{body}</div><a class="cb-related" href="{related}">گزارش مرتبط با این تصمیم ↗</a></div></details></section>')
 
 nav_items=[('index.html','نقشه راه'),('competitors.html','رقبا'),('strategy.html','راهبرد'),('build-paths.html','مسیر ساخت'),('design.html','طراحی'),('templates.html','تمپلیت‌ها'),('woodmart-templates.html','وودمارت'),('security.html','امنیت'),('seo-roadmap.html','سئو'),('client-brief.html','اطلاعات کارفرما')]
