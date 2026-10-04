@@ -3,7 +3,7 @@ from seo_case_study import CASE_STUDY, KEYWORD_PLAYBOOK, CASE_PROOF
 from security_details import enrich_security
 
 ROOT=Path(__file__).parent
-NAV=[('index.html','نقشه راه'),('competitors.html','رقبا'),('strategy.html','راهبرد'),('build-paths.html','مسیر ساخت'),('design.html','طراحی'),('templates.html','تمپلیت‌ها'),('woodmart-templates.html','وودمارت'),('security.html','امنیت'),('seo-roadmap.html','سئو')]
+NAV=[('index.html','نقشه راه'),('competitors.html','رقبا'),('strategy.html','راهبرد'),('build-paths.html','مسیر ساخت'),('design.html','طراحی'),('templates.html','تمپلیت‌ها'),('woodmart-templates.html','وودمارت'),('security.html','امنیت'),('seo-roadmap.html','سئو'),('client-brief.html','اطلاعات کارفرما')]
 
 def report(filename,title,description,eyebrow,hero,lead,meta,image,body,script=''):
     links=''.join(f'<a href="{url}"'+(' aria-current="page"' if url==filename else '')+f'>{name}</a>' for url,name in NAV)
