@@ -34,6 +34,9 @@ def upgrade_page(path):
     s=s[:start]+header+s[end:]
     s=s.replace('index.html#reading-path','index.html#project-roadmap')
     path.write_text(s,encoding='utf-8')
+    # Reapply responsive display derivatives after every report rebuild.
+    from optimize_report_media import upgrade_page as optimize_media_page
+    optimize_media_page(path)
 
 if __name__=='__main__':
     for name in PAGES:upgrade_page(ROOT/name)

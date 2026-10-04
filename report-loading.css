@@ -1,0 +1,23 @@
+/* Progressive media loading: the report remains readable throughout. */
+.pl-media{position:relative;isolation:isolate}
+.pl-pending{background:linear-gradient(135deg,var(--surface,#132935),var(--bg,#0b1d27));color:var(--muted,#98b4be)}
+.pl-pending>img{opacity:0}
+.pl-media>img{transition:opacity .3s ease}
+.pl-ready>img{opacity:1}
+.pl-indicator{position:absolute;inset-block-start:16px;inset-inline-start:16px;z-index:3;display:inline-flex;align-items:center;gap:8px;max-width:calc(100% - 32px);padding:8px 11px;border:1px solid var(--line,#36505a);border-radius:10px;background:var(--surface,#132935);color:var(--muted,#abc4cd);font:500 10px/1.8 Vazirmatn,sans-serif;box-shadow:0 5px 20px #0001;pointer-events:none}
+.pl-indicator:before{content:"";display:block;width:11px;height:11px;border:2px solid var(--line,#36505a);border-top-color:var(--cyan,#46c6ce);border-radius:50%;animation:pl-turn 1s linear infinite;flex-shrink:0}
+.pl-indicator[hidden]{display:none}
+.pl-error .pl-indicator{pointer-events:auto;flex-wrap:wrap;border-color:var(--copper,#c19b74)}
+.pl-error .pl-indicator:before{animation:none;border-radius:3px;border-color:var(--copper,#c19b74)}
+.pl-retry{border:0;background:transparent;color:var(--cyan,#46c6ce);font:inherit;cursor:pointer;text-decoration:underline;text-underline-offset:3px;padding:0 3px}
+.pl-retry:focus-visible{outline:2px solid var(--cyan,#46c6ce);outline-offset:3px}
+.pl-pending .pv-light-line{visibility:hidden}
+.pl-nav-feedback{position:fixed;inset-block-start:0;inset-inline-start:0;width:100%;height:3px;z-index:9999;pointer-events:none;opacity:0;background:linear-gradient(90deg,transparent 20%,var(--cyan,#46c6ce),var(--copper,#c19b74),transparent 80%);background-size:200% 100%}
+.pl-navigating .pl-nav-feedback{opacity:1;animation:pl-nav 1.2s ease-in-out infinite}
+@keyframes pl-turn{to{transform:rotate(360deg)}}
+@keyframes pl-nav{from{background-position:200% 0}to{background-position:-200% 0}}
+@media(prefers-reduced-motion:reduce){.pl-indicator:before,.pl-nav-feedback{animation:none!important}.pl-media>img{transition:none}}
+[data-motion="off"] .pl-indicator:before,[data-motion="off"] .pl-nav-feedback{animation:none}
+@media print{.pl-indicator,.pl-nav-feedback{display:none!important}.pl-media>img{opacity:1!important}}
+/* JS-free mode uses the native lazy-loading fallback. */
+img[data-src]:not([src]){visibility:hidden}
