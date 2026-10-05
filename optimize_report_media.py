@@ -90,6 +90,7 @@ def upgrade_page(path, manifest=None):
     manifest = manifest or json.loads((OUT/'manifest.json').read_text('utf-8'))
     images=manifest['images']
     s=path.read_text('utf-8')
+    if 'data-service-plans-locked="true"' in s:return
     if 'id="report-theme-init"' not in s:
         s=s.replace('<head>','<head><script id="report-theme-init">try{var cableTheme=localStorage.getItem("cable-report-theme");if(cableTheme==="light"||cableTheme==="dark")document.documentElement.dataset.theme=cableTheme;}catch(e){}</script>',1)
     # Remove generated noscript duplicates before the next idempotent pass.

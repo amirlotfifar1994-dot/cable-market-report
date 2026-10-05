@@ -23,13 +23,21 @@
     const months=[3,6,12].includes(Number(form.elements.months.value))?Number(form.elements.months.value):6;
     const media=[0,10,20,30].includes(Number(form.elements.media.value))?Number(form.elements.media.value):0;
     const sku=[0,1,2,3].includes(Number(form.elements.sku.value))?Number(form.elements.sku.value):0;
-    const language=form.elements.language.checked?15:0;
-    const pdf=form.elements.pdf.checked?5:0;
+    const addonPrice=id=>(data.addons.find(addon=>addon.id===id)||{price:0}).price;
+    const language=form.elements.language.checked?addonPrice('language'):0;
+    const pdf=form.elements.pdf.checked?addonPrice('pdf'):0;
+    const bale=form.elements.bale.checked?addonPrice('bale'):0;
+    const foundation=form.elements.foundation;
+    foundation.disabled=p.id!=='catalog' || m.price>0;
+    if(p.id!=='catalog')foundation.checked=false;
+    else if(m.price>0)foundation.checked=true;
+    const seoSetup=foundation.checked?addonPrice('foundation'):0;
+    document.getElementById('sp-foundation-note').textContent=p.id!=='catalog'?'پایه‌گذاری سئو در این پلن هست و دوباره محاسبه نمی‌شود.':m.price>0?'برای شروع سئوی ماهانه روی پلن اول، بسته پایه‌گذاری ۱۵ میلیونی در بودجه اضافه شد.':'پایه‌گذاری سئو پس از طراحی اختیاری است؛ هدف رشد در گوگل به این آماده‌سازی نیاز دارد.';
     const maintenance=form.elements.maintenance;
     maintenance.disabled=m.price>0;
     if(maintenance.disabled)maintenance.checked=false;
     document.getElementById('sp-maintenance-note').textContent=m.price>0?'نگهداری پایه در دستمزد سئوست؛ مبلغ جدا برای همان دامنه اضافه نمی‌شود.':'بدون خدمات ماهانه، مسئول نگهداری و بازبینی محتوا باید از طرف کارفرما مشخص شود. نگهداری مستقل اختیاری است.';
-    const setup=p.price+language+pdf+sku*3;
+    const setup=p.price+language+pdf+bale+seoSetup+sku*addonPrice('sku');
     const monthly=m.price+(!maintenance.disabled && maintenance.checked?data.maintenanceOnly:0);
     const total=setup+months*(monthly+media);
     [['total',total],['setup',setup],['monthly',monthly],['media',media]].forEach(([key,value])=>document.getElementById('sp-budget-'+key).textContent=number.format(value));
@@ -37,7 +45,7 @@
     document.getElementById('sp-budget-equation').textContent=number.format(setup)+' + '+number.format(months)+' × ('+number.format(monthly)+' + '+number.format(media)+') = '+number.format(total);
     let summary=document.getElementById('sp-budget-selection');
     if(!summary){summary=document.createElement('p');summary.id='sp-budget-selection';document.querySelector('.sp-budget-result').append(summary);}
-    summary.textContent=p.name+'؛ '+m.name+(language?'؛ زبان دوم':'')+(pdf?'؛ PDF اضافه':'')+(sku?'؛ '+number.format(sku*50)+' SKU آماده اضافه':'')+(maintenance.checked?'؛ نگهداری مستقل':'')+((sku && ['seo','growth'].includes(p.id))?' — سقف موتور فرمول همچنان ۱۵۰ SKU است.':'');
+    summary.textContent=p.name+'؛ '+m.name+(bale?'؛ بات بله فروش':'')+(seoSetup?'؛ پایه‌گذاری جدا':'')+(language?'؛ زبان دوم':'')+(pdf?'؛ PDF اضافه':'')+(sku?'؛ '+number.format(sku*100)+' SKU آماده اضافه':'')+(maintenance.checked?'؛ نگهداری مستقل':'');
     syncDetails(p.id);
   }
   function choose(id) {

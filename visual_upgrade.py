@@ -14,6 +14,7 @@ def upgrade_page(path):
     slug,title=PAGES[path.name]
     if not (ROOT/f'assets/editorial-2026/{slug}-v1.webp').exists():return
     s=path.read_text(encoding='utf-8')
+    if 'data-service-plans-locked="true"' in s:return
     if 'href="service-plans.html"' not in s.split('</nav>',1)[0]:
         s=s.replace('<a href="design.html"',SERVICE_NAV+'<a href="design.html"',1)
     if path.name=='build-paths.html' and 'id="service-plans-link"' not in s:
