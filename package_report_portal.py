@@ -22,14 +22,17 @@ def package():
         'seo-keyword-map-template.csv','diplomsara-seo-observations.md','implementation-reports.css',
         'reports-site.css','reports-site.js','page-motion.js','page-visuals.css','client-brief.html',
         'report-loading.js','report-loading.css','report-media-map.js',
-        'client-brief.css','client-brief.js','portal-review.md','assets/cable-technical-editorial.webp']]
+        'client-brief.css','client-brief.js','portal-review.md','service-plans.html',
+        'service-plans.css','service-plans.js','service-plans.json','service-plans-proposal.md',
+        'service-plan-catalog.txt','service-plan-commerce.txt','service-plan-seo.txt','service-plan-growth.txt',
+        'assets/cable-technical-editorial.webp']]
     slider_archive=staging/'woodmart-slider-images.zip'
     with ZipFile(slider_archive,'w',ZIP_DEFLATED,compresslevel=6) as z:
         for p in slider_files:
             if p.is_file():z.write(p,p.relative_to(ROOT).as_posix())
 
     files=sorted((ROOT/'assets').rglob('*'))+sorted((ROOT/'competitor-screenshots').rglob('*'))
-    files += [p for p in ROOT.iterdir() if p.is_file() and (p.suffix in ['.html','.css','.js','.cjs','.py','.md','.csv','.json'] or p.name=='.nojekyll')]
+    files += [p for p in ROOT.iterdir() if p.is_file() and (p.suffix in ['.html','.css','.js','.cjs','.py','.md','.csv','.json'] or p.name=='.nojekyll' or (p.name.startswith('service-plan-') and p.suffix=='.txt'))]
     portal_archive=staging/'cable-report-portal.zip'
     with ZipFile(portal_archive,'w',ZIP_DEFLATED,compresslevel=6) as z:
         for p in files:

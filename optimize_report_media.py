@@ -15,7 +15,7 @@ from html import escape
 ROOT = Path(__file__).parent
 OUT = ROOT / 'assets/optimized'
 PAGES = ['index.html','competitors.html','strategy.html','build-paths.html','design.html',
-         'templates.html','woodmart-templates.html','security.html','seo-roadmap.html','client-brief.html']
+         'templates.html','woodmart-templates.html','security.html','seo-roadmap.html','client-brief.html','service-plans.html']
 VERSION = 'media-1'
 
 def sources():
