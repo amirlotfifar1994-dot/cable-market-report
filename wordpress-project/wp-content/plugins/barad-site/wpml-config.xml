@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wpml-config>
+  <custom-fields>
+    <custom-field action="translate">_yoast_wpseo_title</custom-field>
+    <custom-field action="translate">_yoast_wpseo_metadesc</custom-field>
+    <custom-field action="translate">_yoast_wpseo_focuskw</custom-field>
+    <custom-field action="translate">_yoast_wpseo_opengraph-title</custom-field>
+    <custom-field action="translate">_yoast_wpseo_opengraph-description</custom-field>
+    <custom-field action="translate">_yoast_wpseo_twitter-title</custom-field>
+    <custom-field action="translate">_yoast_wpseo_twitter-description</custom-field>
+    <custom-field action="ignore">_yoast_wpseo_canonical</custom-field>
+    <custom-field action="translate">_barad_seo_title</custom-field>
+    <custom-field action="translate">_barad_seo_description</custom-field>
+    <custom-field action="translate">_barad_image_caption</custom-field>
+    <custom-field action="copy">_barad_demo</custom-field>
+    <custom-field action="copy">_barad_catalog_id</custom-field>
+    <custom-field action="copy">_barad_size</custom-field>
+    <custom-field action="copy">_barad_datasheet_id</custom-field>
+    <custom-field action="copy">_barad_sources</custom-field>
+    <custom-field action="copy">_barad_source</custom-field>
+    <custom-field action="copy">_barad_spec_status</custom-field>
+    <custom-field action="ignore">_barad_import_hash</custom-field>
+  </custom-fields>
+  <custom-types>
+    <custom-type translate="0">barad_request</custom-type>
+  </custom-types>
+  <admin-texts>
+    <key name="barad_phone" />
+    <key name="barad_email" />
+    <key name="barad_hours" />
+    <key name="barad_address" />
+  </admin-texts>
+</wpml-config>

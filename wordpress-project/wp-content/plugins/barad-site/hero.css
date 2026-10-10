@@ -1,0 +1,90 @@
+/* Barad hero: separate composition for desktop and handheld screens. */
+.barad-site .hero-native.barad-hero-v3{
+ display:grid!important;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr)!important;
+ grid-template-areas:"heading visual" "details visual" "partners visual" "services services";
+ grid-template-rows:auto auto auto auto;align-items:start;gap:22px 36px!important;
+ width:min(1280px,calc(100% - 48px))!important;max-width:1280px!important;
+ padding:48px 52px 0!important;margin:22px auto 0!important;min-height:0;
+ border-radius:32px;background:radial-gradient(ellipse at 20% 34%,#29303a 0,transparent 55%),#111c28;
+ color:#fff;overflow:hidden;isolation:isolate;box-shadow:0 18px 45px #111c2810;
+}
+.barad-site .hero-native.barad-hero-v3:before{
+ width:400px;height:400px;inset-inline-start:auto;inset-inline-end:-140px;top:-155px;
+ opacity:.045;transform:rotate(-12deg);
+}
+.barad-site .barad-hero-v3>.e-con,.barad-site .barad-hero-v3>.elementor-widget{min-width:0;width:100%;gap:0;z-index:1}
+.barad-site .barad-hero-heading{grid-area:heading;align-self:end}
+.barad-site .barad-hero-details{grid-area:details}
+.barad-site .barad-hero-partners{grid-area:partners;align-self:start;padding-top:3px}
+.barad-site .barad-hero-services{grid-area:services}
+.barad-site .barad-hero-identity{display:flex;align-items:center;gap:11px;font-size:14px;font-weight:600;color:#d5dce5;margin-bottom:23px}
+.barad-site .barad-hero-dot{width:8px;height:8px;background:#e44860;border-radius:50%;box-shadow:0 0 0 6px #e4486012;flex-shrink:0}
+.barad-site .barad-hero-identity-line{width:40px;height:1px;background:#ffffff30}
+.barad-site .hero-native.barad-hero-v3 .elementor-widget-heading h1{font-size:clamp(44px,4.6vw,68px);font-weight:800;line-height:1.5;letter-spacing:-1.7px;color:#f4f7fa;margin:0}
+.barad-site .barad-hero-title h1 span{color:#e4b18b}
+.barad-site .hero-native.barad-hero-v3 .elementor-widget-text-editor p{font-size:14px;line-height:2.15;color:#bfcbd8;margin:0;max-width:475px}
+.barad-site .barad-hero-description{margin-bottom:22px}
+.barad-site .barad-hero-actions{display:flex;flex-direction:row!important;align-items:stretch;gap:10px!important;flex-wrap:wrap}
+.barad-site .barad-hero-actions>.elementor-widget{width:auto;max-width:100%}
+.barad-site .hero-native.barad-hero-v3 .elementor-button{min-height:50px;display:inline-flex;align-items:center;justify-content:center;font-family:inherit;box-shadow:none;font-size:13px;padding:13px 22px;border-radius:14px;transition:background .18s,border-color .18s,transform .18s}
+.barad-site .hero-native.barad-hero-v3 .barad-hero-primary .elementor-button{background:#f4f5f2;border:1px solid #f4f5f2;color:#17212b;font-weight:800;gap:23px}
+.barad-site .barad-hero-primary .elementor-button:after{content:'←';font-size:21px;line-height:1;color:#c9273b}
+.barad-site .hero-native.barad-hero-v3 .barad-hero-call .elementor-button{background:transparent;border:1px solid #ffffff30;color:#eef3f8;font-weight:500}
+.barad-site .hero-native.barad-hero-v3 .barad-hero-partner-label p{font-size:10px;color:#92a3b5;line-height:1.8;margin:0 0 10px}
+.barad-site .barad-hero-partner-links{display:flex;flex-direction:row!important;gap:8px!important;flex-wrap:wrap}
+.barad-site .barad-hero-partner-links>.elementor-widget{width:auto;max-width:100%}
+.barad-site .hero-native.barad-hero-v3 .barad-hero-partner .elementor-button{min-height:34px;padding:7px 12px;font-size:10px;font-weight:500;background:#ffffff05;color:#c6d1dd;border:1px solid #ffffff18;border-radius:100px}
+.barad-site .barad-hero-media{grid-area:visual;align-self:stretch;position:relative;display:flex;justify-content:center;min-height:420px;isolation:isolate}
+.barad-site .barad-hero-media:before,.barad-site .barad-hero-media:after{content:'';position:absolute;z-index:-1;pointer-events:none}
+.barad-site .barad-hero-media:before{width:82%;aspect-ratio:1;max-height:430px;border-radius:50%;border:1px solid #ffffff0b;inset-inline-start:9%;top:5%;background:radial-gradient(circle,#c3895720,transparent 68%)}
+.barad-site .barad-hero-media:after{width:64%;aspect-ratio:1;border-radius:50%;border:1px dashed #ffffff0b;inset-inline-start:18%;top:16%;transform:rotate(30deg)}
+.barad-site .barad-hero-cable{mix-blend-mode:lighten;width:100%;position:relative;z-index:1}
+.barad-site .hero-native.barad-hero-v3 .barad-hero-cable img{width:100%;height:420px;object-fit:contain;object-position:center;border-radius:0;transform:none;box-shadow:none;filter:drop-shadow(0 22px 20px #0004)}
+.barad-site .barad-hero-visual-label{position:absolute;inset-inline-start:16px;bottom:10px;width:auto!important;z-index:2}
+.barad-site .barad-hero-material{display:flex;gap:13px;align-items:center;text-align:start}
+.barad-site .barad-hero-material>span{display:grid;place-items:center;width:43px;height:43px;font:500 21px Georgia,serif;border:1px solid #d3a57b50;border-radius:12px;color:#e4b18b;background:#17202b99}
+.barad-site .barad-hero-material strong{display:block;font-size:12px;font-weight:600;color:#dde5ed;line-height:1.8}
+.barad-site .barad-hero-material small{display:block;font-size:10px;color:#94a4b6;line-height:1.8}
+.barad-site .barad-hero-service-list{display:flex;align-items:center;justify-content:space-between;gap:16px;border-top:1px solid #ffffff13;padding:18px 0;margin-top:8px;font-size:11px;color:#b7c4d2}
+.barad-site .barad-hero-service-list span{display:flex;align-items:center;gap:9px}
+.barad-site .barad-hero-service-list span:before{content:'';width:5px;height:5px;border-radius:50%;background:#e4b18b}
+@media(hover:hover){.barad-site .hero-native.barad-hero-v3 .barad-hero-primary .elementor-button:hover{background:#ffece1;border-color:#ffece1;transform:translateY(-2px)}.barad-site .hero-native.barad-hero-v3 .barad-hero-call .elementor-button:hover{background:#ffffff09;border-color:#ffffff70}.barad-site .hero-native.barad-hero-v3 .barad-hero-partner .elementor-button:hover{background:#ffffff0d;border-color:#ffffff40}}
+@media(max-width:1100px) and (min-width:701px){
+ .barad-site .hero-native.barad-hero-v3{padding:38px 35px 0!important;gap:20px 15px!important;grid-template-columns:1.05fr .95fr!important}
+ .barad-site .hero-native.barad-hero-v3 .elementor-widget-heading h1{font-size:clamp(38px,4.8vw,52px)}
+ .barad-site .hero-native.barad-hero-v3 .barad-hero-cable img{height:355px}
+ .barad-site .barad-hero-media{min-height:375px}
+ .barad-site .barad-hero-visual-label{inset-inline-start:0;bottom:24px}
+ .barad-site .hero-native.barad-hero-v3 .elementor-button{padding-inline:16px;font-size:12px}
+}
+@media(max-width:700px){
+ .barad-site .hero-native.barad-hero-v3{width:calc(100% - 24px)!important;max-width:none!important;margin-top:16px!important;padding:27px 23px 0!important;border-radius:26px;grid-template-columns:minmax(0,1fr)!important;grid-template-areas:"heading" "visual" "details" "partners" "services";gap:19px!important;background:radial-gradient(ellipse at 30% 35%,#2d3038 0,transparent 58%),#111c28}
+ .barad-site .barad-hero-identity{font-size:11px;gap:10px;margin-bottom:16px}
+ .barad-site .barad-hero-identity-line{width:30px}
+ .barad-site .hero-native.barad-hero-v3 .elementor-widget-heading h1{font-size:clamp(32px,8.9vw,51px);line-height:1.4;letter-spacing:-1px}
+ .barad-site .barad-hero-media{min-height:0;height:205px;margin-block:-7px -5px}
+ .barad-site .hero-native.barad-hero-v3 .barad-hero-cable img{height:205px;width:100%;object-fit:contain;object-position:center;filter:none}
+ .barad-site .barad-hero-media:before{width:220px;height:220px;max-height:none;top:-10px;inset-inline-start:calc(50% - 110px)}
+ .barad-site .barad-hero-media:after{width:180px;height:180px;top:10px;inset-inline-start:calc(50% - 90px)}
+ .barad-site .barad-hero-visual-label{inset-inline-start:0;bottom:4px}
+ .barad-site .barad-hero-material{gap:8px}
+ .barad-site .barad-hero-material>span{width:32px;height:32px;font-size:16px;border-radius:9px}
+ .barad-site .barad-hero-material strong{font-size:10px}
+ .barad-site .barad-hero-material small{font-size:8px}
+ .barad-site .hero-native.barad-hero-v3 .barad-hero-description p{font-size:12px;line-height:1.95;max-width:100%}
+ .barad-site .barad-hero-description{margin-bottom:17px}
+ .barad-site .barad-hero-actions{display:grid;grid-template-columns:1.25fr 1fr;gap:8px!important}
+ .barad-site .barad-hero-actions>.elementor-widget{width:100%}
+ .barad-site .hero-native.barad-hero-v3 .barad-hero-actions .elementor-button{width:100%;padding:12px 9px;min-height:47px;font-size:11px;gap:10px;border-radius:12px}
+ .barad-site .barad-hero-primary .elementor-button:after{font-size:18px}
+ .barad-site .barad-hero-partners{padding-top:0}
+ .barad-site .barad-hero-partner-links{gap:6px!important}
+ .barad-site .hero-native.barad-hero-v3 .barad-hero-partner .elementor-button{min-height:32px;padding:6px 11px;font-size:9px}
+ .barad-site .barad-hero-service-list{gap:7px;flex-wrap:wrap;padding:14px 0;margin-top:0;font-size:9px}
+ .barad-site .barad-hero-service-list span{gap:5px}
+ .barad-site .barad-hero-service-list span:before{width:4px;height:4px}
+}
+html[dir=ltr] .barad-site .barad-hero-primary .elementor-button:after{content:'→'}
+html[dir=ltr] .barad-site .barad-hero-title h1{font-size:clamp(37px,4.1vw,59px);line-height:1.25;letter-spacing:-1px}
+@media(prefers-reduced-motion:reduce){.barad-site .barad-hero-v3 .elementor-button{transition:none!important}.barad-site .barad-hero-v3 .elementor-button:hover{transform:none!important}}
+@media print{.barad-site .hero-native.barad-hero-v3{background:white;box-shadow:none;color:black}.barad-site .hero-native.barad-hero-v3 .elementor-widget-heading h1{color:black}.barad-site .barad-hero-media:before,.barad-site .barad-hero-media:after{display:none}}

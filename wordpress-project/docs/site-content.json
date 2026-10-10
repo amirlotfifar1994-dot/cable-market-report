@@ -1,0 +1,279 @@
+{
+  "source": {
+    "sha256": "eeabb8a05db07b95d4272c2f3021936ff8ccb57e2930df06a5530fe659647dc2",
+    "pages": 30,
+    "reviewed_pages": [
+      1,
+      2,
+      3,
+      4,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      24,
+      26,
+      27,
+      28,
+      29
+    ],
+    "address_matches_existing": true,
+    "postal_code_found": true,
+    "postal_code": "1971917006",
+    "postal_code_source": "Repeated business-card images on catalogue pages 5–9; visually checked on pages 5 and 8",
+    "opening_hours_found": false
+  },
+  "fa": {
+    "about_intro": "ایده‌آفرینان باراد از سال ۱۳۹۴ در حوزهٔ تأمین و بازرگانی سیم و کابل برق، شبکه، مخابرات و فیبر نوری فعالیت می‌کند. مشاورهٔ فنی، بررسی نیاز پروژه و هماهنگی تأمین از تولیدکنندگان معتبر، بخش‌های اصلی خدمات باراد هستند.",
+    "representatives": "باراد نمایندهٔ رسمی افشارنژاد خراسان و نمایندهٔ شهید قندی یزد است. برای آشنایی با محصولات و شرایط سفارش، صفحهٔ هر برند را ببینید.",
+    "services_heading": "از انتخاب کابل تا تأمین پروژه",
+    "services_intro": "خدمات باراد، از تأمین سیم و کابل تا مشاورهٔ انتخاب و هماهنگی سفارش‌های تخصصی را در بر می‌گیرد. مدل، مشخصات و امکان تأمین هر سفارش با فروش بررسی می‌شود.",
+    "services": [
+      {
+        "title": "سیم و کابل برق",
+        "text": "تأمین سیم و کابل افشان، نیمه‌افشان و مفتولی، کابل قدرت، کنترل و ترموکوپل بر اساس نیاز پروژه.",
+        "page": 10
+      },
+      {
+        "title": "کابل شبکه",
+        "text": "بررسی و تأمین کابل‌های Cat5e، Cat6، Cat6A و Cat7 برای شبکه‌های سازمانی، مراکز داده و پروژه‌های صنعتی.",
+        "page": 11
+      },
+      {
+        "title": "کابل مخابراتی مسی",
+        "text": "کابل‌های هوایی، زمینی، ژله‌فیلد، کانالی و زوجی تلفن و آیفون؛ انتخاب بر اساس تعداد زوج، قطر هادی و مسیر نصب.",
+        "page": 12
+      },
+      {
+        "title": "کابل کنترل و ابزار دقیق",
+        "text": "انتخاب و تأمین کابل انتقال داده و کنترل تجهیزات برای پروژه‌های صنعتی، نفت، گاز، پتروشیمی، نیروگاهی و معدنی.",
+        "page": 12
+      },
+      {
+        "title": "کابل فیبر نوری",
+        "text": "بررسی خانواده‌های خاکی، کانالی، هوایی، دراپ و میکرو با توجه به مسیر نصب، ساختار کابل و نیاز شبکه.",
+        "page": 13
+      },
+      {
+        "title": "کابل خورشیدی",
+        "text": "مشاورهٔ انتخاب سطح مقطع و تأمین کابل‌های مورد نیاز اتصال پنل‌ها، اینورتر و بخش‌های AC و DC پروژهٔ خورشیدی.",
+        "page": 14
+      },
+      {
+        "title": "کابل مقاوم در برابر حریق",
+        "text": "انتخاب کابل برای مدارهای حیاتی با بررسی نیاز پروژه، مدت حفظ عملکرد، رفتار در برابر شعله و مشخصات مستند سازنده.",
+        "page": 15
+      },
+      {
+        "title": "سفارش‌های اختصاصی",
+        "text": "هماهنگی طراحی و ساخت کابل سفارشی با تولیدکننده، بر اساس شرایط محیطی، مشخصات فنی و الزامات کارفرما.",
+        "page": 16
+      },
+      {
+        "title": "مشاوره و مستندات فنی",
+        "text": "تحلیل نیاز پروژه، بررسی اسناد مناقصه، پیشنهاد فنی و بازرگانی و هماهنگی تهیهٔ مدارک و مستندات نهایی.",
+        "page": 16
+      }
+    ],
+    "fiber_heading": "خانواده‌های کابل فیبر نوری در سبد تأمین باراد",
+    "fiber_intro": "این خانواده‌ها در کاتالوگ باراد معرفی شده‌اند. برای استعلام، تعداد فیبر، نوع فیبر، مسیر نصب و طول مورد نیاز را اعلام کنید؛ سازنده و مشخصات مدل نهایی هنگام بررسی سفارش تعیین می‌شوند.",
+    "fiber_code": "کد خانواده",
+    "fiber_type": "ساختار و کاربرد معرفی‌شده",
+    "fiber_families": [
+      [
+        "OBUC",
+        "کابل نوری خشک خاکی"
+      ],
+      [
+        "OBFC",
+        "کابل نوری ژله‌فیلد خاکی"
+      ],
+      [
+        "OCUC",
+        "کابل نوری خشک کانالی"
+      ],
+      [
+        "OCFC",
+        "کابل نوری ژله‌فیلد کانالی"
+      ],
+      [
+        "OSSC",
+        "کابل نوری هوایی مهاردار؛ تک‌روکش یا دوروکش"
+      ],
+      [
+        "ADSS",
+        "کابل هوایی خودنگهدار تمام‌دی‌الکتریک"
+      ],
+      [
+        "OFAC / ODSWC",
+        "کابل نوری هوایی با تیوب مرکزی و روکش تقویت‌شده"
+      ],
+      [
+        "OFC",
+        "کابل نوری با تیوب مرکزی؛ آرموردار یا بدون آرمور"
+      ],
+      [
+        "ODC",
+        "کابل دراپ نوری تخت؛ دومهار یا سه‌مهار"
+      ],
+      [
+        "OMC",
+        "کابل نوری میکرو"
+      ]
+    ],
+    "projects_heading": "بخشی از سابقهٔ تأمین پروژه‌های باراد",
+    "projects_intro": "نمونه‌های زیر از سوابق معرفی‌شده در کاتالوگ باراد انتخاب شده‌اند.",
+    "projects": [
+      {
+        "title": "راه‌آهن تهران–تبریز",
+        "text": "تأمین کابل فیبر نوری برای پروژهٔ راه‌آهن تهران–تبریز، گروه تخصصی شهید رجاییِ قرارگاه سازندگی خاتم‌الانبیا.",
+        "page": 24
+      },
+      {
+        "title": "تونل آزادراه تهران–شمال",
+        "text": "تأمین کابل برای تونل آزادراه تهران–شمال در همکاری با شرکت مهندسی و ساخت پارس فراگام.",
+        "page": 24
+      },
+      {
+        "title": "پروژهٔ کاغذ الیگودرز",
+        "text": "تأمین انواع کابل برق برای پروژهٔ تولید کاغذ الیگودرزِ شرکت تهیه و تولید مواد معدنی ایران (IMPASCO).",
+        "page": 24
+      }
+    ],
+    "download_heading": "باراد را بیشتر بشناسید",
+    "download_text": "معرفی مجموعه، تیم، حوزه‌های تأمین، سوابق پروژه‌ها و اسناد در کاتالوگ باراد گردآوری شده‌اند.",
+    "download_label": "دریافت کاتالوگ باراد",
+    "download_format": "PDF · ۳۰ صفحه · حدود ۵ مگابایت",
+    "cover_alt": "جلد کاتالوگ معرفی و خدمات ایده‌آفرینان باراد",
+    "ghandi_intro": "ایده‌آفرینان باراد نمایندهٔ شهید قندی یزد در حوزهٔ کابل‌های ارتباطی است. برای انتخاب و تأمین کابل فیبر نوری یا مخابراتی مسی، کاربرد، شرایط نصب و مقدار سفارش را با فروش باراد مطرح کنید.",
+    "ghandi_models": "مدل و مشخصات نهایی کابل با توجه به نیاز پروژه و مدارک سازنده بررسی می‌شوند. برای قیمت روز و امکان تأمین کالای مورد نیازتان با باراد تماس بگیرید.",
+    "ghandi_link": "آشنایی با خانواده‌های کابل نوری و اطلاعات لازم برای استعلام",
+    "about_seo_title": "درباره باراد | خدمات تأمین سیم و کابل و سوابق پروژه‌ها",
+    "about_seo_description": "ایده‌آفرینان باراد از ۱۳۹۴؛ تأمین سیم و کابل برق، شبکه، مخابرات و فیبر نوری، مشاورهٔ فنی و هماهنگی سفارش‌های تخصصی. خدمات، سوابق پروژه‌ها و کاتالوگ باراد."
+  },
+  "en": {
+    "about_intro": "Barad Innovators has worked in the supply and trading of electrical, network, telecommunications and fiber optic cables since 1394 in the Iranian calendar. Technical advice, project requirements review and procurement coordination with established manufacturers are central to Barad’s services.",
+    "representatives": "Barad is an official representative of Afsharnejad Khorasan and a representative of Shahid Ghandi Yazd. Visit each brand’s page for product information and ordering enquiries.",
+    "services_heading": "Cable selection and project supply",
+    "services_intro": "Barad’s services cover cable procurement, technical selection advice and coordination of specialist orders. The model, specifications and supply options are reviewed for each enquiry.",
+    "services": [
+      {
+        "title": "Electrical wires and cables",
+        "text": "Procurement of flexible, stranded and solid conductor cables, power and control cables, and thermocouple cables to suit project requirements."
+      },
+      {
+        "title": "Network cables",
+        "text": "Selection and procurement of Cat5e, Cat6, Cat6A and Cat7 cables for business networks, data centers and industrial projects."
+      },
+      {
+        "title": "Copper telecommunications cables",
+        "text": "Aerial, buried, jelly-filled, duct and paired telephone or intercom cables, selected by pair count, conductor diameter and installation route."
+      },
+      {
+        "title": "Control and instrumentation cables",
+        "text": "Cable selection and procurement for data transmission and equipment control in industrial, oil, gas, petrochemical, power and mining projects."
+      },
+      {
+        "title": "Fiber optic cables",
+        "text": "Review of buried, duct, aerial, drop and micro cable families based on the installation route, cable structure and network requirements."
+      },
+      {
+        "title": "Solar project cables",
+        "text": "Cross-section selection advice and cable procurement for panel connections, inverters and the AC and DC parts of solar projects."
+      },
+      {
+        "title": "Fire resistant cables",
+        "text": "Cable selection for critical circuits, considering the required operating duration, flame performance and documented manufacturer specifications."
+      },
+      {
+        "title": "Custom cable orders",
+        "text": "Coordination with manufacturers for custom cable design and production based on environmental conditions, technical specifications and client requirements."
+      },
+      {
+        "title": "Technical advice and documentation",
+        "text": "Project requirements analysis, tender document review, technical and commercial proposals, and coordination of final documentation."
+      }
+    ],
+    "fiber_heading": "Fiber optic cable families in Barad’s supply portfolio",
+    "fiber_intro": "These families are presented in Barad’s catalogue. Include the fiber count, fiber type, installation route and required length in your enquiry. The manufacturer and final model specifications are confirmed during the order review.",
+    "fiber_code": "Family code",
+    "fiber_type": "Structure and intended installation",
+    "fiber_families": [
+      [
+        "OBUC",
+        "Unfilled buried optical cable"
+      ],
+      [
+        "OBFC",
+        "Filled buried optical cable"
+      ],
+      [
+        "OCUC",
+        "Unfilled duct optical cable"
+      ],
+      [
+        "OCFC",
+        "Filled duct optical cable"
+      ],
+      [
+        "OSSC",
+        "Self-supporting aerial optical cable; single or double sheath"
+      ],
+      [
+        "ADSS",
+        "All-dielectric self-supporting aerial cable"
+      ],
+      [
+        "OFAC / ODSWC",
+        "Central-tube aerial optical cable with reinforced sheath"
+      ],
+      [
+        "OFC",
+        "Central-tube optical cable; armored or unarmored"
+      ],
+      [
+        "ODC",
+        "Flat optical drop cable; two or three strength members"
+      ],
+      [
+        "OMC",
+        "Optical micro cable"
+      ]
+    ],
+    "projects_heading": "Selected Barad project supply experience",
+    "projects_intro": "The following examples are selected from the project experience described in Barad’s catalogue.",
+    "projects": [
+      {
+        "title": "Tehran–Tabriz railway",
+        "text": "Fiber optic cable supply for the Tehran–Tabriz railway project, Shahid Rajaei specialist group of Khatam al-Anbiya Construction Headquarters."
+      },
+      {
+        "title": "Tehran–North freeway tunnel",
+        "text": "Cable supply for the Tehran–North freeway tunnel in cooperation with Pars Faragam Engineering and Construction."
+      },
+      {
+        "title": "Aligudarz paper production project",
+        "text": "Electrical cable supply for the Aligudarz paper production project of Iran Minerals Production and Supply Company (IMPASCO)."
+      }
+    ],
+    "download_heading": "Get to know Barad",
+    "download_text": "Barad’s company introduction, team, supply portfolio, project experience and documents are collected in the Persian catalogue.",
+    "download_label": "Download Barad’s catalogue (Persian)",
+    "download_format": "PDF · 30 pages · approximately 5 MB",
+    "cover_alt": "Cover of Barad Innovators’ company and services catalogue",
+    "ghandi_intro": "Barad Innovators represents Shahid Ghandi Yazd in communications cables. Discuss the application, installation conditions and order quantity with Barad for fiber optic or copper telecommunications cable selection and procurement.",
+    "ghandi_models": "The final model and specifications are reviewed against project requirements and manufacturer documentation. Contact Barad for current pricing and supply options.",
+    "ghandi_link": "Fiber optic cable families and information to include in an enquiry",
+    "about_seo_title": "About Barad | Cable Supply Services and Project Experience",
+    "about_seo_description": "Barad Innovators since 1394 in the Iranian calendar: electrical, network, telecommunications and fiber optic cable supply, technical advice and specialist order coordination. Explore services, project experience and the company catalogue."
+  }
+}

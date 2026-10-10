@@ -1,0 +1,1381 @@
+{
+  "1": {
+    "page": 1,
+    "name": "catalog-image-001.jpg",
+    "sha256": "8c7ef45b010b68f6677bb1c363dc70692eaf9ce93076a56c7966c7f0f3258267",
+    "pdf_name": "Image5.jpg",
+    "width": 806,
+    "height": 1363,
+    "pages": [
+      1
+    ],
+    "web_file": "barad-catalog-001.webp",
+    "web_sha256": "579d2a052673b558b2913a42250fccb39b1b01b5b9abec40df5e685169d721a9"
+  },
+  "2": {
+    "page": 1,
+    "name": "catalog-image-002.jpg",
+    "sha256": "50dc8819c2daa0fe71af1aeff64e4f8fb5d6d9436fef88a63d7d021a7f914860",
+    "pdf_name": "Image7.jpg",
+    "width": 378,
+    "height": 454,
+    "pages": [
+      1
+    ],
+    "web_file": "barad-catalog-002.webp",
+    "web_sha256": "5f80b695ba7d6bb73ac31e9654381e3f6c084750554c58f76a6c1dabec7fb153"
+  },
+  "3": {
+    "page": 1,
+    "name": "catalog-image-003.png",
+    "sha256": "8483471d6f03d1343f40898cd37c83f589c94bfa25e86e5181a361236969b031",
+    "pdf_name": "Image13.png",
+    "width": 953,
+    "height": 435,
+    "pages": [
+      1
+    ],
+    "web_file": "barad-catalog-003.webp",
+    "web_sha256": "02c20344172363cf2382f5de927f6bd96e601f984ac3e25590bed4d0abed2dc1"
+  },
+  "4": {
+    "page": 1,
+    "name": "catalog-image-004.jp2",
+    "sha256": "b17b815d5967268610b881a714957a600c23a5d1f0cb7a8f3a589ed760f7cbc3",
+    "pdf_name": "Image14.jp2",
+    "width": 296,
+    "height": 104,
+    "pages": [
+      1
+    ],
+    "web_file": "barad-catalog-004.webp",
+    "web_sha256": "37ba1d87011aa2407d5444536824a87747e2a2992f4cefa28af45e914dce7294"
+  },
+  "5": {
+    "page": 2,
+    "name": "catalog-image-005.png",
+    "sha256": "cd8ddc9a3c4317fa4da57fdc3bb4935311a60f0f7dc1a9b2d59d7a2a67a9ff8a",
+    "pdf_name": "Image18.png",
+    "width": 356,
+    "height": 132,
+    "pages": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29
+    ],
+    "web_file": "barad-catalog-005.webp",
+    "web_sha256": "4314af04ab614601fd217ac78251839a4924fd6d62aca655f004709aaefd26e6"
+  },
+  "6": {
+    "page": 2,
+    "name": "catalog-image-006.jpg",
+    "sha256": "24e2af11e37775f5d74d38e78050cbd246813e4f8a5c6b328fcd7ce51e8aa124",
+    "pdf_name": "Image34.jpg",
+    "width": 490,
+    "height": 390,
+    "pages": [
+      2
+    ],
+    "web_file": "barad-catalog-006.webp",
+    "web_sha256": "0f347b5e122cc7b3c34ec53f6a38f97de65e60579564d4da26cb751de6f1134a"
+  },
+  "7": {
+    "page": 3,
+    "name": "catalog-image-007.jp2",
+    "sha256": "c92f8ce93ba917aadcde10df38e1baf54e2b07673e37cdabb9b81ea0c4a8ffb3",
+    "pdf_name": "Image38.jp2",
+    "width": 1116,
+    "height": 961,
+    "pages": [
+      3
+    ],
+    "web_file": "barad-catalog-007.webp",
+    "web_sha256": "19cf39f20e9bb8357b7543b7d4e629c2ee105f354ddf2a75d38c324d9ab401a5"
+  },
+  "8": {
+    "page": 4,
+    "name": "catalog-image-008.jp2",
+    "sha256": "97b21768a456e4f9f69f60bf78cd88a224d6e42bf27f5980063ab37d4aaf662c",
+    "pdf_name": "Image43.jp2",
+    "width": 579,
+    "height": 386,
+    "pages": [
+      4
+    ],
+    "web_file": "barad-catalog-008.webp",
+    "web_sha256": "dc6e302ad131dd55f74d06f65ee3b1f406a62400587feea76089b04b103bd7e5"
+  },
+  "9": {
+    "page": 4,
+    "name": "catalog-image-009.jp2",
+    "sha256": "a517ab6612f1c54d5fc770b1eedd4abb273343927677fe460f4bebf4d5cf9882",
+    "pdf_name": "Image45.jp2",
+    "width": 836,
+    "height": 836,
+    "pages": [
+      4
+    ],
+    "web_file": "barad-catalog-009.webp",
+    "web_sha256": "09926a3a9351b83ece4b404ec6f5eeb7e981d386488e756dde493161f5a931ab"
+  },
+  "10": {
+    "page": 5,
+    "name": "catalog-image-010.jp2",
+    "sha256": "0c03f6be1880ddc491ded55a29de758257a8a933e8a28c514a24beef41ab338a",
+    "pdf_name": "Image50.jp2",
+    "width": 725,
+    "height": 417,
+    "pages": [
+      5
+    ],
+    "web_file": "barad-catalog-010.webp",
+    "web_sha256": "12321f1cb76653274096f8a52a23d52018fd094348ce3cd36624f2894db065a8"
+  },
+  "11": {
+    "page": 5,
+    "name": "catalog-image-011.jp2",
+    "sha256": "58498a1029a53d22659b03aa2e244b5ad1d0e1be87429d10e409f18be3b9e928",
+    "pdf_name": "Image52.jp2",
+    "width": 173,
+    "height": 230,
+    "pages": [
+      5
+    ],
+    "web_file": "barad-catalog-011.webp",
+    "web_sha256": "cab7731ed54385e9f259349bb222d7894b0b1c482e7f58f02216d4f82fcbfa95"
+  },
+  "12": {
+    "page": 6,
+    "name": "catalog-image-012.jp2",
+    "sha256": "b6f9a3866a67f85bb9736b28c6e67bb8def206ee6657888f747a475cb0decfe7",
+    "pdf_name": "Image62.jp2",
+    "width": 169,
+    "height": 218,
+    "pages": [
+      6
+    ],
+    "web_file": "barad-catalog-012.webp",
+    "web_sha256": "be0be83dd9d7b3f4da7414c973cfa9fed1ad8aefb0e59798537cc45b93968f31"
+  },
+  "13": {
+    "page": 6,
+    "name": "catalog-image-013.jp2",
+    "sha256": "a656db4c50fbdbc6a608f96813a6771fe90d1fb17ab51e6ed526ce45b6894a60",
+    "pdf_name": "Image64.jp2",
+    "width": 176,
+    "height": 217,
+    "pages": [
+      6
+    ],
+    "web_file": "barad-catalog-013.webp",
+    "web_sha256": "f7e9bcc58dd5f2505d08a057ce715bd5e5f7d27a237293c57c73362c50bf4467"
+  },
+  "14": {
+    "page": 6,
+    "name": "catalog-image-014.png",
+    "sha256": "a1a4fb478e5dd36ee92a7d0b518ad937591226fb24b5fb37b95e5e40df7cc997",
+    "pdf_name": "Image66.png",
+    "width": 725,
+    "height": 417,
+    "pages": [
+      6
+    ],
+    "web_file": "barad-catalog-014.webp",
+    "web_sha256": "a260e8acbde2d61f04bd12d7bec5ecb3ffa889ed4edfbe1929ce8a567a954122"
+  },
+  "15": {
+    "page": 6,
+    "name": "catalog-image-015.png",
+    "sha256": "80ca1ff8471520904ce870e9bd19f91a36a040bb5c9ad62455dffec7ed7c3f5f",
+    "pdf_name": "Image68.png",
+    "width": 725,
+    "height": 417,
+    "pages": [
+      6
+    ],
+    "web_file": "barad-catalog-015.webp",
+    "web_sha256": "7759ddba857c530a1b76ab98af938104d4ad2dad33b89ec565a8fef592149c2e"
+  },
+  "16": {
+    "page": 7,
+    "name": "catalog-image-016.jp2",
+    "sha256": "8a36baf1f1c3e8d6fd5d722f5dd1fa2eb7eb509313640e9542509b48727a8aed",
+    "pdf_name": "Image73.jp2",
+    "width": 725,
+    "height": 417,
+    "pages": [
+      7
+    ],
+    "web_file": "barad-catalog-016.webp",
+    "web_sha256": "e17f603bde5676d18044351d4b585db758010b3256a19de89ca3e415d90eda0e"
+  },
+  "17": {
+    "page": 7,
+    "name": "catalog-image-017.jp2",
+    "sha256": "21db677c3d8af59e7ff0335a546475de9a7a4932c52382f39ecb52ad8b87ef26",
+    "pdf_name": "Image75.jp2",
+    "width": 725,
+    "height": 417,
+    "pages": [
+      7
+    ],
+    "web_file": "barad-catalog-017.webp",
+    "web_sha256": "106a87edc7342a5584e39e862184e38b7685328f69b6055e8ce6c58e7a38e695"
+  },
+  "18": {
+    "page": 8,
+    "name": "catalog-image-018.png",
+    "sha256": "ae3725f216a277fd198c6f71e8ccfa28f0f678be03978bb9ca5acf6184fc3a77",
+    "pdf_name": "Image80.png",
+    "width": 725,
+    "height": 417,
+    "pages": [
+      8
+    ],
+    "web_file": "barad-catalog-018.webp",
+    "web_sha256": "a61ccc17433152921937ebc92b45cf69fedad6cf99c20cecc6b4e260e410cd51"
+  },
+  "19": {
+    "page": 8,
+    "name": "catalog-image-019.jp2",
+    "sha256": "cca5eff3f2c966fcad780f948a73f1ad533c037a8bceaea22ebfe0273c5734a4",
+    "pdf_name": "Image82.jp2",
+    "width": 725,
+    "height": 417,
+    "pages": [
+      8
+    ],
+    "web_file": "barad-catalog-019.webp",
+    "web_sha256": "fc3b81fa29c9e7fd18ce003d15a9c0aaa01d3ccd39fc0822a826498cb7dee7d8"
+  },
+  "20": {
+    "page": 9,
+    "name": "catalog-image-020.jp2",
+    "sha256": "d27e57263e2084766a04644a6c324a7fa1e3e7f59ee2521994b6df58df1e0b5f",
+    "pdf_name": "Image87.jp2",
+    "width": 946,
+    "height": 945,
+    "pages": [
+      9
+    ],
+    "web_file": "barad-catalog-020.webp",
+    "web_sha256": "b67a95730ffc79e29a70d68142a932259548c642120497f054da56f5789b56fa"
+  },
+  "21": {
+    "page": 9,
+    "name": "catalog-image-021.jp2",
+    "sha256": "3daeb57c6b4ac9aff60a703b9886635223330d5b81145c8c0b5e1c1a26c7c204",
+    "pdf_name": "Image89.jp2",
+    "width": 725,
+    "height": 417,
+    "pages": [
+      9
+    ],
+    "web_file": "barad-catalog-021.webp",
+    "web_sha256": "2c2f7d4781658687767fd43c77de5a596c86a929a46b89294fd86bed13e83b21"
+  },
+  "22": {
+    "page": 10,
+    "name": "catalog-image-022.jp2",
+    "sha256": "4dd6063357e157cda80b42ba131a70e1943f6a4d45327a3647bc271406260e1f",
+    "pdf_name": "Image94.jp2",
+    "width": 952,
+    "height": 635,
+    "pages": [
+      10
+    ],
+    "web_file": "barad-catalog-022.webp",
+    "web_sha256": "389af1ad6e85077166bc49497be76b3dbae920c7cd3b194f90a4da3e4b6e49ca"
+  },
+  "23": {
+    "page": 11,
+    "name": "catalog-image-023.jp2",
+    "sha256": "00258da2d0e8a63f1f9f536eecf50698afc169f1c4b116c05379bf17728f5315",
+    "pdf_name": "Image106.jp2",
+    "width": 1162,
+    "height": 600,
+    "pages": [
+      11
+    ],
+    "web_file": "barad-catalog-023.webp",
+    "web_sha256": "767c2ff5a0b0d07ede3d461c8066fc38d8309cf700ec3f1735ef71cf630be012"
+  },
+  "24": {
+    "page": 11,
+    "name": "catalog-image-024.jp2",
+    "sha256": "624a9a770b8503cfda550f15c7411f8a32936a412a3e7a6e3abbed7fc4ca470a",
+    "pdf_name": "Image108.jp2",
+    "width": 763,
+    "height": 763,
+    "pages": [
+      11
+    ],
+    "web_file": "barad-catalog-024.webp",
+    "web_sha256": "f1b87777414ba923d4f82ffbcfb2219297c8daadd18213ad65ec3bae57c1741f"
+  },
+  "25": {
+    "page": 12,
+    "name": "catalog-image-025.jp2",
+    "sha256": "550e50dedf3bd74070780cf1ea139f1ed56451165872209024093b443c0e41db",
+    "pdf_name": "Image113.jp2",
+    "width": 604,
+    "height": 755,
+    "pages": [
+      12
+    ],
+    "web_file": "barad-catalog-025.webp",
+    "web_sha256": "2488ece2e1915abbf7ce49b4ab0c386b6d5d6c2228812dfe451d64748ecfca09"
+  },
+  "26": {
+    "page": 12,
+    "name": "catalog-image-026.jp2",
+    "sha256": "5739dd5118e460e170d260c2d66403f1ba6ae436b4b149a715597148a241fd33",
+    "pdf_name": "Image115.jp2",
+    "width": 561,
+    "height": 561,
+    "pages": [
+      12
+    ],
+    "web_file": "barad-catalog-026.webp",
+    "web_sha256": "350647d42be58695964bbd61cd056d67c22a8158bf395b315f7c96d36aaa65eb"
+  },
+  "27": {
+    "page": 13,
+    "name": "catalog-image-027.jpg",
+    "sha256": "d1098e2efadec896c78a83393e2f05d7be0701a36c1a8280d58ca6e05fa4bd41",
+    "pdf_name": "Image120.jpg",
+    "width": 1253,
+    "height": 1346,
+    "pages": [
+      13
+    ],
+    "web_file": "barad-catalog-027.webp",
+    "web_sha256": "f0a61f96ae2d6afefbda8f2acd174af34bf6ceccb61ceb6fefe96de9da56dc7a"
+  },
+  "28": {
+    "page": 14,
+    "name": "catalog-image-028.jp2",
+    "sha256": "197a7c4533a7dc939ac575da79566610febd283c1cabfa66b1dcaedda08bb7cf",
+    "pdf_name": "Image124.jp2",
+    "width": 964,
+    "height": 701,
+    "pages": [
+      14
+    ],
+    "web_file": "barad-catalog-028.webp",
+    "web_sha256": "591f5b587521f4fda691cb399431db32044d2dac38ba9092c3cc0d732c4ec582"
+  },
+  "29": {
+    "page": 15,
+    "name": "catalog-image-029.jp2",
+    "sha256": "419707ad1f5dbf1d3be960e6b1a6e1c315a6f97620d1ab164ccbbf5702333670",
+    "pdf_name": "Image129.jp2",
+    "width": 692,
+    "height": 692,
+    "pages": [
+      15
+    ],
+    "web_file": "barad-catalog-029.webp",
+    "web_sha256": "f9adc4ebac22101ad479734a76a47400f7b20fa15502b0dc28492b90962adf3e"
+  },
+  "30": {
+    "page": 16,
+    "name": "catalog-image-030.jp2",
+    "sha256": "958f7b306820f871644bf2abff126dbde87aa4891d9285f70309a6520253bf7e",
+    "pdf_name": "Image140.jp2",
+    "width": 661,
+    "height": 568,
+    "pages": [
+      16
+    ],
+    "web_file": "barad-catalog-030.webp",
+    "web_sha256": "94e20219769870de00f7fb9a9f653c2f5f5d8fea6d88d72f191d79d29efd3e47"
+  },
+  "31": {
+    "page": 16,
+    "name": "catalog-image-031.jp2",
+    "sha256": "d2f8e9a60aa4de5ea3462156bceed307a6fb870e2268ac9ccf65b81df7768fc6",
+    "pdf_name": "Image142.jp2",
+    "width": 428,
+    "height": 641,
+    "pages": [
+      16
+    ],
+    "web_file": "barad-catalog-031.webp",
+    "web_sha256": "c58736483228423b42e3f6308a9903fccd2e74f82027cc347eca5703578119dd"
+  },
+  "32": {
+    "page": 17,
+    "name": "catalog-image-032.jp2",
+    "sha256": "b3df9498449b3303b8daa4cb22da278faf89648ae61e07191ed9204ca91fb8d1",
+    "pdf_name": "Image147.jp2",
+    "width": 1017,
+    "height": 154,
+    "pages": [
+      17
+    ],
+    "web_file": "barad-catalog-032.webp",
+    "web_sha256": "f3543957c84801e9ed4783c7468f965fd84b685081e7f1646bf1e33ad3ab7557"
+  },
+  "33": {
+    "page": 17,
+    "name": "catalog-image-033.jpg",
+    "sha256": "17ba7a5f5a9be91307b22c733937fdba050d9145d8dadb0f0e64b3491b24a87a",
+    "pdf_name": "Image149.jpg",
+    "width": 561,
+    "height": 446,
+    "pages": [
+      17
+    ],
+    "web_file": "barad-catalog-033.webp",
+    "web_sha256": "bdf8fe871b887eb50811f50c78d7ebd732a423e873e704b41fe63513f58fc461"
+  },
+  "34": {
+    "page": 17,
+    "name": "catalog-image-034.jpg",
+    "sha256": "da95763f1e13e3f6c6390c02c75b8ae4a35fc59bb5e8866f011dec118189dc17",
+    "pdf_name": "Image150.jpg",
+    "width": 522,
+    "height": 316,
+    "pages": [
+      17
+    ],
+    "web_file": "barad-catalog-034.webp",
+    "web_sha256": "cc524fa86af5209cbbf72a7a60814144c09ce348f9faeef078375b527fbfa87b"
+  },
+  "35": {
+    "page": 17,
+    "name": "catalog-image-035.jp2",
+    "sha256": "f2f779176785ef71180623b4c284b0ce46a864e3c1e8e7dbed29a19362944819",
+    "pdf_name": "Image151.jp2",
+    "width": 1017,
+    "height": 570,
+    "pages": [
+      17
+    ],
+    "web_file": "barad-catalog-035.webp",
+    "web_sha256": "5a8945fd8c6b9ce5b42cca0280bfa12a255e9e2eec1f861f99641312541cacf0"
+  },
+  "36": {
+    "page": 18,
+    "name": "catalog-image-036.png",
+    "sha256": "60561cddeeb03c007781f7b50ba6099cf0a2eaf048d1cf860be6b1b5c8abfe06",
+    "pdf_name": "Image156.png",
+    "width": 706,
+    "height": 250,
+    "pages": [
+      18
+    ],
+    "web_file": "barad-catalog-036.webp",
+    "web_sha256": "5b6263199c622d985d7951753e7514d6bfda948502c36fab5f45675a838fffda"
+  },
+  "37": {
+    "page": 18,
+    "name": "catalog-image-037.jpg",
+    "sha256": "a67e33f8308ae2e72261382d326bc904e95fd3d3af2b5a6d5d995eaed3b58150",
+    "pdf_name": "Image157.jpg",
+    "width": 391,
+    "height": 269,
+    "pages": [
+      18
+    ],
+    "web_file": "barad-catalog-037.webp",
+    "web_sha256": "5a26279e97cff80319b09ab3e2e2ce502c06608f289379e7b824b60dcfff04eb"
+  },
+  "38": {
+    "page": 18,
+    "name": "catalog-image-038.jp2",
+    "sha256": "4ba232efeb5ce9dcfa3cc605b5ede83af2cc383490918d17bca54549447fe800",
+    "pdf_name": "Image158.jp2",
+    "width": 340,
+    "height": 250,
+    "pages": [
+      18
+    ],
+    "web_file": "barad-catalog-038.webp",
+    "web_sha256": "3d394ec9e9b57213bcdaf36c5085451d2b40c915dba17409f098624a5bda220f"
+  },
+  "39": {
+    "page": 18,
+    "name": "catalog-image-039.jp2",
+    "sha256": "f70c77cae617053770c2b5f133ec279e91fcc7e61751752c4375c2c42b6f7c92",
+    "pdf_name": "Image160.jp2",
+    "width": 709,
+    "height": 481,
+    "pages": [
+      18
+    ],
+    "web_file": "barad-catalog-039.webp",
+    "web_sha256": "2e29f3b0c825efd7e6f59d6bb6db2b1a34018a163af29feb1190a25e5b2e7891"
+  },
+  "40": {
+    "page": 18,
+    "name": "catalog-image-040.jp2",
+    "sha256": "a12b04d9af9d48caec914bd4140496cfb28bec455efd51594acf92fca93e1b18",
+    "pdf_name": "Image162.jp2",
+    "width": 709,
+    "height": 481,
+    "pages": [
+      18
+    ],
+    "web_file": "barad-catalog-040.webp",
+    "web_sha256": "c182ba47bcb5800362ff3ac10f7cb56c14eaa830eb901bdb7d23fbac21cd3e2a"
+  },
+  "41": {
+    "page": 19,
+    "name": "catalog-image-041.jpg",
+    "sha256": "dca73992854237fc2ae66b74cfda45e576ef446962bf2cab1ac6cd943210380f",
+    "pdf_name": "Image167.jpg",
+    "width": 422,
+    "height": 225,
+    "pages": [
+      19
+    ],
+    "web_file": "barad-catalog-041.webp",
+    "web_sha256": "cefbfcc600142e6cd93cac466bc21ae95588bce96cff58d8e32eff9b29c185a9"
+  },
+  "42": {
+    "page": 19,
+    "name": "catalog-image-042.jpg",
+    "sha256": "8c684e74a82f934e09d726b4e0d4057f3139faed2eae8e2a45087b5cfc39e41d",
+    "pdf_name": "Image168.jpg",
+    "width": 390,
+    "height": 390,
+    "pages": [
+      19
+    ],
+    "web_file": "barad-catalog-042.webp",
+    "web_sha256": "3ee31bd05586e83af715751c382eddd3f0a290a79b2aa1cd90a869e8890ab6a9"
+  },
+  "43": {
+    "page": 19,
+    "name": "catalog-image-043.jpg",
+    "sha256": "5d2e16146029792ba9293958790571b623e699309d78969e0262a810ced6f9ca",
+    "pdf_name": "Image169.jpg",
+    "width": 300,
+    "height": 300,
+    "pages": [
+      19
+    ],
+    "web_file": "barad-catalog-043.webp",
+    "web_sha256": "a31524c8306a866a18248c50daa8910611300a055bd369ba5fc6a6819e362c8c"
+  },
+  "44": {
+    "page": 19,
+    "name": "catalog-image-044.jp2",
+    "sha256": "6d447d92ae1d527e1f22a1314176c28eccac888c358d5a253ef83795c4953547",
+    "pdf_name": "Image170.jp2",
+    "width": 1254,
+    "height": 648,
+    "pages": [
+      19
+    ],
+    "web_file": "barad-catalog-044.webp",
+    "web_sha256": "1f78d5fc06cf51d57db6198bc4e1c7af62cf8a8a866c19fc83285553bccdb051"
+  },
+  "45": {
+    "page": 20,
+    "name": "catalog-image-045.jp2",
+    "sha256": "5847a8ae6640dd496be5c294f27c4f99052829d7596c300d6693a1d6eb8322be",
+    "pdf_name": "Image175.jp2",
+    "width": 436,
+    "height": 203,
+    "pages": [
+      20
+    ],
+    "web_file": "barad-catalog-045.webp",
+    "web_sha256": "f5653936b74a65896b7b58ce9ddd94ad59c806dc33220e54c14a8c95830d78db"
+  },
+  "46": {
+    "page": 20,
+    "name": "catalog-image-046.jp2",
+    "sha256": "717a1482ff5a7a09e8da832e727c4c6648539dfe225e2c558e41f3101749adb1",
+    "pdf_name": "Image177.jp2",
+    "width": 863,
+    "height": 419,
+    "pages": [
+      20
+    ],
+    "web_file": "barad-catalog-046.webp",
+    "web_sha256": "657a80e6d139ea36d6c5209753666c6f993f8e255e746324aed19317517ba50a"
+  },
+  "47": {
+    "page": 20,
+    "name": "catalog-image-047.jpg",
+    "sha256": "03e210e3e4f2020796828d765e7797abb1b9d6addead83d8af2d7dab2601109d",
+    "pdf_name": "Image179.jpg",
+    "width": 1193,
+    "height": 659,
+    "pages": [
+      20
+    ],
+    "web_file": "barad-catalog-047.webp",
+    "web_sha256": "135ec20c1b8a03e4cfbb30b066b3367956d3d6807c9f197e8a24daade4a71bd8"
+  },
+  "48": {
+    "page": 21,
+    "name": "catalog-image-048.jp2",
+    "sha256": "67b6a7b18c3d53500607818fa80bd62e886a27e955716c61903bc1c7ef26e59a",
+    "pdf_name": "Image183.jp2",
+    "width": 466,
+    "height": 297,
+    "pages": [
+      21
+    ],
+    "web_file": "barad-catalog-048.webp",
+    "web_sha256": "f434b39f11a2056f846a16c54d66f05d93ceb62d4085d6ad6f61b2c54bcbfb61"
+  },
+  "49": {
+    "page": 21,
+    "name": "catalog-image-049.png",
+    "sha256": "8c35655da00b6bc0656b625c04eee250ebc0e4219fb964dbcff4e95cef1df657",
+    "pdf_name": "Image185.png",
+    "width": 185,
+    "height": 78,
+    "pages": [
+      21
+    ],
+    "web_file": "barad-catalog-049.webp",
+    "web_sha256": "2b910208fabaa63314ad2baf86ff5eb684f5731136d3d06c711918857c27fb32"
+  },
+  "50": {
+    "page": 21,
+    "name": "catalog-image-050.jpg",
+    "sha256": "6f66b45724dd9aa03f1f6de918769f29983c0a67eb66f3ebe838ac9667e83099",
+    "pdf_name": "Image187.jpg",
+    "width": 405,
+    "height": 405,
+    "pages": [
+      21
+    ],
+    "web_file": "barad-catalog-050.webp",
+    "web_sha256": "c896166bb75284f00ffe4a160cf66852f026855f4e762c11adcd102d151bdac4"
+  },
+  "51": {
+    "page": 21,
+    "name": "catalog-image-051.jpg",
+    "sha256": "249d99b5a3e4113eb0f652ac0e067b506f77831a304bfde79e52824541dda6c2",
+    "pdf_name": "Image188.jpg",
+    "width": 300,
+    "height": 300,
+    "pages": [
+      21
+    ],
+    "web_file": "barad-catalog-051.webp",
+    "web_sha256": "55110c694ac4ac0e5bebf9ff350b11b2b1be86921e71b89579a284e35b0fb0b1"
+  },
+  "52": {
+    "page": 21,
+    "name": "catalog-image-052.png",
+    "sha256": "23a82ec79b5776c90adb1a93f70fa31e2b343c85008f2ff2d2e7a8cb573312d9",
+    "pdf_name": "Image189.png",
+    "width": 156,
+    "height": 45,
+    "pages": [
+      21
+    ],
+    "web_file": "barad-catalog-052.webp",
+    "web_sha256": "1fa479e7695701992ad5fee3e446da7661fab62a94d01512cf8c41dc32c6c04e"
+  },
+  "53": {
+    "page": 21,
+    "name": "catalog-image-053.jp2",
+    "sha256": "0cd91d7e7c86d85e32a46c0c070fa1a4b422109edc3668b688e2a1222731f951",
+    "pdf_name": "Image190.jp2",
+    "width": 496,
+    "height": 330,
+    "pages": [
+      21
+    ],
+    "web_file": "barad-catalog-053.webp",
+    "web_sha256": "b477bc167b8818b3de6634c3c1ed0a323c99e00e0748a129b8b0c94a4ae4a109"
+  },
+  "54": {
+    "page": 22,
+    "name": "catalog-image-054.png",
+    "sha256": "19340662287c617e7967070ee61fc00282f7270dd9dc064222ab2ada6ad642e6",
+    "pdf_name": "Image195.png",
+    "width": 115,
+    "height": 100,
+    "pages": [
+      22
+    ],
+    "web_file": "barad-catalog-054.webp",
+    "web_sha256": "052df114bd57a6ff547b345fdee1738b028a08ffe3b79bab493dd314dba25ae6"
+  },
+  "55": {
+    "page": 22,
+    "name": "catalog-image-055.jp2",
+    "sha256": "9c836862cd739160c10c61a080fc1a0bfa6e947d536d208eb5246922bb4b0ba0",
+    "pdf_name": "Image197.jp2",
+    "width": 845,
+    "height": 524,
+    "pages": [
+      22
+    ],
+    "web_file": "barad-catalog-055.webp",
+    "web_sha256": "dac6220015bfe5be3b4aaa0213dbdaa33d23663c634b7bafcbb1916d6d53ae19"
+  },
+  "56": {
+    "page": 22,
+    "name": "catalog-image-056.png",
+    "sha256": "7f989354e3f31681d52c468869f0e0c28ed43788d1f3c326207641e8bdc5e48e",
+    "pdf_name": "Image199.png",
+    "width": 1025,
+    "height": 486,
+    "pages": [
+      22
+    ],
+    "web_file": "barad-catalog-056.webp",
+    "web_sha256": "01f68def9a6139f1c2e93dfb9a6e8fc61abf37b7992ea727bff0f08b54c58e3c"
+  },
+  "57": {
+    "page": 23,
+    "name": "catalog-image-057.png",
+    "sha256": "4eb1d2e0e7378f3c9c2dd3b8292a90c0766816d1818137f27e0d08f9d468b793",
+    "pdf_name": "Image203.png",
+    "width": 256,
+    "height": 197,
+    "pages": [
+      23
+    ],
+    "web_file": "barad-catalog-057.webp",
+    "web_sha256": "03cff85e5c5d2412f1cbcb509fe386709e869e414acd4e3adec889c8c4e307c9"
+  },
+  "58": {
+    "page": 23,
+    "name": "catalog-image-058.jpg",
+    "sha256": "dfad19b3eba21f4122a3df479a1f1432bbdec7e252d52c430320178789067d10",
+    "pdf_name": "Image205.jpg",
+    "width": 173,
+    "height": 171,
+    "pages": [
+      23
+    ],
+    "web_file": "barad-catalog-058.webp",
+    "web_sha256": "6bd19d74e9ee56283c808866515609d32f5469176a0178adc66b7871ff7cb954"
+  },
+  "59": {
+    "page": 23,
+    "name": "catalog-image-059.png",
+    "sha256": "3663eef3c11d133eac4366cd6cbe5ebf2a7ddbbf6cd970016fe8c067b5cf9021",
+    "pdf_name": "Image208.png",
+    "width": 150,
+    "height": 129,
+    "pages": [
+      23
+    ],
+    "web_file": "barad-catalog-059.webp",
+    "web_sha256": "b59ee11e4252a37a15ae49d1486d74c592569f768aac7e6cf585ff72ee0c1c36"
+  },
+  "60": {
+    "page": 23,
+    "name": "catalog-image-060.jpg",
+    "sha256": "141fa38d4dec95ea7b692ef3ddd179338eaf67edbd11ff7175deed022991acd6",
+    "pdf_name": "Image209.jpg",
+    "width": 408,
+    "height": 172,
+    "pages": [
+      23
+    ],
+    "web_file": "barad-catalog-060.webp",
+    "web_sha256": "61bf495d516a2aef134597b83eeb2ee8d8f10c888268c1d3e7a309b49e812a24"
+  },
+  "61": {
+    "page": 23,
+    "name": "catalog-image-061.png",
+    "sha256": "b9233abaf98d65b73eab0eef0feba393a1cf0acbf8c9ef9ddbda0d15d856f00b",
+    "pdf_name": "Image210.png",
+    "width": 292,
+    "height": 145,
+    "pages": [
+      23
+    ],
+    "web_file": "barad-catalog-061.webp",
+    "web_sha256": "ce7f3d748813945aeeed21ac9dc55f882519bc077d89ff2a71c8dabd7f0f20a0"
+  },
+  "62": {
+    "page": 23,
+    "name": "catalog-image-062.png",
+    "sha256": "542d248963841f1b2d90c0e258170c8fd515f30e492bd5709dcdcab289e64b49",
+    "pdf_name": "Image211.png",
+    "width": 332,
+    "height": 273,
+    "pages": [
+      23
+    ],
+    "web_file": "barad-catalog-062.webp",
+    "web_sha256": "3b93812d4de4b3309a9dae97a2ac86cbcda07fc710ba8a0222ad13b3d74c8e3b"
+  },
+  "63": {
+    "page": 23,
+    "name": "catalog-image-063.jpg",
+    "sha256": "a38127d7553409d9ba9d8f6a27caa1f07bb458df2a560f61e9ba2cacc45473d6",
+    "pdf_name": "Image213.jpg",
+    "width": 232,
+    "height": 209,
+    "pages": [
+      23
+    ],
+    "web_file": "barad-catalog-063.webp",
+    "web_sha256": "d18bfa35f760b7c71f0def9537f06cacc32bcf916cb861bfa323891d9deab612"
+  },
+  "64": {
+    "page": 23,
+    "name": "catalog-image-064.png",
+    "sha256": "13ab186720a8535f4f4b3017c8002224eb28cdaa5108a64f6f0323cef1413049",
+    "pdf_name": "Image214.png",
+    "width": 205,
+    "height": 205,
+    "pages": [
+      23
+    ],
+    "web_file": "barad-catalog-064.webp",
+    "web_sha256": "dbb5ee269f0978d12bba203971c1199e4e98ef40d62ca7143673f100847a8de4"
+  },
+  "65": {
+    "page": 23,
+    "name": "catalog-image-065.png",
+    "sha256": "afbb27cf05cfd21e985ca0672782634c4610bfa4f9e05e6c3659f960384aba9b",
+    "pdf_name": "Image216.png",
+    "width": 228,
+    "height": 171,
+    "pages": [
+      23
+    ],
+    "web_file": "barad-catalog-065.webp",
+    "web_sha256": "88b8f25cd1cfa2fab0e6ef6ade8e482e18ec22f45a80a186eea3ebe8d196c0d3"
+  },
+  "66": {
+    "page": 23,
+    "name": "catalog-image-066.jpg",
+    "sha256": "403a5b4bf0e83ace697abe9bd205b8a928f3c71d6cb5f697671133091348ec46",
+    "pdf_name": "Image218.jpg",
+    "width": 255,
+    "height": 255,
+    "pages": [
+      23
+    ],
+    "web_file": "barad-catalog-066.webp",
+    "web_sha256": "4c634be2c6ff2bcdc0c92f84daaefaa250cb8018252fdf4d94b9820006defc7c"
+  },
+  "67": {
+    "page": 23,
+    "name": "catalog-image-067.jpg",
+    "sha256": "b440b3ce25fd28c7a9a169e096b1e57dbcfaea79cd222ad9ab504d4d7da2a024",
+    "pdf_name": "Image219.jpg",
+    "width": 200,
+    "height": 200,
+    "pages": [
+      23
+    ],
+    "web_file": "barad-catalog-067.webp",
+    "web_sha256": "ed2faf3fcc9938b662b1dc222468d87f12a01c77416f0ca93882491ba6c48107"
+  },
+  "68": {
+    "page": 23,
+    "name": "catalog-image-068.png",
+    "sha256": "35350eb7cd82aec180c8556185b5dda7ebd882009c6419c6aed68b86777b9922",
+    "pdf_name": "Image220.png",
+    "width": 343,
+    "height": 106,
+    "pages": [
+      23
+    ],
+    "web_file": "barad-catalog-068.webp",
+    "web_sha256": "96e809e641b31907f2342713c5d1a1c17e67be2295ad44a9ed0fa27d3d570eb9"
+  },
+  "69": {
+    "page": 23,
+    "name": "catalog-image-069.png",
+    "sha256": "90135689bd1c903f7a746c6f8d112abb28be2a18a637a497031a4dd6cc8fc964",
+    "pdf_name": "Image221.png",
+    "width": 267,
+    "height": 267,
+    "pages": [
+      23
+    ],
+    "web_file": "barad-catalog-069.webp",
+    "web_sha256": "b8c2ff8e39e655480d5e355a1f185a4c2f296da64a38bca08d73b266794232a7"
+  },
+  "70": {
+    "page": 23,
+    "name": "catalog-image-070.png",
+    "sha256": "cbcf45433760f29e9d9fa5db8d67c1eae2e4477fc3f7a43020f41aaf3e66e757",
+    "pdf_name": "Image223.png",
+    "width": 229,
+    "height": 220,
+    "pages": [
+      23
+    ],
+    "web_file": "barad-catalog-070.webp",
+    "web_sha256": "d1803fd51c49e7ef14c88296ab64c6f8fc0f0cc71c673e1590a4d91819529cc8"
+  },
+  "71": {
+    "page": 23,
+    "name": "catalog-image-071.jpg",
+    "sha256": "3822ae350c63ba4a91102ff5fbc052c31c71628db2dff42e7ec7ff67fe04895b",
+    "pdf_name": "Image225.jpg",
+    "width": 279,
+    "height": 197,
+    "pages": [
+      23
+    ],
+    "web_file": "barad-catalog-071.webp",
+    "web_sha256": "4c9d4d5f0f4bcbe417cf67479376c2a4a39ab39dd33f6e97b1fd97d61a13c27e"
+  },
+  "72": {
+    "page": 23,
+    "name": "catalog-image-072.png",
+    "sha256": "952de58253610f50c835bf3c07cc2e075eddc4a4d8548083374630bd7de67a87",
+    "pdf_name": "Image226.png",
+    "width": 226,
+    "height": 223,
+    "pages": [
+      23
+    ],
+    "web_file": "barad-catalog-072.webp",
+    "web_sha256": "7874488e8a23d5caca397da5af5c5466244d8d4986298e50fc2042237ff0de2c"
+  },
+  "73": {
+    "page": 23,
+    "name": "catalog-image-073.png",
+    "sha256": "a8e923a9cd8d4804a32bb07ef7ddb515a1560e7b24e201979c599c5c1219d97e",
+    "pdf_name": "Image228.png",
+    "width": 326,
+    "height": 142,
+    "pages": [
+      23
+    ],
+    "web_file": "barad-catalog-073.webp",
+    "web_sha256": "ca47c22b19749407c5c1ddd775977cba8c5d4720e45c235dfd34b151a59f7783"
+  },
+  "74": {
+    "page": 23,
+    "name": "catalog-image-074.png",
+    "sha256": "ca9943cb7a4e9b2468cd3869f341ab07f97522a5efa19f658dea6ab1f6b3da7f",
+    "pdf_name": "Image230.png",
+    "width": 226,
+    "height": 168,
+    "pages": [
+      23
+    ],
+    "web_file": "barad-catalog-074.webp",
+    "web_sha256": "94892654ee48a46fa857e1dfe22de70dcb8e3b644da52f158a641421e9e11a6e"
+  },
+  "75": {
+    "page": 23,
+    "name": "catalog-image-075.jpg",
+    "sha256": "cf86b23a8e6865767a6079f94a3229a91f1d119d00a620485439f1d9c9bf526f",
+    "pdf_name": "Image231.jpg",
+    "width": 164,
+    "height": 164,
+    "pages": [
+      23
+    ],
+    "web_file": "barad-catalog-075.webp",
+    "web_sha256": "0cb8677ceefc110267c8e5dc9ed5e7635491ef7b7c7b6745f6eba4d24eb82554"
+  },
+  "76": {
+    "page": 23,
+    "name": "catalog-image-076.jpg",
+    "sha256": "3057a60a0b10ce8d25ef65520fba2b9baebb8cc657da837af55f38ded034dcdf",
+    "pdf_name": "Image232.jpg",
+    "width": 490,
+    "height": 175,
+    "pages": [
+      23
+    ],
+    "web_file": "barad-catalog-076.webp",
+    "web_sha256": "03c8ae7bf2303c91220afa4911c98ce509fc714a12b6b252311db9b70d7024a0"
+  },
+  "77": {
+    "page": 23,
+    "name": "catalog-image-077.jp2",
+    "sha256": "1e8a0b834533a8a27dff3296a07737f1178caf92624feb8a1fd73610d6fc89b4",
+    "pdf_name": "Image233.jp2",
+    "width": 533,
+    "height": 188,
+    "pages": [
+      23
+    ],
+    "web_file": "barad-catalog-077.webp",
+    "web_sha256": "c23e07323b18a44bfdbc99a8bc12ae1c63873227c179a1b8f39d38b5b175e826"
+  },
+  "78": {
+    "page": 23,
+    "name": "catalog-image-078.png",
+    "sha256": "d611435d6e5eb7bd9d4d180f012c598ffd477243c0d4b0f0d9128b8446e379a0",
+    "pdf_name": "Image235.png",
+    "width": 257,
+    "height": 257,
+    "pages": [
+      23
+    ],
+    "web_file": "barad-catalog-078.webp",
+    "web_sha256": "59de18b6645b6150bb7bbbf508601186ba176a726cef8125b31b323900280235"
+  },
+  "79": {
+    "page": 23,
+    "name": "catalog-image-079.png",
+    "sha256": "68101a1921c178a8777ec0cec96a89f5e6df0db882dfe0673cd6bb30d9fdf210",
+    "pdf_name": "Image237.png",
+    "width": 207,
+    "height": 56,
+    "pages": [
+      23
+    ],
+    "web_file": "barad-catalog-079.webp",
+    "web_sha256": "c5c3fcc749ed5ef9f5ee713689d0d9ea6fdb2b0205784036c9e892eeb38e24f1"
+  },
+  "80": {
+    "page": 25,
+    "name": "catalog-image-080.jpg",
+    "sha256": "c622ad5771ca71800399f810613ebf4789d5596ca799825c00d66d0fecabb8a3",
+    "pdf_name": "Image247.jpg",
+    "width": 490,
+    "height": 693,
+    "pages": [
+      25
+    ],
+    "web_file": "barad-catalog-080.webp",
+    "web_sha256": "d70592ce86092e35da0b94c8032c07b2947650d5b14ff093952049b1dbfd94b3"
+  },
+  "81": {
+    "page": 25,
+    "name": "catalog-image-081.png",
+    "sha256": "349e0970971efcabc61fdbfd49e3321f54d4d352d9c083779669c6daef3c2520",
+    "pdf_name": "Image248.png",
+    "width": 517,
+    "height": 734,
+    "pages": [
+      25
+    ],
+    "web_file": "barad-catalog-081.webp",
+    "web_sha256": "0b2ef00938aaca06a171e66827563e387e04b01061a0440b6a0f2c8ec1ed8486"
+  },
+  "82": {
+    "page": 25,
+    "name": "catalog-image-082.jpg",
+    "sha256": "61d06c329da5f10ba5e9afff49513892450b5d4fed109c7dbfc54adc74cbb651",
+    "pdf_name": "Image249.jpg",
+    "width": 430,
+    "height": 629,
+    "pages": [
+      25
+    ],
+    "web_file": "barad-catalog-082.webp",
+    "web_sha256": "95a3ae1656d7110e082a56fe6b430f608f9ad9883d922cb65ae947a325430bc0"
+  },
+  "83": {
+    "page": 25,
+    "name": "catalog-image-083.jpg",
+    "sha256": "3a326358b48ac568a9ded4da43a0c20fffc645e116389d7f3b697a9592c727fe",
+    "pdf_name": "Image250.jpg",
+    "width": 553,
+    "height": 506,
+    "pages": [
+      25
+    ],
+    "web_file": "barad-catalog-083.webp",
+    "web_sha256": "a47411b0658b6609894e0b06a6536527b9c0790bb20fed06538ff4cd1c66bca4"
+  },
+  "84": {
+    "page": 25,
+    "name": "catalog-image-084.jpg",
+    "sha256": "55e09e936478373608f6d0839798d64fd63614ab10a79e1878fe51d36bba62b2",
+    "pdf_name": "Image251.jpg",
+    "width": 420,
+    "height": 607,
+    "pages": [
+      25
+    ],
+    "web_file": "barad-catalog-084.webp",
+    "web_sha256": "39ce1ea5550b402d89fc674965981aa01947ff509914f448b6650bb4eeeac5eb"
+  },
+  "85": {
+    "page": 25,
+    "name": "catalog-image-085.jpg",
+    "sha256": "4e3bf7186a60e76f98fa6be1cabc1c7d40cc4aa7a9a84c4b3931af4cbc7c2565",
+    "pdf_name": "Image252.jpg",
+    "width": 524,
+    "height": 693,
+    "pages": [
+      25
+    ],
+    "web_file": "barad-catalog-085.webp",
+    "web_sha256": "d6312a2c09485b635ee57f382ac28622217269502daf4fde14ab497775448e55"
+  },
+  "86": {
+    "page": 25,
+    "name": "catalog-image-086.jpg",
+    "sha256": "3a59c5bd26638ae500bedeac1fc86472fe32469ae18ed3d28e563945627c4f90",
+    "pdf_name": "Image253.jpg",
+    "width": 490,
+    "height": 693,
+    "pages": [
+      25
+    ],
+    "web_file": "barad-catalog-086.webp",
+    "web_sha256": "fc529363c287d6fea3e396f95fd95356c42dc6d6b9385751e6a04d6d328cdf0f"
+  },
+  "87": {
+    "page": 25,
+    "name": "catalog-image-087.png",
+    "sha256": "f406b586f5a3937ba8e988f615c10525d63b9bb1e5e94d06556988c0bbf16a36",
+    "pdf_name": "Image254.png",
+    "width": 601,
+    "height": 738,
+    "pages": [
+      25
+    ],
+    "web_file": "barad-catalog-087.webp",
+    "web_sha256": "e19220dac8a211b8e354870a701f9c24edfb9a3725c5118fb4956096ed71ffd7"
+  },
+  "88": {
+    "page": 26,
+    "name": "catalog-image-088.jpg",
+    "sha256": "b05dafd5666d8a444236821186a87aa0d28ba8e8727827d16b1f6104924bd9f9",
+    "pdf_name": "Image258.jpg",
+    "width": 1331,
+    "height": 922,
+    "pages": [
+      26
+    ],
+    "web_file": "barad-catalog-088.webp",
+    "web_sha256": "5adcd2540bc138eb13c51e428705fe5f1b4160e4db2d42b731d37beb2c174127"
+  },
+  "89": {
+    "page": 26,
+    "name": "catalog-image-089.jpg",
+    "sha256": "acea5e00068317b1703fd616909fe627938572d7cc841f1a2bb77054d315459a",
+    "pdf_name": "Image259.jpg",
+    "width": 638,
+    "height": 903,
+    "pages": [
+      26
+    ],
+    "web_file": "barad-catalog-089.webp",
+    "web_sha256": "91205fa6ad4775367df257d9c3f7a4ac301e9575634de01374df1a987cf39009"
+  },
+  "90": {
+    "page": 26,
+    "name": "catalog-image-090.jpg",
+    "sha256": "9ba464d1ca3c48de307e809f3dba70a313b2e912d71900c51f5c2f42cfdddca3",
+    "pdf_name": "Image260.jpg",
+    "width": 796,
+    "height": 1126,
+    "pages": [
+      26
+    ],
+    "web_file": "barad-catalog-090.webp",
+    "web_sha256": "ea0b2337f63a66f1ea778ec3052a3a647a6f554338835b45829498ca8902d559"
+  },
+  "91": {
+    "page": 27,
+    "name": "catalog-image-091.jp2",
+    "sha256": "8d04508a1efa9a20abe9a7fb8416f4a109e49b65c9cc8c1f1c2253996f563d76",
+    "pdf_name": "Image264.jp2",
+    "width": 1253,
+    "height": 1443,
+    "pages": [
+      27
+    ],
+    "web_file": "barad-catalog-091.webp",
+    "web_sha256": "8d4fdd67dc90f0aa5156a581596cc8be17edd5d1e35c3a905eef68000d245290"
+  },
+  "92": {
+    "page": 27,
+    "name": "catalog-image-092.jp2",
+    "sha256": "4618238587a7a95273cc4350ec47952fcb78e7127bd03c019277ce7b5041de81",
+    "pdf_name": "Image266.jp2",
+    "width": 801,
+    "height": 534,
+    "pages": [
+      27
+    ],
+    "web_file": "barad-catalog-092.webp",
+    "web_sha256": "5541e1faa31fa38e7effbdba5d73082ee7c1f51b1837b1bd00c2940791752640"
+  },
+  "93": {
+    "page": 28,
+    "name": "catalog-image-093.jpg",
+    "sha256": "5e80dc8279d4b293026ea09e1944e1e820abfb301ba5a4fe85ffc3512b2e88c9",
+    "pdf_name": "Image271.jpg",
+    "width": 1314,
+    "height": 1795,
+    "pages": [
+      28
+    ],
+    "web_file": "barad-catalog-093.webp",
+    "web_sha256": "9f55863faaf4f122819d123337cbad444ecccfce3bbeed382beface5bd25267e"
+  },
+  "94": {
+    "page": 29,
+    "name": "catalog-image-094.png",
+    "sha256": "187f5162c8f8c5b5e7cd0f786bfaf441a0f2a6b5fdb8a7e160910ec6d8b09225",
+    "pdf_name": "Image275.png",
+    "width": 353,
+    "height": 702,
+    "pages": [
+      29
+    ],
+    "web_file": "barad-catalog-094.webp",
+    "web_sha256": "e7ae77abb9e02c02f6f76ab3e056d9976bd812fbcae36ed3a7ea6b7a750991aa"
+  },
+  "95": {
+    "page": 29,
+    "name": "catalog-image-095.png",
+    "sha256": "92f300560005bf336e4cbfc89a723803102751b234339be23dae13b83c6149c1",
+    "pdf_name": "Image276.png",
+    "width": 130,
+    "height": 130,
+    "pages": [
+      29
+    ],
+    "web_file": "barad-catalog-095.webp",
+    "web_sha256": "f337ae40a8ff684e99a98e653784097dfdf52559677f90b7dd4fb5533098a47f"
+  },
+  "96": {
+    "page": 29,
+    "name": "catalog-image-096.png",
+    "sha256": "a1f87006cddfa75af2f8216b5c3904c52b2c0eb14ec4d6690e2d3819096bcec6",
+    "pdf_name": "Image277.png",
+    "width": 791,
+    "height": 110,
+    "pages": [
+      29
+    ],
+    "web_file": "barad-catalog-096.webp",
+    "web_sha256": "382252a924b4bb8c9a8b62e938d38afc66e6eafd9e0eab0bc745e26c29ba4457"
+  },
+  "97": {
+    "page": 29,
+    "name": "catalog-image-097.png",
+    "sha256": "31e6d671e72b825275d2f27d8528cde6356db1b8ad37fce2570eebb2ddaf7ddc",
+    "pdf_name": "Image281.png",
+    "width": 130,
+    "height": 130,
+    "pages": [
+      29
+    ],
+    "web_file": "barad-catalog-097.webp",
+    "web_sha256": "acd801fde456c8d0d3b9977bbc1d89487d6de1b0bc813da69f8409f90b92742d"
+  },
+  "98": {
+    "page": 29,
+    "name": "catalog-image-098.png",
+    "sha256": "9313ad36f12bdb6e314e3634de1945731ab4f76cf587c054849454cd92eda006",
+    "pdf_name": "Image282.png",
+    "width": 256,
+    "height": 52,
+    "pages": [
+      29
+    ],
+    "web_file": "barad-catalog-098.webp",
+    "web_sha256": "7732a569cfdf4ed1eda1cf7de0f9f27efe68111bf8cc000eb31973114950f10d"
+  },
+  "99": {
+    "page": 29,
+    "name": "catalog-image-099.png",
+    "sha256": "14b46d3b36e84cb3d189986da5bc0edbe7cfeda29113299caee0acfc0ab7fc13",
+    "pdf_name": "Image284.png",
+    "width": 130,
+    "height": 130,
+    "pages": [
+      29
+    ],
+    "web_file": "barad-catalog-099.webp",
+    "web_sha256": "1f0587e3986961c9fcda0b28d25766dfef0c12d9ee9a96acf79aaaf25c0f6d50"
+  },
+  "100": {
+    "page": 29,
+    "name": "catalog-image-100.png",
+    "sha256": "4cc241fd4884350d7e0331b3c894435fe04a445f592f799528b5b70bdc2a0ef6",
+    "pdf_name": "Image285.png",
+    "width": 481,
+    "height": 52,
+    "pages": [
+      29
+    ],
+    "web_file": "barad-catalog-100.webp",
+    "web_sha256": "0ccde478f3869661c9f29a2d9c8ae5f4016f108b29a11d862ec502760d2ff578"
+  },
+  "101": {
+    "page": 29,
+    "name": "catalog-image-101.png",
+    "sha256": "59976276f9d3e9c97396d5f796b5bb5030c12fc5ebbf5ba5bdec84f99c58eba7",
+    "pdf_name": "Image287.png",
+    "width": 69,
+    "height": 135,
+    "pages": [
+      29
+    ],
+    "web_file": "barad-catalog-101.webp",
+    "web_sha256": "c21c90e65846f43a720eb19204e2391e73e88788402328715d104dd897d5b381"
+  },
+  "102": {
+    "page": 29,
+    "name": "catalog-image-102.png",
+    "sha256": "51c1b8b56b87b3440810d8cec77ce77a03cc61d4e4322a9ae1ed38c53700b94f",
+    "pdf_name": "Image291.png",
+    "width": 86,
+    "height": 86,
+    "pages": [
+      29
+    ],
+    "web_file": "barad-catalog-102.webp",
+    "web_sha256": "197fd6b3ce9d250014bd1e48a58927da705de32af6c8f026667be3a9032647c3"
+  },
+  "103": {
+    "page": 29,
+    "name": "catalog-image-103.jp2",
+    "sha256": "ab2996df76de385f721e365921e4538763f56c5552319a86ff2e8748770fcbf3",
+    "pdf_name": "Image292.jp2",
+    "width": 1255,
+    "height": 706,
+    "pages": [
+      29
+    ],
+    "web_file": "barad-catalog-103.webp",
+    "web_sha256": "1249274092240b8a109afb64196e601dbe89d62fc9df30d01438fc60162ec46a"
+  },
+  "104": {
+    "page": 30,
+    "name": "catalog-image-104.png",
+    "sha256": "14e80253bfcd6eb668aca004e05f5b7428285ad0bbd3d5600202b21078253a87",
+    "pdf_name": "Image296.png",
+    "width": 315,
+    "height": 517,
+    "pages": [
+      30
+    ],
+    "web_file": "barad-catalog-104.webp",
+    "web_sha256": "0e54d4ede1b8cc89e1d67162f130b675b1410c865973c659b6112d2f640b70bc"
+  }
+}

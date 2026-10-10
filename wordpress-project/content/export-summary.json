@@ -1,0 +1,19 @@
+{
+  "pages": 25,
+  "published_pages": 13,
+  "products": 282,
+  "published_products": 141,
+  "media": 252,
+  "public_routes": 170,
+  "excluded": [
+    "users",
+    "passwords",
+    "requests",
+    "orders",
+    "customer-data",
+    "license-files",
+    "wp-config",
+    "database",
+    "runtime"
+  ]
+}

@@ -1,0 +1,900 @@
+{
+  "date": "2026-10-09",
+  "pages": [
+    {
+      "path": "/projects/",
+      "file": "projects/index.html",
+      "title": "سوابق تأمین پروژه‌های باراد | باراد"
+    },
+    {
+      "path": "/cable-guide/",
+      "file": "cable-guide/index.html",
+      "title": "راهنمای فنی سیم و کابل | باراد"
+    },
+    {
+      "path": "/services/",
+      "file": "services/index.html",
+      "title": "خدمات تأمین و مشاورهٔ باراد | باراد"
+    },
+    {
+      "path": "/partners/",
+      "file": "partners/index.html",
+      "title": "شبکهٔ همکاری و تأمین باراد | باراد"
+    },
+    {
+      "path": "/team/",
+      "file": "team/index.html",
+      "title": "تیم ایده‌آفرینان باراد | باراد"
+    },
+    {
+      "path": "/tehran/",
+      "file": "tehran/index.html",
+      "title": "خرید سیم و کابل در تهران و شمال تهران | باراد"
+    },
+    {
+      "path": "/ghandi/",
+      "file": "ghandi/index.html",
+      "title": "نمایندگی شهید قندی یزد؛ کابل نوری و مخابراتی | باراد"
+    },
+    {
+      "path": "/afsharnejad/",
+      "file": "afsharnejad/index.html",
+      "title": "نمایندگی رسمی افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/",
+      "file": "index.html",
+      "title": "باراد | تأمین سیم و کابل در تهران و شمال تهران"
+    },
+    {
+      "path": "/catalog/",
+      "file": "catalog/index.html",
+      "title": "کالاهای باراد؛ مشخصات سیم و کابل و استعلام قیمت"
+    },
+    {
+      "path": "/quote/",
+      "file": "quote/index.html",
+      "title": "درخواست پیش‌فاکتور سیم و کابل | باراد"
+    },
+    {
+      "path": "/about/",
+      "file": "about/index.html",
+      "title": "درباره باراد | خدمات تأمین سیم و کابل و سوابق پروژه‌ها"
+    },
+    {
+      "path": "/contact/",
+      "file": "contact/index.html",
+      "title": "تماس با باراد در تهران | دفتر نیاوران و هماهنگی مراجعه"
+    },
+    {
+      "path": "/product/afshar-flexible-cable-1x35/",
+      "file": "product/afshar-flexible-cable-1x35/index.html",
+      "title": "کابل افشان دو روکشه ۱x۳۵ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-flexible-cable-1x50/",
+      "file": "product/afshar-flexible-cable-1x50/index.html",
+      "title": "کابل افشان دو روکشه ۱x۵۰ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-flexible-cable-1x70/",
+      "file": "product/afshar-flexible-cable-1x70/index.html",
+      "title": "کابل افشان دو روکشه ۱x۷۰ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-flexible-cable-1x95/",
+      "file": "product/afshar-flexible-cable-1x95/index.html",
+      "title": "کابل افشان دو روکشه ۱x۹۵ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-flexible-cable-1x120/",
+      "file": "product/afshar-flexible-cable-1x120/index.html",
+      "title": "کابل افشان دو روکشه ۱x۱۲۰ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-flexible-cable-1x150/",
+      "file": "product/afshar-flexible-cable-1x150/index.html",
+      "title": "کابل افشان دو روکشه ۱x۱۵۰ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-flexible-cable-1x185/",
+      "file": "product/afshar-flexible-cable-1x185/index.html",
+      "title": "کابل افشان دو روکشه ۱x۱۸۵ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-flexible-cable-1x240/",
+      "file": "product/afshar-flexible-cable-1x240/index.html",
+      "title": "کابل افشان دو روکشه ۱x۲۴۰ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-flexible-cable-1x300/",
+      "file": "product/afshar-flexible-cable-1x300/index.html",
+      "title": "کابل افشان دو روکشه ۱x۳۰۰ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-shielded-flexible-cable-2x2-5/",
+      "file": "product/afshar-shielded-flexible-cable-2x2-5/index.html",
+      "title": "کابل افشان شیلددار ۲x۲.۵ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-shielded-flexible-cable-3x0-75/",
+      "file": "product/afshar-shielded-flexible-cable-3x0-75/index.html",
+      "title": "کابل افشان شیلددار ۳x۰.۷۵ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-shielded-flexible-cable-3x1/",
+      "file": "product/afshar-shielded-flexible-cable-3x1/index.html",
+      "title": "کابل افشان شیلددار ۳x۱ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-shielded-flexible-cable-3x1-5/",
+      "file": "product/afshar-shielded-flexible-cable-3x1-5/index.html",
+      "title": "کابل افشان شیلددار ۳x۱.۵ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-shielded-flexible-cable-3x2-5/",
+      "file": "product/afshar-shielded-flexible-cable-3x2-5/index.html",
+      "title": "کابل افشان شیلددار ۳x۲.۵ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-shielded-flexible-cable-4x1/",
+      "file": "product/afshar-shielded-flexible-cable-4x1/index.html",
+      "title": "کابل افشان شیلددار ۴x۱ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-shielded-flexible-cable-4x1-5/",
+      "file": "product/afshar-shielded-flexible-cable-4x1-5/index.html",
+      "title": "کابل افشان شیلددار ۴x۱.۵ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-shielded-flexible-cable-4x2-5/",
+      "file": "product/afshar-shielded-flexible-cable-4x2-5/index.html",
+      "title": "کابل افشان شیلددار ۴x۲.۵ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-shielded-flexible-cable-5x1/",
+      "file": "product/afshar-shielded-flexible-cable-5x1/index.html",
+      "title": "کابل افشان شیلددار ۵x۱ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-shielded-flexible-cable-5x1-5/",
+      "file": "product/afshar-shielded-flexible-cable-5x1-5/index.html",
+      "title": "کابل افشان شیلددار ۵x۱.۵ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-flexible-cable-1x16/",
+      "file": "product/afshar-flexible-cable-1x16/index.html",
+      "title": "کابل افشان دو روکشه ۱x۱۶ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-flexible-cable-1x25/",
+      "file": "product/afshar-flexible-cable-1x25/index.html",
+      "title": "کابل افشان دو روکشه ۱x۲۵ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-underground-cable-5x6/",
+      "file": "product/afshar-underground-cable-5x6/index.html",
+      "title": "کابل زمینی ۵x۶ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-underground-cable-5x10/",
+      "file": "product/afshar-underground-cable-5x10/index.html",
+      "title": "کابل زمینی ۵x۱۰ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-underground-cable-5x16/",
+      "file": "product/afshar-underground-cable-5x16/index.html",
+      "title": "کابل زمینی ۵x۱۶ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-underground-cable-5x25/",
+      "file": "product/afshar-underground-cable-5x25/index.html",
+      "title": "کابل زمینی ۵x۲۵ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-underground-cable-5x35/",
+      "file": "product/afshar-underground-cable-5x35/index.html",
+      "title": "کابل زمینی ۵x۳۵ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-telecommunication-cable-0-6x2x2/",
+      "file": "product/afshar-telecommunication-cable-0-6x2x2/index.html",
+      "title": "کابل مخابراتی هوایی ۲x۲x۰.۶ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-telecommunication-cable-0-6x2x4/",
+      "file": "product/afshar-telecommunication-cable-0-6x2x4/index.html",
+      "title": "کابل مخابراتی هوایی ۴x۲x۰.۶ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-telecommunication-cable-0-6x2x6/",
+      "file": "product/afshar-telecommunication-cable-0-6x2x6/index.html",
+      "title": "کابل مخابراتی هوایی ۶x۲x۰.۶ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-telecommunication-cable-0-6x2x10/",
+      "file": "product/afshar-telecommunication-cable-0-6x2x10/index.html",
+      "title": "کابل مخابراتی هوایی ۱۰x۲x۰.۶ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-telecommunication-cable-4-5c-2v/",
+      "file": "product/afshar-telecommunication-cable-4-5c-2v/index.html",
+      "title": "کابل کواکسیال ۴.۵C-۲V افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-shielded-flexible-cable-2x1/",
+      "file": "product/afshar-shielded-flexible-cable-2x1/index.html",
+      "title": "کابل افشان شیلددار ۲x۱ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-shielded-flexible-cable-2x1-5/",
+      "file": "product/afshar-shielded-flexible-cable-2x1-5/index.html",
+      "title": "کابل افشان شیلددار ۲x۱.۵ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-underground-cable-3x25/",
+      "file": "product/afshar-underground-cable-3x25/index.html",
+      "title": "کابل زمینی ۳x۲۵ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-underground-cable-3x35/",
+      "file": "product/afshar-underground-cable-3x35/index.html",
+      "title": "کابل زمینی ۳x۳۵ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-underground-cable-4x1-5/",
+      "file": "product/afshar-underground-cable-4x1-5/index.html",
+      "title": "کابل زمینی ۴x۱.۵ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-underground-cable-4x2-5/",
+      "file": "product/afshar-underground-cable-4x2-5/index.html",
+      "title": "کابل زمینی ۴x۲.۵ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-underground-cable-4x4/",
+      "file": "product/afshar-underground-cable-4x4/index.html",
+      "title": "کابل زمینی ۴x۴ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-underground-cable-4x6/",
+      "file": "product/afshar-underground-cable-4x6/index.html",
+      "title": "کابل زمینی ۴x۶ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-underground-cable-4x10/",
+      "file": "product/afshar-underground-cable-4x10/index.html",
+      "title": "کابل زمینی ۴x۱۰ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-underground-cable-4x16/",
+      "file": "product/afshar-underground-cable-4x16/index.html",
+      "title": "کابل زمینی ۴x۱۶ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-underground-cable-4x25/",
+      "file": "product/afshar-underground-cable-4x25/index.html",
+      "title": "کابل زمینی ۴x۲۵ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-underground-cable-5x1-5/",
+      "file": "product/afshar-underground-cable-5x1-5/index.html",
+      "title": "کابل زمینی ۵x۱.۵ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-underground-cable-5x2-5/",
+      "file": "product/afshar-underground-cable-5x2-5/index.html",
+      "title": "کابل زمینی ۵x۲.۵ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-underground-cable-5x4/",
+      "file": "product/afshar-underground-cable-5x4/index.html",
+      "title": "کابل زمینی ۵x۴ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-underground-cable-2x1-5/",
+      "file": "product/afshar-underground-cable-2x1-5/index.html",
+      "title": "کابل زمینی ۲x۱.۵ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-underground-cable-2x2-5/",
+      "file": "product/afshar-underground-cable-2x2-5/index.html",
+      "title": "کابل زمینی ۲x۲.۵ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-underground-cable-2x4/",
+      "file": "product/afshar-underground-cable-2x4/index.html",
+      "title": "کابل زمینی ۲x۴ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-underground-cable-2x6/",
+      "file": "product/afshar-underground-cable-2x6/index.html",
+      "title": "کابل زمینی ۲x۶ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-underground-cable-2x10/",
+      "file": "product/afshar-underground-cable-2x10/index.html",
+      "title": "کابل زمینی ۲x۱۰ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-underground-cable-2x16/",
+      "file": "product/afshar-underground-cable-2x16/index.html",
+      "title": "کابل زمینی ۲x۱۶ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-underground-cable-3x1-5/",
+      "file": "product/afshar-underground-cable-3x1-5/index.html",
+      "title": "کابل زمینی ۳x۱.۵ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-underground-cable-3x2-5/",
+      "file": "product/afshar-underground-cable-3x2-5/index.html",
+      "title": "کابل زمینی ۳x۲.۵ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-underground-cable-3x4/",
+      "file": "product/afshar-underground-cable-3x4/index.html",
+      "title": "کابل زمینی ۳x۴ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-underground-cable-3x6/",
+      "file": "product/afshar-underground-cable-3x6/index.html",
+      "title": "کابل زمینی ۳x۶ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-underground-cable-3x10/",
+      "file": "product/afshar-underground-cable-3x10/index.html",
+      "title": "کابل زمینی ۳x۱۰ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-underground-cable-3x16/",
+      "file": "product/afshar-underground-cable-3x16/index.html",
+      "title": "کابل زمینی ۳x۱۶ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-underground-cable-1x150/",
+      "file": "product/afshar-underground-cable-1x150/index.html",
+      "title": "کابل زمینی ۱x۱۵۰ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-underground-cable-1x185/",
+      "file": "product/afshar-underground-cable-1x185/index.html",
+      "title": "کابل زمینی ۱x۱۸۵ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-underground-cable-1x240/",
+      "file": "product/afshar-underground-cable-1x240/index.html",
+      "title": "کابل زمینی ۱x۲۴۰ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-underground-cable-1x300/",
+      "file": "product/afshar-underground-cable-1x300/index.html",
+      "title": "کابل زمینی ۱x۳۰۰ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-underground-cable-3-5-core-3x25-16/",
+      "file": "product/afshar-underground-cable-3-5-core-3x25-16/index.html",
+      "title": "کابل زمینی ۳x۲۵+۱۶ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-underground-cable-3-5-core-3x35-16/",
+      "file": "product/afshar-underground-cable-3-5-core-3x35-16/index.html",
+      "title": "کابل زمینی ۳x۳۵+۱۶ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-underground-cable-3-5-core-3x50-25/",
+      "file": "product/afshar-underground-cable-3-5-core-3x50-25/index.html",
+      "title": "کابل زمینی ۳x۵۰+۲۵ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-underground-cable-3-5-core-3x70-35/",
+      "file": "product/afshar-underground-cable-3-5-core-3x70-35/index.html",
+      "title": "کابل زمینی ۳x۷۰+۳۵ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-underground-cable-3-5-core-3x95-50/",
+      "file": "product/afshar-underground-cable-3-5-core-3x95-50/index.html",
+      "title": "کابل زمینی ۳x۹۵+۵۰ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-underground-cable-3-5-core-3x120-70/",
+      "file": "product/afshar-underground-cable-3-5-core-3x120-70/index.html",
+      "title": "کابل زمینی ۳x۱۲۰+۷۰ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-underground-cable-3-5-core-3x150-70/",
+      "file": "product/afshar-underground-cable-3-5-core-3x150-70/index.html",
+      "title": "کابل زمینی ۳x۱۵۰+۷۰ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-underground-cable-3-5-core-3x185-95/",
+      "file": "product/afshar-underground-cable-3-5-core-3x185-95/index.html",
+      "title": "کابل زمینی ۳x۱۸۵+۹۵ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-underground-cable-3-5-core-3x240-120/",
+      "file": "product/afshar-underground-cable-3-5-core-3x240-120/index.html",
+      "title": "کابل زمینی ۳x۲۴۰+۱۲۰ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-flexible-cable-5x6/",
+      "file": "product/afshar-flexible-cable-5x6/index.html",
+      "title": "کابل افشان ۵x۶ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-flexible-cable-5x10/",
+      "file": "product/afshar-flexible-cable-5x10/index.html",
+      "title": "کابل افشان ۵x۱۰ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-flexible-cable-5x16/",
+      "file": "product/afshar-flexible-cable-5x16/index.html",
+      "title": "کابل افشان ۵x۱۶ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-flexible-cable-5x25/",
+      "file": "product/afshar-flexible-cable-5x25/index.html",
+      "title": "کابل افشان ۵x۲۵ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-flexible-cable-5x35/",
+      "file": "product/afshar-flexible-cable-5x35/index.html",
+      "title": "کابل افشان ۵x۳۵ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-underground-cable-1x16/",
+      "file": "product/afshar-underground-cable-1x16/index.html",
+      "title": "کابل زمینی ۱x۱۶ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-underground-cable-1x25/",
+      "file": "product/afshar-underground-cable-1x25/index.html",
+      "title": "کابل زمینی ۱x۲۵ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-underground-cable-1x35/",
+      "file": "product/afshar-underground-cable-1x35/index.html",
+      "title": "کابل زمینی ۱x۳۵ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-underground-cable-1x50/",
+      "file": "product/afshar-underground-cable-1x50/index.html",
+      "title": "کابل زمینی ۱x۵۰ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-underground-cable-1x70/",
+      "file": "product/afshar-underground-cable-1x70/index.html",
+      "title": "کابل زمینی ۱x۷۰ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-underground-cable-1x95/",
+      "file": "product/afshar-underground-cable-1x95/index.html",
+      "title": "کابل زمینی ۱x۹۵ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-underground-cable-1x120/",
+      "file": "product/afshar-underground-cable-1x120/index.html",
+      "title": "کابل زمینی ۱x۱۲۰ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-flexible-cable-4x1-5/",
+      "file": "product/afshar-flexible-cable-4x1-5/index.html",
+      "title": "کابل افشان ۴x۱.۵ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-flexible-cable-4x2-5/",
+      "file": "product/afshar-flexible-cable-4x2-5/index.html",
+      "title": "کابل افشان ۴x۲.۵ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-flexible-cable-4x4/",
+      "file": "product/afshar-flexible-cable-4x4/index.html",
+      "title": "کابل افشان ۴x۴ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-flexible-cable-4x6/",
+      "file": "product/afshar-flexible-cable-4x6/index.html",
+      "title": "کابل افشان ۴x۶ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-flexible-cable-4x10/",
+      "file": "product/afshar-flexible-cable-4x10/index.html",
+      "title": "کابل افشان ۴x۱۰ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-flexible-cable-4x16/",
+      "file": "product/afshar-flexible-cable-4x16/index.html",
+      "title": "کابل افشان ۴x۱۶ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-flexible-cable-4x25/",
+      "file": "product/afshar-flexible-cable-4x25/index.html",
+      "title": "کابل افشان ۴x۲۵ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-flexible-cable-4x35/",
+      "file": "product/afshar-flexible-cable-4x35/index.html",
+      "title": "کابل افشان ۴x۳۵ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-flexible-cable-5x1/",
+      "file": "product/afshar-flexible-cable-5x1/index.html",
+      "title": "کابل افشان ۵x۱ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-flexible-cable-5x1-5/",
+      "file": "product/afshar-flexible-cable-5x1-5/index.html",
+      "title": "کابل افشان ۵x۱.۵ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-flexible-cable-5x2-5/",
+      "file": "product/afshar-flexible-cable-5x2-5/index.html",
+      "title": "کابل افشان ۵x۲.۵ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-flexible-cable-5x4/",
+      "file": "product/afshar-flexible-cable-5x4/index.html",
+      "title": "کابل افشان ۵x۴ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-flexible-cable-3x25/",
+      "file": "product/afshar-flexible-cable-3x25/index.html",
+      "title": "کابل افشان ۳x۲۵ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-flexible-cable-3x35/",
+      "file": "product/afshar-flexible-cable-3x35/index.html",
+      "title": "کابل افشان ۳x۳۵ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-flexible-cable-3x50/",
+      "file": "product/afshar-flexible-cable-3x50/index.html",
+      "title": "کابل افشان ۳x۵۰ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-flexible-cable-3x70/",
+      "file": "product/afshar-flexible-cable-3x70/index.html",
+      "title": "کابل افشان ۳x۷۰ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-flexible-cable-3-5-core-3x25-16/",
+      "file": "product/afshar-flexible-cable-3-5-core-3x25-16/index.html",
+      "title": "کابل افشان ۳x۲۵+۱۶ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-flexible-cable-3-5-core-3x35-16/",
+      "file": "product/afshar-flexible-cable-3-5-core-3x35-16/index.html",
+      "title": "کابل افشان ۳x۳۵+۱۶ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-flexible-cable-3-5-core-3x50-25/",
+      "file": "product/afshar-flexible-cable-3-5-core-3x50-25/index.html",
+      "title": "کابل افشان ۳x۵۰+۲۵ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-flexible-cable-3-5-core-3x70-35/",
+      "file": "product/afshar-flexible-cable-3-5-core-3x70-35/index.html",
+      "title": "کابل افشان ۳x۷۰+۳۵ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-flexible-cable-3-5-core-3x95-50/",
+      "file": "product/afshar-flexible-cable-3-5-core-3x95-50/index.html",
+      "title": "کابل افشان ۳x۹۵+۵۰ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-flexible-cable-3-5-core-3x120-70/",
+      "file": "product/afshar-flexible-cable-3-5-core-3x120-70/index.html",
+      "title": "کابل افشان ۳x۱۲۰+۷۰ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-flexible-cable-4x0-75/",
+      "file": "product/afshar-flexible-cable-4x0-75/index.html",
+      "title": "کابل افشان ۴x۰.۷۵ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-flexible-cable-4x1/",
+      "file": "product/afshar-flexible-cable-4x1/index.html",
+      "title": "کابل افشان ۴x۱ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-flexible-cable-2x4/",
+      "file": "product/afshar-flexible-cable-2x4/index.html",
+      "title": "کابل افشان ۲x۴ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-flexible-cable-2x6/",
+      "file": "product/afshar-flexible-cable-2x6/index.html",
+      "title": "کابل افشان ۲x۶ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-flexible-cable-2x10/",
+      "file": "product/afshar-flexible-cable-2x10/index.html",
+      "title": "کابل افشان ۲x۱۰ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-flexible-cable-2x16/",
+      "file": "product/afshar-flexible-cable-2x16/index.html",
+      "title": "کابل افشان ۲x۱۶ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-flexible-cable-3x0-75/",
+      "file": "product/afshar-flexible-cable-3x0-75/index.html",
+      "title": "کابل افشان ۳x۰.۷۵ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-flexible-cable-3x1/",
+      "file": "product/afshar-flexible-cable-3x1/index.html",
+      "title": "کابل افشان ۳x۱ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-flexible-cable-3x1-5/",
+      "file": "product/afshar-flexible-cable-3x1-5/index.html",
+      "title": "کابل افشان ۳x۱.۵ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-flexible-cable-3x2-5/",
+      "file": "product/afshar-flexible-cable-3x2-5/index.html",
+      "title": "کابل افشان ۳x۲.۵ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-flexible-cable-3x4/",
+      "file": "product/afshar-flexible-cable-3x4/index.html",
+      "title": "کابل افشان ۳x۴ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-flexible-cable-3x6/",
+      "file": "product/afshar-flexible-cable-3x6/index.html",
+      "title": "کابل افشان ۳x۶ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-flexible-cable-3x10/",
+      "file": "product/afshar-flexible-cable-3x10/index.html",
+      "title": "کابل افشان ۳x۱۰ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-flexible-cable-3x16/",
+      "file": "product/afshar-flexible-cable-3x16/index.html",
+      "title": "کابل افشان ۳x۱۶ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-flexible-wire-70/",
+      "file": "product/afshar-flexible-wire-70/index.html",
+      "title": "سیم افشان ۱x۷۰ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-flexible-wire-95/",
+      "file": "product/afshar-flexible-wire-95/index.html",
+      "title": "سیم افشان ۱x۹۵ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-flexible-wire-120/",
+      "file": "product/afshar-flexible-wire-120/index.html",
+      "title": "سیم افشان ۱x۱۲۰ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-flexible-wire-150/",
+      "file": "product/afshar-flexible-wire-150/index.html",
+      "title": "سیم افشان ۱x۱۵۰ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-flexible-wire-185/",
+      "file": "product/afshar-flexible-wire-185/index.html",
+      "title": "سیم افشان ۱x۱۸۵ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-flexible-wire-240/",
+      "file": "product/afshar-flexible-wire-240/index.html",
+      "title": "سیم افشان ۱x۲۴۰ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-flexible-wire-300/",
+      "file": "product/afshar-flexible-wire-300/index.html",
+      "title": "سیم افشان ۱x۳۰۰ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-cooler-cable-4x1-5/",
+      "file": "product/afshar-cooler-cable-4x1-5/index.html",
+      "title": "کابل کولری ۴x۱.۵ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-cooler-cable-5x1-5/",
+      "file": "product/afshar-cooler-cable-5x1-5/index.html",
+      "title": "کابل کولری ۵x۱.۵ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-flexible-cable-2x0-75/",
+      "file": "product/afshar-flexible-cable-2x0-75/index.html",
+      "title": "کابل افشان ۲x۰.۷۵ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-flexible-cable-2x1/",
+      "file": "product/afshar-flexible-cable-2x1/index.html",
+      "title": "کابل افشان ۲x۱ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-flexible-cable-2x1-5/",
+      "file": "product/afshar-flexible-cable-2x1-5/index.html",
+      "title": "کابل افشان ۲x۱.۵ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-flexible-cable-2x2-5/",
+      "file": "product/afshar-flexible-cable-2x2-5/index.html",
+      "title": "کابل افشان ۲x۲.۵ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-flexible-wire-1/",
+      "file": "product/afshar-flexible-wire-1/index.html",
+      "title": "سیم افشان ۱x۱ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-flexible-wire-1-5/",
+      "file": "product/afshar-flexible-wire-1-5/index.html",
+      "title": "سیم افشان ۱x۱.۵ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-flexible-wire-2-5/",
+      "file": "product/afshar-flexible-wire-2-5/index.html",
+      "title": "سیم افشان ۱x۲.۵ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-flexible-wire-4/",
+      "file": "product/afshar-flexible-wire-4/index.html",
+      "title": "سیم افشان ۱x۴ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-flexible-wire-6/",
+      "file": "product/afshar-flexible-wire-6/index.html",
+      "title": "سیم افشان ۱x۶ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-flexible-wire-10/",
+      "file": "product/afshar-flexible-wire-10/index.html",
+      "title": "سیم افشان ۱x۱۰ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-flexible-wire-16/",
+      "file": "product/afshar-flexible-wire-16/index.html",
+      "title": "سیم افشان ۱x۱۶ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-flexible-wire-25/",
+      "file": "product/afshar-flexible-wire-25/index.html",
+      "title": "سیم افشان ۱x۲۵ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-flexible-wire-35/",
+      "file": "product/afshar-flexible-wire-35/index.html",
+      "title": "سیم افشان ۱x۳۵ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product/afshar-flexible-wire-50/",
+      "file": "product/afshar-flexible-wire-50/index.html",
+      "title": "سیم افشان ۱x۵۰ افشارنژاد خراسان | باراد"
+    },
+    {
+      "path": "/product-category/wire/afshar-wire/",
+      "file": "product-category/wire/afshar-wire/index.html",
+      "title": "سیم افشان افشارنژاد؛ مشخصات و قیمت | باراد"
+    },
+    {
+      "path": "/product-category/flex/afshar-flexible/",
+      "file": "product-category/flex/afshar-flexible/index.html",
+      "title": "کابل افشان افشارنژاد؛ مشخصات و قیمت | باراد"
+    },
+    {
+      "path": "/product-category/flex/afshar-double/",
+      "file": "product-category/flex/afshar-double/index.html",
+      "title": "کابل افشان دو روکشه افشارنژاد؛ مشخصات و قیمت | باراد"
+    },
+    {
+      "path": "/product-category/flex/afshar-shielded/",
+      "file": "product-category/flex/afshar-shielded/index.html",
+      "title": "کابل افشان شیلددار افشارنژاد؛ مشخصات و قیمت | باراد"
+    },
+    {
+      "path": "/product-category/power/afshar-underground/",
+      "file": "product-category/power/afshar-underground/index.html",
+      "title": "کابل زمینی افشارنژاد؛ مشخصات و قیمت | باراد"
+    },
+    {
+      "path": "/product-category/telecom/afshar-coax/",
+      "file": "product-category/telecom/afshar-coax/index.html",
+      "title": "کابل کواکسیال افشارنژاد؛ مشخصات و قیمت | باراد"
+    },
+    {
+      "path": "/product-category/power/afshar-cooler/",
+      "file": "product-category/power/afshar-cooler/index.html",
+      "title": "کابل کولری افشارنژاد؛ مشخصات و قیمت | باراد"
+    },
+    {
+      "path": "/product-category/telecom/afshar-telephone/",
+      "file": "product-category/telecom/afshar-telephone/index.html",
+      "title": "کابل مخابراتی هوایی افشارنژاد؛ مشخصات و قیمت | باراد"
+    },
+    {
+      "path": "/product-category/instrument/",
+      "file": "product-category/instrument/index.html",
+      "title": "تلفنی و ابزار دقیق؛ مشخصات و قیمت | باراد"
+    },
+    {
+      "path": "/product-category/wire/",
+      "file": "product-category/wire/index.html",
+      "title": "سیم‌ها؛ مشخصات و قیمت | باراد"
+    },
+    {
+      "path": "/product-category/flex/",
+      "file": "product-category/flex/index.html",
+      "title": "کابل افشان و کنترل؛ مشخصات و قیمت | باراد"
+    },
+    {
+      "path": "/product-category/fiber/",
+      "file": "product-category/fiber/index.html",
+      "title": "کابل فیبر نوری؛ مشخصات و قیمت | باراد"
+    },
+    {
+      "path": "/product-category/power/",
+      "file": "product-category/power/index.html",
+      "title": "کابل قدرت و نصب ثابت؛ مشخصات و قیمت | باراد"
+    },
+    {
+      "path": "/product-category/telecom/",
+      "file": "product-category/telecom/index.html",
+      "title": "کابل مخابراتی و کواکسیال؛ مشخصات و قیمت | باراد"
+    },
+    {
+      "path": "/product-category/coax/",
+      "file": "product-category/coax/index.html",
+      "title": "کواکسیال و مواد اولیه؛ مشخصات و قیمت | باراد"
+    },
+    {
+      "path": "/product-category/fire/",
+      "file": "product-category/fire/index.html",
+      "title": "هالوژن فری، حریق و حرارت؛ مشخصات و قیمت | باراد"
+    },
+    {
+      "path": "/product-category/wire/afshar-wire/page/2/",
+      "file": "product-category/wire/afshar-wire/page/2/index.html",
+      "title": "سیم افشان افشارنژاد؛ مشخصات و قیمت | باراد — صفحه ۲"
+    },
+    {
+      "path": "/product-category/flex/afshar-flexible/page/2/",
+      "file": "product-category/flex/afshar-flexible/page/2/index.html",
+      "title": "کابل افشان افشارنژاد؛ مشخصات و قیمت | باراد — صفحه ۲"
+    },
+    {
+      "path": "/product-category/flex/afshar-flexible/page/3/",
+      "file": "product-category/flex/afshar-flexible/page/3/index.html",
+      "title": "کابل افشان افشارنژاد؛ مشخصات و قیمت | باراد — صفحه ۳"
+    },
+    {
+      "path": "/product-category/flex/afshar-flexible/page/4/",
+      "file": "product-category/flex/afshar-flexible/page/4/index.html",
+      "title": "کابل افشان افشارنژاد؛ مشخصات و قیمت | باراد — صفحه ۴"
+    },
+    {
+      "path": "/product-category/power/afshar-underground/page/2/",
+      "file": "product-category/power/afshar-underground/page/2/index.html",
+      "title": "کابل زمینی افشارنژاد؛ مشخصات و قیمت | باراد — صفحه ۲"
+    },
+    {
+      "path": "/product-category/power/afshar-underground/page/3/",
+      "file": "product-category/power/afshar-underground/page/3/index.html",
+      "title": "کابل زمینی افشارنژاد؛ مشخصات و قیمت | باراد — صفحه ۳"
+    },
+    {
+      "path": "/product-category/power/afshar-underground/page/5/",
+      "file": "product-category/power/afshar-underground/page/5/index.html",
+      "title": "کابل زمینی افشارنژاد؛ مشخصات و قیمت | باراد — صفحه ۵"
+    },
+    {
+      "path": "/product-category/power/afshar-underground/page/4/",
+      "file": "product-category/power/afshar-underground/page/4/index.html",
+      "title": "کابل زمینی افشارنژاد؛ مشخصات و قیمت | باراد — صفحه ۴"
+    }
+  ],
+  "page_count": 178,
+  "asset_count": 1211,
+  "form_submission": false,
+  "admin": false,
+  "english_public": false
+}
