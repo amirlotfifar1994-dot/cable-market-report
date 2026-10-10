@@ -23,7 +23,8 @@ def package():
         'reports-site.css','reports-site.js','page-motion.js','page-visuals.css','client-brief.html',
         'report-loading.js','report-loading.css','report-media-map.js',
         'client-brief.css','client-brief.js','portal-review.md','service-plans.html',
-        'service-plans.css','service-plans.js','service-plans-lock.css','service-plans-lock.js',
+        'service-plans.css','service-plans.js','service-plans.json','service-plans-proposal.md',
+        'service-plan-catalog.txt','service-plan-commerce.txt','service-plan-seo.txt','service-plan-growth.txt',
         'assets/cable-technical-editorial.webp']]
     slider_archive=staging/'woodmart-slider-images.zip'
     with ZipFile(slider_archive,'w',ZIP_DEFLATED,compresslevel=6) as z:
